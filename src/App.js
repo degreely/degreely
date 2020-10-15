@@ -23,7 +23,7 @@ function App() {
           <Col>
             <header className="App-header">
               <Typography variant="h2" align="left">
-                Supercharge your degree planning with us today
+                Supercharge your degree planning with us today (Kenneth)
               </Typography>
             </header>
             <Button variant="primary" size="lg">Sign in with SSO</Button>
