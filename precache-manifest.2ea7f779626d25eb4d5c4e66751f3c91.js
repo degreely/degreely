@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b348fe19cb09455574da4aa972f81f0",
+    "revision": "ae77ca168831ab79d28c610af87db438",
     "url": "/degreely/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/degreely/static/css/2.53085af8.chunk.css"
   },
   {
-    "revision": "dece40076b1811ed42dc",
+    "revision": "14ec57a2f866d14b21c9",
     "url": "/degreely/static/css/main.c377cbfc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/degreely/static/js/2.24ba5f04.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dece40076b1811ed42dc",
-    "url": "/degreely/static/js/main.e17c2169.chunk.js"
+    "revision": "14ec57a2f866d14b21c9",
+    "url": "/degreely/static/js/main.27987a7f.chunk.js"
   },
   {
     "revision": "e89e318310450ef21868",
