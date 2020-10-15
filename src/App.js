@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import landing from "./img/landing.svg";
 
 
-import LandingHeader from './LandingHeader.js'
+import LandingHeader from './components/LandingHeader.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
-import logo from './img/logo.svg';
-import "./LandingHeader.css";
+import logo from '../img/logo.svg';
+import "../css/LandingHeader.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
