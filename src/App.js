@@ -9,7 +9,6 @@ import "fontsource-roboto";
 import Typography from "@material-ui/core/Typography";
 import landing from "./img/landing.svg";
 
-
 import LandingHeader from './components/LandingHeader.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
