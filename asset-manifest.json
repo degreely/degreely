@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/degreely/static/css/main.c377cbfc.chunk.css",
-    "main.js": "/degreely/static/js/main.27987a7f.chunk.js",
-    "main.js.map": "/degreely/static/js/main.27987a7f.chunk.js.map",
+    "main.css": "/degreely/static/css/main.3da45bb9.chunk.css",
+    "main.js": "/degreely/static/js/main.d579a619.chunk.js",
+    "main.js.map": "/degreely/static/js/main.d579a619.chunk.js.map",
     "runtime-main.js": "/degreely/static/js/runtime-main.8d5e98b3.js",
     "runtime-main.js.map": "/degreely/static/js/runtime-main.8d5e98b3.js.map",
     "static/css/2.53085af8.chunk.css": "/degreely/static/css/2.53085af8.chunk.css",
-    "static/js/2.24ba5f04.chunk.js": "/degreely/static/js/2.24ba5f04.chunk.js",
-    "static/js/2.24ba5f04.chunk.js.map": "/degreely/static/js/2.24ba5f04.chunk.js.map",
+    "static/js/2.221be350.chunk.js": "/degreely/static/js/2.221be350.chunk.js",
+    "static/js/2.221be350.chunk.js.map": "/degreely/static/js/2.221be350.chunk.js.map",
     "index.html": "/degreely/index.html",
-    "precache-manifest.2ea7f779626d25eb4d5c4e66751f3c91.js": "/degreely/precache-manifest.2ea7f779626d25eb4d5c4e66751f3c91.js",
+    "precache-manifest.06bdf9efdfbf7cd656e82525901bae3e.js": "/degreely/precache-manifest.06bdf9efdfbf7cd656e82525901bae3e.js",
     "service-worker.js": "/degreely/service-worker.js",
     "static/css/2.53085af8.chunk.css.map": "/degreely/static/css/2.53085af8.chunk.css.map",
-    "static/css/main.c377cbfc.chunk.css.map": "/degreely/static/css/main.c377cbfc.chunk.css.map",
-    "static/js/2.24ba5f04.chunk.js.LICENSE.txt": "/degreely/static/js/2.24ba5f04.chunk.js.LICENSE.txt",
+    "static/css/main.3da45bb9.chunk.css.map": "/degreely/static/css/main.3da45bb9.chunk.css.map",
+    "static/js/2.221be350.chunk.js.LICENSE.txt": "/degreely/static/js/2.221be350.chunk.js.LICENSE.txt",
     "static/media/landing.svg": "/degreely/static/media/landing.6a73e9e9.svg",
     "static/media/logo.svg": "/degreely/static/media/logo.eb47fbc3.svg",
     "static/media/index.css": "/degreely/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.8d5e98b3.js",
     "static/css/2.53085af8.chunk.css",
-    "static/js/2.24ba5f04.chunk.js",
-    "static/css/main.c377cbfc.chunk.css",
-    "static/js/main.27987a7f.chunk.js"
+    "static/js/2.221be350.chunk.js",
+    "static/css/main.3da45bb9.chunk.css",
+    "static/js/main.d579a619.chunk.js"
   ]
 }
