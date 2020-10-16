@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import landing from "./img/landing.svg";
 
 import LandingHeader from './components/LandingHeader.js'
+import Dashboard from './components/Dashboard';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -30,6 +31,9 @@ function App() {
           <Col>
             <img src={landing} className="landing-art" alt="landing-art" />
           </Col>
+        </Row>
+        <Row>
+          <Dashboard />
         </Row>
       </Container>
     </div>
