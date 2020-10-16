@@ -9,8 +9,8 @@ function Mod(props) {
         <Draggable draggableId={modData.code} index={props.index}>
             {(provided, snapshot) => {
                 return (
-                    <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
-                        <Card className="mod">
+                    <div className="mod" ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+                        <Card style={{backgroundColor: snapshot.isDragging ? 'lightgrey' : 'white', ...provided.dragHandleProps.style}}>
                             <Card.Body>
                                 <Card.Title className="mod-code">{modData.code}</Card.Title>
                                 <Card.Subtitle className="mod-mcs mb-2 text-muted">{modData.mcs} MCs</Card.Subtitle>

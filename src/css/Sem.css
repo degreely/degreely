@@ -1,0 +1,11 @@
+.sem {
+    min-height: 46.5rem;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.sem-name {
+    text-align: left;
+    margin: 10px;
+}
