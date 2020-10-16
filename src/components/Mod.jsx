@@ -6,7 +6,7 @@ import "../css/Mod.css";
 function Mod(props) {
     const modData = props.modData;
     return (
-        <Draggable draggableId={modData.code} index={props.index}>
+        <Draggable draggableId={modData.code} index={props.index} key={modData.code}>
             {(provided, snapshot) => {
                 return (
                     <div className="mod" ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
