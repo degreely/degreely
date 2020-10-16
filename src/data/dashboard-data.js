@@ -16,22 +16,22 @@ const mods = [
         name: "Programming Methodology",
         mcs: 4,
     }, {
-        id: 0,
+        id: 1,
         code: "CS1231",
         name: "Discrete Structures",
         mcs: 4,
     }, {
-        id: 0,
+        id: 2,
         code: "GEQ1000",
         name: "Asking Questions",
         mcs: 4,
     }, {
-        id: 0,
+        id: 3,
         code: "MA1101R",
         name: "Linear Algebra I",
         mcs: 4,
     }, {
-        id: 0,
+        id: 4,
         code: "GEH1002",
         name: "Economic Issues in Dev World",
         mcs: 4,

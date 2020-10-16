@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { DragDropContext } from "react-beautiful-dnd";
 import Sem from "./Sem";
 
 import { sems, mods } from "../data/dashboard-data";
@@ -22,15 +23,19 @@ class Dashboard extends React.Component {
         this.state = DEFAULT_SET_UP;
     }
 
+    onDragEnd = (result) => {}
+
     render() {
         return (
-            <Container>
-                <Row>
-                    {Object.entries(this.state.sems).map(([key, semData]) => {
-                        return <Col><Sem key={key} semData={semData} /></Col>;
-                    })}
-                </Row>
-            </Container>
+            <DragDropContext onDragEnd={result => this.onDragEnd(result)}>
+                <Container>
+                    <Row>
+                        {Object.entries(this.state.sems).map(([key, semData]) => {
+                            return <Col key={key}><Sem semData={semData} /></Col>;
+                        })}
+                    </Row>
+                </Container>
+            </DragDropContext>
         );
     }
 }
