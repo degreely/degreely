@@ -25,5 +25,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Deploy gh-pages
         working-directory: .
-        run: npm run deploy
+        run: |
+          npm install
+          npm run deploy
 
