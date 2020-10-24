@@ -2,7 +2,6 @@ import React from "react";
 
 import ListGroup from "react-bootstrap/ListGroup";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
-import Dropdown from "react-bootstrap/Dropdown";
 
 import DeleteIcon from "@material-ui/icons/Clear";
 import MoreIcon from "@material-ui/icons/MoreVert";
@@ -10,9 +9,9 @@ import AddIcon from "@material-ui/icons/Add";
 
 import IconButton from "./IconButton";
 
-const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpenMoreOptions, listStyle }) => {
+const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpenMoreOptions, ...props }) => {
   return (
-    <ListGroup variant="flush" style={listStyle}>
+    <ListGroup variant="flush" {...props}>
       {items.map((item) => (
         <ListGroup.Item
           key={item}
@@ -38,13 +37,12 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
           </ButtonGroup>
         </ListGroup.Item>
       ))}
-      <Dropdown.Divider />
       <ListGroup.Item
         action
         as="button"
         onClick={onAdd}
         className="d-flex justify-content-between align-items-center"
-        style={{ color: "inherit" }}
+        style={{ color: "inherit", borderTop: !items.length && 0 }}
       >
         {addLabel}
         <AddIcon fontSize="small" />

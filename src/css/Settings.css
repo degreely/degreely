@@ -1,0 +1,20 @@
+.degree-info > div:not(:first-child) {
+  margin-top: 36px;
+}
+
+.info-label {
+  font-weight: 500;
+}
+
+.list-label {
+  margin-top: 0.75rem;
+}
+
+.info-content {
+  width: 360px;
+  margin-left: 32px;
+}
+
+span.info-content {
+  padding: 0 1.25rem;
+}
