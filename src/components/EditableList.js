@@ -1,5 +1,9 @@
 import React from "react";
 
+import ListGroup from "react-bootstrap/ListGroup";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import Dropdown from "react-bootstrap/Dropdown";
+
 import DeleteIcon from "@material-ui/icons/Clear";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import AddIcon from "@material-ui/icons/Add";
@@ -8,15 +12,15 @@ import IconButton from "./IconButton";
 
 const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpenMoreOptions, listStyle }) => {
   return (
-    <ul className="list-group list-group-flush" style={listStyle}>
+    <ListGroup variant="flush" style={listStyle}>
       {items.map((item) => (
-        <li
+        <ListGroup.Item
           key={item}
-          className="list-group-item d-flex justify-content-between align-items-center"
+          className="d-flex justify-content-between align-items-center"
           style={{ border: 0 }}
         >
           {item}
-          <div className="btn-group" role="group" aria-label="Basic example">
+          <ButtonGroup>
             {hasMoreOptions && (
               <IconButton
                 type="button"
@@ -31,20 +35,21 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
               className="btn btn-small"
               icon={<DeleteIcon fontSize="small" />}
             />
-          </div>
-        </li>
+          </ButtonGroup>
+        </ListGroup.Item>
       ))}
-      <div className="dropdown-divider" />
-      <button
-        type="button"
+      <Dropdown.Divider />
+      <ListGroup.Item
+        action
+        as="button"
         onClick={onAdd}
-        className="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-between align-items-center"
         style={{ color: "inherit" }}
       >
         {addLabel}
         <AddIcon fontSize="small" />
-      </button>
-    </ul>
+      </ListGroup.Item>
+    </ListGroup>
   );
 };
 
