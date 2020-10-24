@@ -8,7 +8,7 @@ import "../css/LandingHeader.css";
 function LandingHeader() {
   return (
     <div className="LandingHeader">
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg">
         <Navbar.Brand href="#home">
           <img src={logo} className="App-logo" alt="logo" />
         </Navbar.Brand>

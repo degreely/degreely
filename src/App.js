@@ -8,8 +8,6 @@ import SupportPage from "./pages/Support";
 import LandingPage from "./pages/Landing";
 import SettingsPage from "./pages/Settings";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
 const App = () => {
   return (
     <Router basename="/degreely">
