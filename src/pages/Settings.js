@@ -7,7 +7,7 @@ import EditableList from "../components/EditableList";
 import "../css/Settings.css";
 
 const Settings = () => {
-  const options = {
+  const degreeInfo = {
     specialisations: {
       label: "Focus areas/Specialisations",
       items: ["Software Engineering", "Computer Security"],
@@ -26,7 +26,7 @@ const Settings = () => {
           <span className="info-label">Degree program</span>
           <span className="info-content">BComp in Computer Science (Hons)</span>
         </Row>
-        {Object.values(options).map(({ label, items }) => (
+        {Object.values(degreeInfo).map(({ label, items }) => (
           <Row className="d-flex justify-content-end" key={label}>
             <span className="info-label list-label">{label}</span>
             <EditableList
