@@ -8,11 +8,13 @@ import landing from "../img/landing.svg";
 import Btn from "../components/Button";
 import Dashboard from "../components/Dashboard";
 
+import "../scss/Landing.scss";
+
 const Landing = () => {
   return (
-    <Container fluid className="my-2">
+    <Container fluid>
       <Row>
-        <Col className="ml-4 mt-4">
+        <Col className="mt-4 Text-container">
           <Container>
             <Row>
               <Typography variant="h2" align="left">
@@ -29,12 +31,9 @@ const Landing = () => {
             </Row>
           </Container>
         </Col>
-        <Col>
-          <img src={landing} className="landing-art" alt="landing-art" />
+        <Col className="Art-container">
+          <img src={landing} className="Landing-art" alt="landing-art" />
         </Col>
-      </Row>
-      <Row>
-        <Dashboard />
       </Row>
     </Container>
   );

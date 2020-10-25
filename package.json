@@ -17,6 +17,7 @@
     "react-beautiful-dnd": "^13.0.0",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
+    "react-external-link": "^1.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "save-dev": "0.0.1-security"

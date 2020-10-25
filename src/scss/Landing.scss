@@ -1,0 +1,30 @@
+.Landing-art {
+    position: absolute;
+    bottom: 5vh;
+}
+
+.Text-container {
+    width: 30vw;
+    left: 3vw;
+}
+
+.Art-container {
+    width: 70vw;
+    height: 90vh;
+    right: 3vw;
+}
+
+.degreely {
+    color: #5E60CE;
+    display: inline;
+}
+
+.External-link {
+    color: #5E60CE;
+    text-decoration: underline;
+
+    &:hover {
+        color: #5E60CE;
+        text-decoration: none;
+    }
+}
