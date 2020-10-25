@@ -15,10 +15,10 @@ const App = () => {
     <Router basename="/degreely">
       <LandingHeader />
       <Switch>
-        <Route path="/" component={LandingPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/support" component={SupportPage} />
         <Route path="/settings" component={SettingsPage} />
+        <Route path="/" component={LandingPage} />
       </Switch>
     </Router>
   );
