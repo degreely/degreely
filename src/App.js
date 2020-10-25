@@ -7,15 +7,16 @@ import LandingPage from "./pages/Landing";
 import LandingHeader from "./components/LandingHeader";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./scss/App.scss";
 
 const App = () => {
   return (
     <Router basename="/degreely">
       <LandingHeader />
       <Switch>
+        <Route path="/" component={LandingPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/support" component={SupportPage} />
-        <Route path="/" component={LandingPage} />
       </Switch>
     </Router>
   );
