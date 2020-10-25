@@ -20,7 +20,7 @@ const primaryStyle = {
 
 const secondaryStyle = {
   backgroundColor: "#FFFFFF",
-  color: "5E60CE",
+  color: "#5E60CE",
   borderColor: "#5E60CE",
   paddingTop: 12,
   paddingBottom: 12,
