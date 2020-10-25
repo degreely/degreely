@@ -6,7 +6,6 @@ import Typography from "@material-ui/core/Typography";
 
 import landing from "../img/landing.svg";
 import Btn from "../components/Button";
-import Dashboard from "../components/Dashboard";
 
 import "../scss/Landing.scss";
 
