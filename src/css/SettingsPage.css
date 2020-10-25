@@ -1,0 +1,33 @@
+.page-actions {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.page-actions :not(:first-child) {
+  margin-left: 24px;
+}
+
+.page-body {
+  width: 100%;
+}
+
+.degree-info > div:not(:first-child) {
+  margin-top: 36px;
+}
+
+.info-label {
+  font-weight: 500;
+}
+
+.list-label {
+  margin-top: 0.75rem;
+}
+
+.info-content {
+  width: 25vw;
+  margin-left: 32px;
+}
+
+span.info-content {
+  padding: 0 1.25rem;
+}
