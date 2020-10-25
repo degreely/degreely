@@ -7,7 +7,6 @@ import LandingPage from "./pages/Landing";
 import LandingHeader from "./components/LandingHeader";
 import SettingsPage from "./pages/Settings";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./scss/App.scss";
 
 const App = () => {
