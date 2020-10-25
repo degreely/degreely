@@ -1,28 +1,25 @@
 {
   "files": {
-    "main.css": "/degreely/static/css/main.ab013203.chunk.css",
-    "main.js": "/degreely/static/js/main.ba085e07.chunk.js",
-    "main.js.map": "/degreely/static/js/main.ba085e07.chunk.js.map",
+    "main.css": "/degreely/static/css/main.8295129a.chunk.css",
+    "main.js": "/degreely/static/js/main.fcfb4cce.chunk.js",
+    "main.js.map": "/degreely/static/js/main.fcfb4cce.chunk.js.map",
     "runtime-main.js": "/degreely/static/js/runtime-main.8d5e98b3.js",
     "runtime-main.js.map": "/degreely/static/js/runtime-main.8d5e98b3.js.map",
-    "static/css/2.2a86faee.chunk.css": "/degreely/static/css/2.2a86faee.chunk.css",
-    "static/js/2.2f29db5b.chunk.js": "/degreely/static/js/2.2f29db5b.chunk.js",
-    "static/js/2.2f29db5b.chunk.js.map": "/degreely/static/js/2.2f29db5b.chunk.js.map",
+    "static/js/2.f999ba10.chunk.js": "/degreely/static/js/2.f999ba10.chunk.js",
+    "static/js/2.f999ba10.chunk.js.map": "/degreely/static/js/2.f999ba10.chunk.js.map",
     "index.html": "/degreely/index.html",
-    "precache-manifest.410429650271d63e773336d6ef03e8be.js": "/degreely/precache-manifest.410429650271d63e773336d6ef03e8be.js",
+    "precache-manifest.3bd6a232a517f5a4889e8106fd80f1ea.js": "/degreely/precache-manifest.3bd6a232a517f5a4889e8106fd80f1ea.js",
     "service-worker.js": "/degreely/service-worker.js",
-    "static/css/2.2a86faee.chunk.css.map": "/degreely/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.ab013203.chunk.css.map": "/degreely/static/css/main.ab013203.chunk.css.map",
-    "static/js/2.2f29db5b.chunk.js.LICENSE.txt": "/degreely/static/js/2.2f29db5b.chunk.js.LICENSE.txt",
+    "static/css/main.8295129a.chunk.css.map": "/degreely/static/css/main.8295129a.chunk.css.map",
+    "static/js/2.f999ba10.chunk.js.LICENSE.txt": "/degreely/static/js/2.f999ba10.chunk.js.LICENSE.txt",
     "static/media/about.svg": "/degreely/static/media/about.c6561f74.svg",
     "static/media/landing.svg": "/degreely/static/media/landing.22083d66.svg",
     "static/media/logo.svg": "/degreely/static/media/logo.eb47fbc3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8d5e98b3.js",
-    "static/css/2.2a86faee.chunk.css",
-    "static/js/2.2f29db5b.chunk.js",
-    "static/css/main.ab013203.chunk.css",
-    "static/js/main.ba085e07.chunk.js"
+    "static/js/2.f999ba10.chunk.js",
+    "static/css/main.8295129a.chunk.css",
+    "static/js/main.fcfb4cce.chunk.js"
   ]
 }
