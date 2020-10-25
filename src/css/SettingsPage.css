@@ -1,3 +1,16 @@
+.page-actions {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.page-actions :not(:first-child) {
+  margin-left: 24px;
+}
+
+.page-body {
+  width: 100%;
+}
+
 .degree-info > div:not(:first-child) {
   margin-top: 36px;
 }
