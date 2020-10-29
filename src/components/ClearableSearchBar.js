@@ -10,7 +10,12 @@ const ClearableSearchBar = ({ resultCount, resultType, handleChange, handleClear
       <SearchIcon style={{ position: "relative", right: "-32px" }} />
       <input
         onChange={(e) => handleChange(e.target.value)}
-        style={{ width: "300px", paddingLeft: "32px", paddingRight: "32px" }}
+        style={{
+          width: "300px",
+          paddingLeft: "32px",
+          paddingRight: "32px",
+          boxShadow: "0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)",
+        }}
         {...inputProps}
       />
       <IconButton

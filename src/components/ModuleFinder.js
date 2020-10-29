@@ -38,11 +38,11 @@ const ModuleFinder = ({ moduleToSemMapping }) => {
           handleClear={handleClearSearch}
         />
       </div>
-      <ul className="results">
+      <div className="results">
         {modules.map((module) => (
           <Card key={module.moduleCode} {...module} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
