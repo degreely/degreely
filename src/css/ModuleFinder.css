@@ -13,6 +13,6 @@
   max-height: 100%;
 }
 
-.results > div:not(:last-child) {
+.results > div {
   margin-bottom: 1rem;
 }

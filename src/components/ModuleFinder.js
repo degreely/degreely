@@ -7,7 +7,10 @@ import Card from "./ModuleFinderResultCard";
 import allModules from "../data/computing-modules-detailed";
 import "../css/ModuleFinder.css";
 
-const ModuleFinder = ({ moduleToSemMapping }) => {
+const ModuleFinder = ({
+  moduleToSemMapping = { CS3230: "YS31" },
+  availableSems = ["Y1S1", "Y1S2", "Y2S1", "Y2S2", "Y3S1", "Y3S2", "Y4S1", "Y4S2"],
+}) => {
   const [modules, setModules] = useState(allModules);
 
   const handleClearSearch = () => {
@@ -39,7 +42,12 @@ const ModuleFinder = ({ moduleToSemMapping }) => {
       />
       <div className="results">
         {modules.map((module) => (
-          <Card key={module.moduleCode} {...module} />
+          <Card
+            key={module.moduleCode}
+            containingSemester={moduleToSemMapping[module.moduleCode]}
+            semesterOptions={availableSems}
+            {...module}
+          />
         ))}
       </div>
     </div>
