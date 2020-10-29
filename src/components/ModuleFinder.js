@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import _ from "lodash";
 
-import SearchBox from "./ClearableSearchBar";
+import SearchBar from "./ClearableSearchBar";
 import Card from "./ModuleFinderResultCard";
 
 import allModules from "../data/computing-modules-detailed";
@@ -28,16 +28,15 @@ const ModuleFinder = ({ moduleToSemMapping }) => {
   }, 350);
 
   return (
-    <div>
-      <div>
-        <SearchBox
-          id="module-search-box"
-          resultCount={modules.length}
-          resultType="module"
-          handleChange={debouncedFilter}
-          handleClear={handleClearSearch}
-        />
-      </div>
+    <div className="module-finder-container">
+      <h5 className="text-primary font-weight-medium">Module Search</h5>
+      <SearchBar
+        id="module-search-box"
+        resultCount={modules.length}
+        resultType="module"
+        handleChange={debouncedFilter}
+        handleClear={handleClearSearch}
+      />
       <div className="results">
         {modules.map((module) => (
           <Card key={module.moduleCode} {...module} />
