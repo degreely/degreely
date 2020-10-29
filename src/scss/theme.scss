@@ -4,3 +4,11 @@ $theme-colors: (
 );
 
 @import "bootstrap";
+
+.text-small {
+  font-size: 0.75rem;
+}
+
+.medium-font-weight {
+  font-weight: 500;
+}

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import _ from "lodash";
 
 import SearchBox from "./ClearableSearchBar";
+import Card from "./ModuleFinderResultCard";
 
 import allModules from "../data/computing-modules-detailed";
+import "../css/ModuleFinder.css";
 
 const ModuleFinder = ({ moduleToSemMapping }) => {
   const [modules, setModules] = useState(allModules);
@@ -36,10 +38,10 @@ const ModuleFinder = ({ moduleToSemMapping }) => {
           handleClear={handleClearSearch}
         />
       </div>
-      <ul>
-        {modules.map((module) => {
-          return <li key={module.moduleCode}>{`${module.moduleCode} ${module.title}`}</li>;
-        })}
+      <ul className="results">
+        {modules.map((module) => (
+          <Card key={module.moduleCode} {...module} />
+        ))}
       </ul>
     </div>
   );

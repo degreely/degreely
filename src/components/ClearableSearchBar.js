@@ -19,8 +19,8 @@ const ClearableSearchBar = ({ resultCount, resultType, handleChange, handleClear
         style={{ position: "relative", left: "-32px", color: "grey" }}
       />
       <p
-        className="text-muted"
-        style={{ fontSize: "0.75rem", paddingTop: "10px", position: "relative", right: "-32px" }}
+        className="text-muted text-small"
+        style={{ paddingTop: "10px", position: "relative", right: "-32px" }}
       >
         {`${resultCount} ${resultType}${resultCount === 1 ? "" : "s"} found`}
       </p>
