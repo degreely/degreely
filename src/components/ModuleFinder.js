@@ -6,7 +6,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 import SearchBox from "./ClearableSearchBox";
 
-import allModules from "../data/modules-detailed";
+import allModules from "../data/computing-modules-detailed";
 
 const ModuleFinder = ({ moduleToSemMapping }) => {
   const [modules, setModules] = useState(allModules);
