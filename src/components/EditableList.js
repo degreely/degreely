@@ -42,7 +42,7 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
         as="button"
         onClick={onAdd}
         className="d-flex justify-content-between align-items-center"
-        style={{ color: "inherit", borderTop: !items.length && 0 }}
+        style={{ color: "inherit" }}
       >
         {addLabel}
         <AddIcon fontSize="small" />

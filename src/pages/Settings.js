@@ -21,7 +21,7 @@ const Settings = () => {
   const handleAdd = () => console.log("add clicked");
 
   return (
-    <Container id="root" className="d-flex flex-column justify-content-center align-items-center">
+    <Container id="root" className="d-flex flex-column justify-content-start align-items-center">
       <Row id="row" className="d-flex justify-content-end page-actions">
         <Button variant="outline-primary">Cancel</Button>
         <Button variant="outline-primary">Save Changes</Button>
