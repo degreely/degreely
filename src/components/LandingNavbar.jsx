@@ -4,11 +4,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Btn from "./Button";
 import logo from "../img/logo.svg";
-import "../scss/LandingHeader.scss";
+import "../scss/LandingNavbar.scss";
 
-function LandingHeader() {
+function LandingNavbar() {
   return (
-    <div className="Landing-header">
+    <div className="Landing-navbar">
       <Navbar expand="lg">
         <div className="order-1 mr-auto">
           <Navbar.Brand>
@@ -41,4 +41,4 @@ function LandingHeader() {
   );
 }
 
-export default LandingHeader;
+export default LandingNavbar;
