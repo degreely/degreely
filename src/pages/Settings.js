@@ -65,7 +65,7 @@ const Settings = () => {
 
   if (mode === "view") {
     return (
-      <Container id="root" className="d-flex flex-column justify-content-start align-items-center">
+      <Container className="d-flex flex-column justify-content-start align-items-center">
         <Row id="row" className="d-flex justify-content-end page-actions">
           <Button variant="outline-primary" onClick={handleStartEditMode}>
             Edit
@@ -90,7 +90,7 @@ const Settings = () => {
   } else {
     return (
       <>
-        <Container id="root" className="d-flex flex-column justify-content-start align-items-center">
+        <Container className="d-flex flex-column justify-content-start align-items-center">
           <Row id="row" className="d-flex justify-content-end page-actions">
             <Button variant="outline-primary" onClick={handleCancel}>
               Cancel
