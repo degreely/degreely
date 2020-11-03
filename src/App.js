@@ -10,13 +10,14 @@ import Dashboard from "./components/Dashboard";
 
 import "./scss/App.scss";
 import LandingNavbar from "./components/LandingNavbar";
+import UserNavbar from "./components/UserNavbar";
 
 const App = () => {
   const isAuthenticated = !!localStorage.token;
 
   return (
-    <Router basename="/degreely">
-      <LandingNavbar />
+    <Router basename="/degreely" forceRefresh>
+      {isAuthenticated ? <UserNavbar /> : <LandingNavbar />}
       <Switch>
         <Route path="/about" component={AboutPage} />
         <Route path="/support" component={SupportPage} />
