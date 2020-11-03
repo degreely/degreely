@@ -14,20 +14,18 @@ function UserDropdown() {
       <Dropdown.Toggle>
         <img src={Avatar} alt="Logo" style={circleCrop} />
         Welcome, Jolyn!
-        <div style={iconRight}>
-          <KeyboardArrowDownIcon />
-        </div>
+        <KeyboardArrowDownIcon />
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
         <Dropdown.Item>
-          <div style={iconLeft}>
+          <div className="IconLeft">
             <SettingsIcon />
           </div>
           Degree settings
         </Dropdown.Item>
         <Dropdown.Item>
-          <div style={iconLeft}>
+          <div className="IconLeft">
             <PowerSettingsNewIcon />
           </div>
           Sign out
@@ -40,21 +38,8 @@ function UserDropdown() {
 const circleCrop = {
   borderRadius: "50%",
   display: "inline",
-  marginRight: 24,
-  width: 32,
-  height: 32
-};
-
-const iconLeft = {
-    textAlign: "left",
-    display: "inline",
-    paddingRight: 24
-}
-
-const iconRight = {
-  textAlign: "right",
-  display: "inline",
-  paddingLeft: 24,
+  width: "2rem",
+  height: "2rem"
 };
 
 export default UserDropdown;
