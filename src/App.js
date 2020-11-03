@@ -7,6 +7,7 @@ import SupportPage from "./pages/Support";
 import LandingPage from "./pages/Landing";
 import SettingsPage from "./pages/Settings";
 import Dashboard from "./components/Dashboard";
+import CreatePlanPage from "./pages/CreatePlan";
 
 import "./scss/App.scss";
 import LandingNavbar from "./components/LandingNavbar";
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/support" component={SupportPage} />
         <ProtectedRoute path="/dashboard" component={Dashboard} />
         <ProtectedRoute path="/settings" component={SettingsPage} />
+        <Route path="/create-plan" component={CreatePlanPage} />
         <Route path="/" component={LandingPage} />
       </Switch>
     </Router>
