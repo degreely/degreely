@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Dropdown from "react-bootstrap/Dropdown";
 
 import SettingsIcon from "@material-ui/icons/Settings";
@@ -18,13 +20,13 @@ function UserDropdown() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item>
+        <Dropdown.Item as={Link} to="/settings">
           <div className="IconLeft">
             <SettingsIcon />
           </div>
           Degree settings
         </Dropdown.Item>
-        <Dropdown.Item>
+        <Dropdown.Item as={Link} to="/">
           <div className="IconLeft">
             <PowerSettingsNewIcon />
           </div>
