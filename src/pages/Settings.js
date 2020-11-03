@@ -122,7 +122,7 @@ const Settings = () => {
         </Container>
         <SelectionModal
           open={!!selectionType}
-          title={`Add a ${!!labels[selectionType] ? labels[selectionType].singular.toLowerCase() : ""}`}
+          title={`Select a ${!!labels[selectionType] ? labels[selectionType].singular.toLowerCase() : ""}`}
           options={getOptions(selectionType)}
           handleSubmit={(selection) => handleAdd(selectionType, selection)}
           handleClose={() => setSelectionType("")}

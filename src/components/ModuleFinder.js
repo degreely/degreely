@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import _ from "lodash";
 
-import SearchBar from "./ClearableSearchBar";
+import SearchBar from "./SearchBar";
 import Card from "./ModuleFinderResultCard";
 
 import allModules from "../data/computing-modules-detailed";
@@ -34,6 +34,7 @@ const ModuleFinder = ({
     <div className="module-finder-container">
       <h5 className="text-primary font-weight-medium">Module Search</h5>
       <SearchBar
+        clearable
         id="module-search-box"
         resultCount={modules.length}
         resultType="module"

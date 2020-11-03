@@ -4,7 +4,14 @@ import SearchIcon from "@material-ui/icons/Search";
 import ClearIcon from "@material-ui/icons/Clear";
 import IconButton from "./IconButton";
 
-const ClearableSearchBar = ({ resultCount, resultType, handleChange, handleClear, ...inputProps }) => {
+const ClearableSearchBar = ({
+  resultCount,
+  resultType,
+  handleChange,
+  clearable,
+  handleClear,
+  ...inputProps
+}) => {
   return (
     <>
       <div style={{ position: "relative", display: "flex", alignItems: "center" }}>
@@ -19,11 +26,13 @@ const ClearableSearchBar = ({ resultCount, resultType, handleChange, handleClear
           }}
           {...inputProps}
         />
-        <IconButton
-          icon={<ClearIcon color="inherit" />}
-          onClick={handleClear}
-          style={{ position: "absolute", left: "calc(100% - 32px)", color: "grey" }}
-        />
+        {clearable && (
+          <IconButton
+            icon={<ClearIcon color="inherit" />}
+            onClick={handleClear}
+            style={{ position: "absolute", left: "calc(100% - 32px)", color: "grey" }}
+          />
+        )}
       </div>
       <p className="text-muted text-small" style={{ paddingTop: "10px" }}>
         {`${resultCount} ${resultType}${resultCount === 1 ? "" : "s"} found`}
