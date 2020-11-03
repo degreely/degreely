@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useHistory } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 
 import SettingsIcon from "@material-ui/icons/Settings";
@@ -8,9 +7,13 @@ import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import Avatar from "../img/avatar.jpg";
 
+import { logout } from "../utils/logout";
+
 import "../scss/Dropdown.scss";
 
 function UserDropdown() {
+  const history = useHistory();
+
   return (
     <Dropdown>
       <Dropdown.Toggle>
@@ -26,7 +29,7 @@ function UserDropdown() {
           </div>
           Degree settings
         </Dropdown.Item>
-        <Dropdown.Item as={Link} to="/">
+        <Dropdown.Item onClick={() => logout(history)}>
           <div className="IconLeft">
             <PowerSettingsNewIcon />
           </div>
@@ -41,7 +44,7 @@ const circleCrop = {
   borderRadius: "50%",
   display: "inline",
   width: "2rem",
-  height: "2rem"
+  height: "2rem",
 };
 
 export default UserDropdown;
