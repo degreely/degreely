@@ -20,14 +20,28 @@ const INITIAL_STATE = {
   minors: ["Economics"],
 };
 
-const Settings = ({ degreeInfo = INITIAL_STATE }) => {
+const Settings = () => {
   const [mode, setMode] = useState("view");
+  const [degreeInfo, setDegreeInfo] = useState(INITIAL_STATE);
+  const [prev, setPrev] = useState({});
 
-  const handleStartEditMode = () => setMode("edit");
-  const handleCancel = () => setMode("view");
+  const handleStartEditMode = () => {
+    setMode("edit");
+    setPrev(degreeInfo);
+  };
+  const handleCancel = () => {
+    setMode("view");
+    setDegreeInfo(prev);
+  };
   const handleSaveChanges = () => setMode("view");
 
-  const handleDelete = () => console.log("delete clicked");
+  const handleDelete = (category, itemToDelete) => {
+    setDegreeInfo({
+      ...degreeInfo,
+      [category]: degreeInfo[category].filter((item) => item !== itemToDelete),
+    });
+  };
+
   const handleAdd = () => console.log("add clicked");
 
   if (mode === "view") {
@@ -76,7 +90,7 @@ const Settings = ({ degreeInfo = INITIAL_STATE }) => {
                 <span className="info-label list-label">{labels[category]}</span>
                 <EditableList
                   items={items}
-                  onDelete={handleDelete}
+                  onDelete={(item) => handleDelete(category, item)}
                   onAdd={handleAdd}
                   addLabel={`Add ${labels[category].toLowerCase()}`}
                   className="info-content"

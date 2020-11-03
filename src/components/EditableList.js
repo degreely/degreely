@@ -30,7 +30,7 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
             )}
             <IconButton
               type="button"
-              onClick={onDelete}
+              onClick={() => onDelete(item)}
               className="btn btn-small"
               icon={<DeleteIcon fontSize="small" />}
             />
