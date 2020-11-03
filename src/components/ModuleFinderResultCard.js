@@ -25,7 +25,7 @@ const ModuleFinderResultCard = ({
         boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
       }}
     >
-      <h6 className="text-primary medium-font-weight">{`${code} ${title}`}</h6>
+      <h6 className="text-primary font-weight-medium">{`${code} ${title}`}</h6>
 
       <p className="text-muted text-small" style={{ marginBottom: 0 }}>{`${department} • ${mcs} MCs`}</p>
       <p className="text-muted text-small">{semesters}</p>
@@ -42,7 +42,7 @@ const ModuleFinderResultCard = ({
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
           {hasPreclusion || hasPrerequisite ? (
-            <p className="text-primary text-small medium-font-weight" style={{ marginBottom: 0 }}>
+            <p className="text-primary text-small font-weight-medium" style={{ marginBottom: 0 }}>
               Has Preclusions/Prerequistes
             </p>
           ) : null}
@@ -52,7 +52,7 @@ const ModuleFinderResultCard = ({
         </div>
         {containingSemester ? (
           <div className="bg-primary text-white" style={{ padding: "0 0.5rem", borderRadius: "16px" }}>
-            <span className="text-small medium-font-weight">{containingSemester}</span>
+            <span className="text-small font-weight-medium">{containingSemester}</span>
           </div>
         ) : (
           <Dropdown navbar className="selector-dropdown">
@@ -62,7 +62,7 @@ const ModuleFinderResultCard = ({
               variant="outline-primary"
               style={{ padding: "0 0.5rem", borderRadius: "16px" }}
             >
-              <span className="text-small medium-font-weight">Add to</span>
+              <span className="text-small font-weight-medium">Add to</span>
             </Dropdown.Toggle>
             <Dropdown.Menu>
               {semesterOptions.map((option) => (

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Typography from "@material-ui/core/Typography";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -22,7 +23,9 @@ const SelectionModal = ({ open, title, options = [], handleSubmit, handleClose }
   return (
     <Modal show={open} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title>{title}</Modal.Title>
+        <Modal.Title>
+          <Typography variant="h4">{title}</Typography>
+        </Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
