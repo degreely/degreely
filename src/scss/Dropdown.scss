@@ -79,6 +79,24 @@
 
 }
 
+.list-group-item {
+    background-color: #F5F8FF;
+    border-color: #F5F8FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 16rem;
+
+    &:hover {
+        background-color: #CCCCCC;
+        cursor: pointer;
+    }
+}
+
 .IconLeft {
   padding-right: 0.75rem;
 }

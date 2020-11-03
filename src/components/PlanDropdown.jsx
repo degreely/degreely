@@ -1,14 +1,14 @@
 import React from "react";
-
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 import EditableList from "./EditableList";
 
-import "../css/PlanSelector.css";
+import "../scss/Dropdown.scss";
 
-const PlanSelector = ({
-  plans = ["Default Plan", "Second Major", "without honours"],
+const PlanDropdown = ({
+  plans = ["Second Major", "without honours"],
   selected = "Default Plan",
 }) => {
   const handleOpenMoreOptions = () => console.log("more clicked");
@@ -19,8 +19,9 @@ const PlanSelector = ({
     <Container className="d-flex flex-row align-items-center selector-root">
       <span>You are viewing</span>
       <Dropdown navbar className="selector-dropdown">
-        <Dropdown.Toggle variant="outline-dark" className="selector-dropdown-toggle">
+        <Dropdown.Toggle className="selector-dropdown-toggle">
           {selected}
+          <KeyboardArrowDownIcon />
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <EditableList
@@ -37,4 +38,4 @@ const PlanSelector = ({
   );
 };
 
-export default PlanSelector;
+export default PlanDropdown;
