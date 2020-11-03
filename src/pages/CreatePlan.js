@@ -36,7 +36,7 @@ const CreatePlan = () => {
             />
           </OverlayTrigger>
         </div>
-        <Button size="lg" href="dashboard">
+        <Button variant="primary" size="lg" href="dashboard">
           Start with an empty plan
         </Button>
       </Row>
