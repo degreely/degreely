@@ -1,5 +1,14 @@
 $theme-colors: (
   "primary": #5e60ce,
+  "text-muted": #adb2c1,
 );
 
 @import "bootstrap";
+
+.text-small {
+  font-size: 0.75rem;
+}
+
+.medium-font-weight {
+  font-weight: 500;
+}
