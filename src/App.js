@@ -6,6 +6,8 @@ import SupportPage from "./pages/Support";
 import LandingPage from "./pages/Landing";
 import LandingNavbar from "./components/LandingNavbar";
 import SettingsPage from "./pages/Settings";
+import UserDropdown from "./components/UserDropdown";
+
 
 import "./scss/App.scss";
 
@@ -13,6 +15,7 @@ const App = () => {
   return (
     <Router basename="/degreely">
       <LandingNavbar />
+      <UserDropdown />
       <Switch>
         <Route path="/about" component={AboutPage} />
         <Route path="/support" component={SupportPage} />
