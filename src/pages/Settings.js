@@ -7,16 +7,19 @@ import EditableList from "../components/EditableList";
 
 import "../css/SettingsPage.css";
 
-const Settings = () => {
-  const degreeInfo = {
-    specialisations: {
-      label: "Focus areas/Specialisations",
-      items: ["Software Engineering", "Computer Security"],
-    },
-    majors: { label: "Majors", items: [] },
-    minors: { label: "Minors", items: ["Economics"] },
-  };
+const labels = {
+  specialisations: "Focus areas/Specialisations",
+  majors: "majors",
+  minors: "minors",
+};
 
+const INITIAL_STATE = {
+  specialisations: ["Software Engineering", "Computer Security"],
+  majors: [],
+  minors: ["Economics"],
+};
+
+const Settings = ({ degreeInfo = INITIAL_STATE }) => {
   const handleDelete = () => console.log("delete clicked");
   const handleAdd = () => console.log("add clicked");
 
@@ -32,14 +35,14 @@ const Settings = () => {
             <span className="info-label">Degree program</span>
             <span className="info-content">BComp in Computer Science (Hons)</span>
           </Row>
-          {Object.values(degreeInfo).map(({ label, items }) => (
-            <Row className="d-flex justify-content-end" key={label}>
-              <span className="info-label list-label">{label}</span>
+          {Object.entries(degreeInfo).map(([category, items]) => (
+            <Row className="d-flex justify-content-end" key={category}>
+              <span className="info-label list-label">{labels[category]}</span>
               <EditableList
                 items={items}
                 onDelete={handleDelete}
                 onAdd={handleAdd}
-                addLabel={`Add ${label.toLowerCase()}`}
+                addLabel={`Add ${labels[category].toLowerCase()}`}
                 className="info-content"
               />
             </Row>
