@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import "../scss/CustomDropdownButton.scss";
+import "../scss/CustomDropdownToggle.scss";
 
 const CustomDropdownToggle = ({ children, ...props }) => {
   return (
