@@ -17,7 +17,7 @@ const CreatePlan = () => {
         To get started,
       </Typography>
       <Row>
-        <Button size="lg" style={{ marginRight: "15rem" }} href="template">
+        <Button size="lg" style={{ marginRight: "15rem" }} href="templates">
           Choose a template
         </Button>
         <Button size="lg" href="dashboard">
