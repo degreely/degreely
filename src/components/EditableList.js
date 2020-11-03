@@ -16,7 +16,7 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
         <ListGroup.Item
           key={item}
           className="d-flex justify-content-between align-items-center"
-          style={{ border: 0 }}
+          style={{ border: 0, padding: "0.375rem 1.25rem" }}
         >
           {item}
           <ButtonGroup>
@@ -42,7 +42,7 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
         as="button"
         onClick={onAdd}
         className="d-flex justify-content-between align-items-center"
-        style={{ color: "inherit" }}
+        style={{ color: "inherit", borderTopWidth: items.length ? "1px" : "0px" }}
       >
         {addLabel}
         <AddIcon fontSize="small" />

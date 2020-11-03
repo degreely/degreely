@@ -20,7 +20,7 @@
 }
 
 .list-label {
-  margin-top: 0.75rem;
+  margin-top: 0.375rem;
 }
 
 .info-content {
@@ -30,4 +30,8 @@
 
 span.info-content {
   padding: 0 1.25rem;
+}
+
+.read-only > div {
+  background: rgba(0, 0, 0, 0);
 }
