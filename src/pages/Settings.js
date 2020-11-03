@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
+import ArrowBackIcon from "@material-ui/icons/ArrowBackIos";
 import ReadOnlyList from "../components/ReadOnlyList";
 import EditableList from "../components/EditableList";
 import SelectionModal from "../components/SelectionModal";
@@ -63,43 +66,38 @@ const Settings = () => {
     return selectionOptions[category].filter((option) => !existing.has(option));
   };
 
-  if (mode === "view") {
-    return (
-      <Container className="d-flex flex-column justify-content-start align-items-center">
-        <Row id="row" className="d-flex justify-content-end page-actions">
-          <Button variant="outline-primary" onClick={handleStartEditMode}>
-            Edit
-          </Button>
-        </Row>
-        <Row id="row" className="d-flex justify-content-center page-body">
-          <div className="degree-info">
-            <Row className="d-flex justify-content-end">
-              <span className="info-label">Degree program</span>
-              <span className="info-content">BComp in Computer Science (Hons)</span>
+  return (
+    <>
+      <Container className="d-flex flex-col justify-content-between page-root">
+        <Col sm={10}>
+          {mode === "view" ? (
+            <Row id="row" className="d-flex justify-content-between page-actions">
+              <Button
+                as={Link}
+                to="dashboard"
+                variant="outline-primary"
+                className="d-flex align-items-center"
+                style={{ border: 0, fontSize: "1rem" }}
+              >
+                <ArrowBackIcon fontSize="inherit" style={{ marginRight: "1rem" }} />
+                Dashboard
+              </Button>
+              <Button variant="outline-primary" onClick={handleStartEditMode}>
+                Edit
+              </Button>
             </Row>
-            {Object.entries(degreeInfo).map(([category, items]) => (
-              <Row className="d-flex justify-content-end" key={category}>
-                <span className="info-label list-label">{labels[category].plural}</span>
-                <ReadOnlyList items={items} className="info-content read-only" />
-              </Row>
-            ))}
-          </div>
-        </Row>
-      </Container>
-    );
-  } else {
-    return (
-      <>
-        <Container className="d-flex flex-column justify-content-start align-items-center">
-          <Row id="row" className="d-flex justify-content-end page-actions">
-            <Button variant="outline-primary" onClick={handleCancel}>
-              Cancel
-            </Button>
-            <Button variant="outline-primary" onClick={handleSaveChanges}>
-              Save Changes
-            </Button>
-          </Row>
-          <Row id="row" className="d-flex justify-content-center page-body">
+          ) : (
+            <Row id="row" className="d-flex justify-content-end page-actions">
+              <Button variant="outline-primary" onClick={handleCancel}>
+                Cancel
+              </Button>
+              <Button variant="outline-primary" onClick={handleSaveChanges}>
+                Save Changes
+              </Button>
+            </Row>
+          )}
+
+          <Row id="row" className="d-flex justify-content-center">
             <div className="degree-info">
               <Row className="d-flex justify-content-end">
                 <span className="info-label">Degree program</span>
@@ -108,28 +106,36 @@ const Settings = () => {
               {Object.entries(degreeInfo).map(([category, items]) => (
                 <Row className="d-flex justify-content-end" key={category}>
                   <span className="info-label list-label">{labels[category].plural}</span>
-                  <EditableList
-                    items={items}
-                    onDelete={(item) => handleDelete(category, item)}
-                    onAdd={() => handleOpenSelectionModal(category)}
-                    addLabel={`Add a ${labels[category].singular.toLowerCase()}`}
-                    className="info-content"
-                  />
+                  {mode === "view" ? (
+                    <ReadOnlyList items={items} className="info-content read-only" />
+                  ) : (
+                    <EditableList
+                      items={items}
+                      onDelete={(item) => handleDelete(category, item)}
+                      onAdd={() => handleOpenSelectionModal(category)}
+                      addLabel={`Add a ${labels[category].singular.toLowerCase()}`}
+                      className="info-content"
+                    />
+                  )}
                 </Row>
               ))}
             </div>
           </Row>
-        </Container>
-        <SelectionModal
-          open={!!selectionType}
-          title={`Select a ${!!labels[selectionType] ? labels[selectionType].singular.toLowerCase() : ""}`}
-          options={getOptions(selectionType)}
-          handleSubmit={(selection) => handleAdd(selectionType, selection)}
-          handleClose={() => setSelectionType("")}
-        />
-      </>
-    );
-  }
+        </Col>
+        <Col sm={2} className="page-sidebar">
+          degree progress thing here
+        </Col>
+      </Container>
+
+      <SelectionModal
+        open={!!selectionType}
+        title={`Select a ${!!labels[selectionType] ? labels[selectionType].singular.toLowerCase() : ""}`}
+        options={getOptions(selectionType)}
+        handleSubmit={(selection) => handleAdd(selectionType, selection)}
+        handleClose={() => setSelectionType("")}
+      />
+    </>
+  );
 };
 
 export default Settings;

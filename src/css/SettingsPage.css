@@ -7,8 +7,15 @@
   margin-left: 24px;
 }
 
-.page-body {
-  width: 100%;
+.page-root {
+  margin: 0px;
+  max-width: none;
+  margin-top: 36px;
+}
+
+.page-sidebar {
+  height: 80vh;
+  border: 1px solid black;
 }
 
 .degree-info > div:not(:first-child) {
