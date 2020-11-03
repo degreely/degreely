@@ -1,8 +1,13 @@
 import React from "react";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Typography from "@material-ui/core/Typography";
 import Button from "react-bootstrap/Button";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
+import HelpIcon from "@material-ui/icons/Help";
+import IconButton from "../components/IconButton";
 
 const CreatePlan = () => {
   return (
@@ -17,11 +22,22 @@ const CreatePlan = () => {
         To get started,
       </Typography>
       <Row>
-        <Button size="lg" style={{ marginRight: "15rem" }} href="templates">
-          Choose a template
-        </Button>
+        <div style={{ marginRight: "16rem" }}>
+          <Button size="lg" href="templates">
+            Choose a template
+          </Button>
+          <OverlayTrigger
+            placement="top"
+            overlay={<Tooltip>Select from our curated list of templates to kickstart your planning!</Tooltip>}
+          >
+            <IconButton
+              icon={<HelpIcon color="disabled" />}
+              style={{ marginLeft: "0.5rem", color: "grey" }}
+            />
+          </OverlayTrigger>
+        </div>
         <Button size="lg" href="dashboard">
-          Do it yourself
+          Start with an empty plan
         </Button>
       </Row>
     </Container>
