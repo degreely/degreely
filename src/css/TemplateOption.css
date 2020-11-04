@@ -1,0 +1,29 @@
+.plan > :not(:last-child).year {
+  margin-bottom: 2rem;
+}
+
+.year > :not(:last-child).semester {
+  margin-right: 5%;
+}
+
+.semester {
+  width: 30%;
+  max-width: 30%;
+}
+
+.semester > :first-child {
+  margin-bottom: 0.75rem;
+}
+
+.semester > div > :not(:last-child).module {
+  margin-bottom: 0.5rem;
+}
+
+.module {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
