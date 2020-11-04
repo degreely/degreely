@@ -7,13 +7,11 @@ import ExpandIcon from "@material-ui/icons/ExpandMore";
 
 import ModuleDisplay from "./ModuleDisplay";
 
-import "../../css/TemplateOption.css";
-
 const TemplateOption = ({ title, subtitle, plan }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Accordion className="expandable-option">
+    <Accordion>
       <Card>
         <Accordion.Toggle
           as={Card.Header}
