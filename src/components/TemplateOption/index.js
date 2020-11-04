@@ -5,7 +5,9 @@ import Typography from "@material-ui/core/Typography";
 import CollapseIcon from "@material-ui/icons/ExpandLess";
 import ExpandIcon from "@material-ui/icons/ExpandMore";
 
-const TemplateOption = ({ title, subtitle }) => {
+import ModuleDisplay from "./ModuleDisplay";
+
+const TemplateOption = ({ title, subtitle, plan }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -27,7 +29,9 @@ const TemplateOption = ({ title, subtitle }) => {
           </div>
         </Accordion.Toggle>
         <Accordion.Collapse eventKey={title}>
-          <Card.Body>plan here</Card.Body>
+          <Card.Body style={{ padding: "2rem" }}>
+            <ModuleDisplay plan={plan} />
+          </Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>
