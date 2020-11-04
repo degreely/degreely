@@ -1,3 +1,7 @@
+.expandable-option:hover {
+  cursor: pointer;
+}
+
 .plan > :not(:last-child).year {
   margin-bottom: 2rem;
 }
