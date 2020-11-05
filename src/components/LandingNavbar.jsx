@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Btn from "./Button";
@@ -9,8 +9,6 @@ import logo from "../img/logo.svg";
 import "../scss/LandingNavbar.scss";
 
 function LandingNavbar() {
-  const history = useHistory();
-
   return (
     <Navbar expand="lg Landing-navbar">
       <div className="order-1 mr-auto">
@@ -37,10 +35,24 @@ function LandingNavbar() {
         </Navbar.Collapse>
       </div>
       <div className="order-3 ml-auto">
-        <Btn title="Sign in with SSO" type="primary" onClick={() => login(history)} />
+        <SSO />
       </div>
     </Navbar>
   );
+}
+
+function SSO() {
+  const history = useHistory();
+  const pathName = useLocation()["pathname"];
+  const isLanding = (pathName === "/");
+  console.log(pathName);
+  if (!isLanding) {
+    return (
+    <Btn title="Sign in with SSO" type="primary" onClick={() => login(history)} />
+    );
+  } else {
+    return null;
+  }
 }
 
 export default LandingNavbar;
