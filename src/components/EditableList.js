@@ -26,12 +26,16 @@ const EditableList = ({
           key={item}
           className="d-flex justify-content-between align-items-center"
           style={{ border: 0, padding: "0.375rem 1.25rem" }}
-          onClick={(e) => {
-            e.preventDefault();
-            onClick(item);
-          }}
         >
-          {item}
+          <span
+            onClick={(e) => {
+              e.preventDefault();
+              if (onClick) onClick(item);
+            }}
+            style={{ width: "100%" }}
+          >
+            {item}
+          </span>
           <ButtonGroup>
             {hasMoreOptions && (
               <IconButton
