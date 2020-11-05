@@ -3,8 +3,7 @@ import { Droppable } from "react-beautiful-dnd";
 import Mod from "./Mod";
 import "../css/Sem.css";
 
-function Sem(props) {
-    const semData = props.semData;
+function Sem({semData}) {
     return (
         <div className="sem">
             <h2 className="sem-name">{semData.name}</h2>

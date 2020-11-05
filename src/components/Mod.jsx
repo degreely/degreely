@@ -3,10 +3,9 @@ import Card from "react-bootstrap/Card";
 import { Draggable } from "react-beautiful-dnd";
 import "../css/Mod.css";
 
-function Mod(props) {
-    const modData = props.modData;
+function Mod({index, modData}) {
     return (
-        <Draggable draggableId={modData.code} index={props.index} key={modData.code}>
+        <Draggable draggableId={modData.code} index={index} key={modData.code}>
             {(provided, snapshot) => {
                 return (
                     <div className="mod" ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
