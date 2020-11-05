@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-
 import ArrowBackIcon from "@material-ui/icons/ArrowBackIos";
+
 import ReadOnlyList from "../components/ReadOnlyList";
 import EditableList from "../components/EditableList";
 import SelectionModal from "../components/SelectionModal";
 import { options as selectionOptions } from "../data/settings-options";
+import { Actions } from "../redux/actions";
 
 import "../css/SettingsPage.css";
 
@@ -19,50 +22,42 @@ const labels = {
   minors: { plural: "Minors", singular: "Minor" },
 };
 
-const INITIAL_STATE = {
-  specialisations: ["Software Engineering", "Computer Security"],
-  majors: [],
-  minors: ["Economics"],
-};
+const Settings = ({ currentPlanName, plan, handleEditPlan }) => {
+  const { specialisations, majors, minors } = plan;
 
-const Settings = () => {
   const [mode, setMode] = useState("view");
-  const [degreeInfo, setDegreeInfo] = useState(INITIAL_STATE);
-  const [prevDegreeInfo, setPrevDegreeInfo] = useState({});
+  const [newDegreeInfo, setNewDegreeInfo] = useState({ specialisations, majors, minors });
   const [selectionType, setSelectionType] = useState("");
 
-  const handleStartEditMode = () => {
-    setMode("edit");
-    setPrevDegreeInfo(degreeInfo);
-  };
-  const handleCancel = () => {
+  const handleStartEditMode = () => setMode("edit");
+  const handleCancel = () => setMode("view");
+  const handleSaveChanges = () => {
     setMode("view");
-    setDegreeInfo(prevDegreeInfo);
+    handleEditPlan({ [currentPlanName]: { ...plan, ...newDegreeInfo } });
   };
-  const handleSaveChanges = () => setMode("view");
 
   const handleOpenSelectionModal = (category) => {
     setSelectionType(category);
   };
 
   const handleAdd = (category, itemToAdd) => {
-    setDegreeInfo({
-      ...degreeInfo,
-      [category]: [...degreeInfo[category], itemToAdd].sort(),
+    setNewDegreeInfo({
+      ...newDegreeInfo,
+      [category]: [...newDegreeInfo[category], itemToAdd].sort(),
     });
     setSelectionType("");
   };
 
   const handleDelete = (category, itemToDelete) => {
-    setDegreeInfo({
-      ...degreeInfo,
-      [category]: degreeInfo[category].filter((item) => item !== itemToDelete),
+    setNewDegreeInfo({
+      ...newDegreeInfo,
+      [category]: newDegreeInfo[category].filter((item) => item !== itemToDelete),
     });
   };
 
   const getOptions = (category) => {
     if (!category) return [];
-    const existing = new Set(degreeInfo[category]);
+    const existing = new Set(newDegreeInfo[category]);
     return selectionOptions[category].filter((option) => !existing.has(option));
   };
 
@@ -103,7 +98,7 @@ const Settings = () => {
                 <span className="info-label">Degree program</span>
                 <span className="info-content">BComp in Computer Science (Hons)</span>
               </Row>
-              {Object.entries(degreeInfo).map(([category, items]) => (
+              {Object.entries(newDegreeInfo).map(([category, items]) => (
                 <Row className="d-flex justify-content-end" key={category}>
                   <span className="info-label list-label">{labels[category].plural}</span>
                   {mode === "view" ? (
@@ -138,4 +133,13 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+const mapStateToProps = (state) => ({
+  currentPlanName: state.currentPlan,
+  plan: state.plans[state.currentPlan],
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  handleEditPlan: (plan) => dispatch(Actions.editPlan(plan)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Settings);
