@@ -24,6 +24,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "redux-persist": "^6.0.0",
+    "reduxsauce": "^1.2.0",
     "save-dev": "0.0.1-security"
   },
   "scripts": {

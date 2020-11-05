@@ -7,7 +7,7 @@ import storage from "redux-persist/lib/storage";
 import { PersistGate } from "redux-persist/integration/react";
 
 import App from "./App";
-import rootReducer, { INITIAL_STATE } from "./reducers";
+import rootReducer, { INITIAL_STATE } from "./redux/reducers";
 import "./scss/index.scss";
 import "./scss/theme.scss";
 import * as serviceWorker from "./serviceWorker";
