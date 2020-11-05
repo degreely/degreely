@@ -2,9 +2,11 @@ import { createReducer } from "reduxsauce";
 import { Types } from "./actions";
 import { getSimplifiedModuleInfo } from "../utils/getSimplifiedModuleInfo";
 
+const EMPTY_PLAN = { sems: {}, specialisations: [], majors: [], minors: [] };
+
 export const INITIAL_STATE = {
   currentPlan: "sample plan",
-  plans: { "sample plan": {}, "second major": {}, "without hons": {} },
+  plans: { "sample plan": EMPTY_PLAN, "second major": EMPTY_PLAN, "without hons": EMPTY_PLAN },
   modules: getSimplifiedModuleInfo(),
 };
 
