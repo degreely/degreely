@@ -1,10 +1,11 @@
 import { createReducer } from "reduxsauce";
 import { Types } from "./actions";
+import { getSimplifiedModuleInfo } from "../utils/getSimplifiedModuleInfo";
 
 export const INITIAL_STATE = {
   currentPlan: "sample plan",
   plans: { "sample plan": {}, "second major": {}, "without hons": {} },
-  modules: {},
+  modules: getSimplifiedModuleInfo(),
 };
 
 export const changePlan = (state = INITIAL_STATE, { name }) => {
