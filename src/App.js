@@ -16,7 +16,7 @@ const App = () => {
   const isAuthenticated = !!localStorage.token;
 
   return (
-    <Router basename="/degreely" forceRefresh>
+    <Router basename={process.env.PUBLIC_URL} forceRefresh>
       {isAuthenticated ? <UserNavbar /> : <LandingNavbar />}
       <Switch>
         <Route path="/about" component={AboutPage} />
