@@ -1,6 +1,6 @@
 import { createActions } from "reduxsauce";
 
-export const { Types, Actions } = createActions(
+export const { Types, Creators: Actions } = createActions(
   {
     changePlan: ["name"],
     addPlan: ["plan"],

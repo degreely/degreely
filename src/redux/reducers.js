@@ -2,8 +2,8 @@ import { createReducer } from "reduxsauce";
 import { Types } from "./actions";
 
 export const INITIAL_STATE = {
-  currentPlan: "",
-  plans: {},
+  currentPlan: "sample plan",
+  plans: { "sample plan": {}, "second major": {}, "without hons": {} },
   modules: {},
 };
 
@@ -29,7 +29,7 @@ export const editPlan = (state = INITIAL_STATE, { plan }) => {
 
 export const deletePlan = (state = INITIAL_STATE, { name }) => {
   const { [name]: toDelete, ...plans } = state.plans;
-  return plans;
+  return { ...state, plans };
 };
 
 export const HANDLERS = {
