@@ -26,7 +26,10 @@ const EditableList = ({
           key={item}
           className="d-flex justify-content-between align-items-center"
           style={{ border: 0, padding: "0.375rem 1.25rem" }}
-          onClick={() => onClick(item)}
+          onClick={(e) => {
+            e.preventDefault();
+            onClick(item);
+          }}
         >
           {item}
           <ButtonGroup>
