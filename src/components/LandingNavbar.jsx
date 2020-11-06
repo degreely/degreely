@@ -45,7 +45,6 @@ function SSO() {
   const history = useHistory();
   const pathName = useLocation()["pathname"];
   const isLanding = (pathName === "/");
-  console.log(pathName);
   if (!isLanding) {
     return (
     <Btn title="Sign in with SSO" type="primary" onClick={() => login(history)} />
