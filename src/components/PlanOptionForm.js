@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 const PlanOptionForm = ({ show, plans, planName, onSubmit, onClose }) => {
-  const [submissionDisabled, setSubmissionDisabled] = useState(true);
+  const [submissionDisabled, setSubmissionDisabled] = useState(false);
 
   const handleSubmit = () => {
     onSubmit(document.querySelector('input[name="plan-name"]').value.trim());
@@ -31,9 +31,8 @@ const PlanOptionForm = ({ show, plans, planName, onSubmit, onClose }) => {
 
       <Modal.Body
         as={Form}
-        onChange={() =>
-          setSubmissionDisabled(false || !document.querySelector(`input[name="plan-name"]`).value)
-        }
+        onSubmit={(e) => e.preventDefault()}
+        onChange={() => setSubmissionDisabled(!document.querySelector(`input[name="plan-name"]`).value)}
         validated={isValidForm}
       >
         <Form.Group controlId="plan-name-input">
@@ -54,7 +53,7 @@ const PlanOptionForm = ({ show, plans, planName, onSubmit, onClose }) => {
           Cancel
         </Button>
         <Button variant="primary" disabled={submissionDisabled} onClick={handleSubmit}>
-          Save changes
+          Save Changes
         </Button>
       </Modal.Footer>
     </Modal>
