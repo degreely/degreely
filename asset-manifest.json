@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/degreely/static/css/main.fc34b740.chunk.css",
+    "main.css": "/degreely/static/css/main.021073ac.chunk.css",
     "main.js": "/degreely/static/js/main.fff9bbeb.chunk.js",
     "main.js.map": "/degreely/static/js/main.fff9bbeb.chunk.js.map",
     "runtime-main.js": "/degreely/static/js/runtime-main.8d5e98b3.js",
@@ -8,9 +8,9 @@
     "static/js/2.8fbee252.chunk.js": "/degreely/static/js/2.8fbee252.chunk.js",
     "static/js/2.8fbee252.chunk.js.map": "/degreely/static/js/2.8fbee252.chunk.js.map",
     "index.html": "/degreely/index.html",
-    "precache-manifest.8bd7a1d8ca11dbe7fc76d20533e0f364.js": "/degreely/precache-manifest.8bd7a1d8ca11dbe7fc76d20533e0f364.js",
+    "precache-manifest.39baf24967ead22bcdb22840317dc942.js": "/degreely/precache-manifest.39baf24967ead22bcdb22840317dc942.js",
     "service-worker.js": "/degreely/service-worker.js",
-    "static/css/main.fc34b740.chunk.css.map": "/degreely/static/css/main.fc34b740.chunk.css.map",
+    "static/css/main.021073ac.chunk.css.map": "/degreely/static/css/main.021073ac.chunk.css.map",
     "static/js/2.8fbee252.chunk.js.LICENSE.txt": "/degreely/static/js/2.8fbee252.chunk.js.LICENSE.txt",
     "static/media/about.svg": "/degreely/static/media/about.c6561f74.svg",
     "static/media/avatar.jpg": "/degreely/static/media/avatar.6290c739.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.8d5e98b3.js",
     "static/js/2.8fbee252.chunk.js",
-    "static/css/main.fc34b740.chunk.css",
+    "static/css/main.021073ac.chunk.css",
     "static/js/main.fff9bbeb.chunk.js"
   ]
 }

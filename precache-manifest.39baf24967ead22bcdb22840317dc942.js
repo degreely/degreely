@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8246b448f24ef3e07f8df9642b56a071",
+    "revision": "ad07e6797020ceb6d8c05c7e34320183",
     "url": "/degreely/index.html"
   },
   {
-    "revision": "9ce1e88c69ec899cd308",
-    "url": "/degreely/static/css/main.fc34b740.chunk.css"
+    "revision": "8872916631aa251f8e24",
+    "url": "/degreely/static/css/main.021073ac.chunk.css"
   },
   {
     "revision": "8d60e30c0de31ccf4efa",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/degreely/static/js/2.8fbee252.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ce1e88c69ec899cd308",
+    "revision": "8872916631aa251f8e24",
     "url": "/degreely/static/js/main.fff9bbeb.chunk.js"
   },
   {
