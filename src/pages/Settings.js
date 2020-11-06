@@ -26,14 +26,17 @@ const Settings = ({ currentPlanName, plan, handleEditPlan }) => {
   const { specialisations, majors, minors } = plan;
 
   const [mode, setMode] = useState("view");
-  const [newDegreeInfo, setNewDegreeInfo] = useState({ specialisations, majors, minors });
+  const [degreeInfo, setDegreeInfo] = useState({ specialisations, majors, minors });
   const [selectionType, setSelectionType] = useState("");
 
   const handleStartEditMode = () => setMode("edit");
-  const handleCancel = () => setMode("view");
+  const handleCancel = () => {
+    setMode("view");
+    setDegreeInfo({ specialisations, majors, minors }); // reset
+  };
   const handleSaveChanges = () => {
     setMode("view");
-    handleEditPlan({ [currentPlanName]: { ...plan, ...newDegreeInfo } });
+    handleEditPlan(currentPlanName, { ...plan, ...degreeInfo });
   };
 
   const handleOpenSelectionModal = (category) => {
@@ -41,23 +44,23 @@ const Settings = ({ currentPlanName, plan, handleEditPlan }) => {
   };
 
   const handleAdd = (category, itemToAdd) => {
-    setNewDegreeInfo({
-      ...newDegreeInfo,
-      [category]: [...newDegreeInfo[category], itemToAdd].sort(),
+    setDegreeInfo({
+      ...degreeInfo,
+      [category]: [...degreeInfo[category], itemToAdd].sort(),
     });
     setSelectionType("");
   };
 
   const handleDelete = (category, itemToDelete) => {
-    setNewDegreeInfo({
-      ...newDegreeInfo,
-      [category]: newDegreeInfo[category].filter((item) => item !== itemToDelete),
+    setDegreeInfo({
+      ...degreeInfo,
+      [category]: degreeInfo[category].filter((item) => item !== itemToDelete),
     });
   };
 
   const getOptions = (category) => {
     if (!category) return [];
-    const existing = new Set(newDegreeInfo[category]);
+    const existing = new Set(degreeInfo[category]);
     return selectionOptions[category].filter((option) => !existing.has(option));
   };
 
@@ -98,7 +101,7 @@ const Settings = ({ currentPlanName, plan, handleEditPlan }) => {
                 <span className="info-label">Degree program</span>
                 <span className="info-content">BComp in Computer Science (Hons)</span>
               </Row>
-              {Object.entries(newDegreeInfo).map(([category, items]) => (
+              {Object.entries(degreeInfo).map(([category, items]) => (
                 <Row className="d-flex justify-content-end" key={category}>
                   <span className="info-label list-label">{labels[category].plural}</span>
                   {mode === "view" ? (
@@ -139,7 +142,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  handleEditPlan: (plan) => dispatch(Actions.editPlan(plan)),
+  handleEditPlan: (name, plan) => dispatch(Actions.editPlan(name, plan)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Settings);
