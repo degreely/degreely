@@ -1,7 +1,7 @@
 import { createReducer } from "reduxsauce";
 import { Types } from "./actions";
 
-const EMPTY_PLAN = { sems: {}, specialisations: [], majors: [], minors: [] };
+export const EMPTY_PLAN = { sems: {}, specialisations: [], majors: [], minors: [] };
 
 export const INITIAL_STATE = {
   currentPlan: "sample plan",

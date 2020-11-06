@@ -10,13 +10,14 @@ import Tooltip from "react-bootstrap/Tooltip";
 import HelpIcon from "@material-ui/icons/Help";
 
 import { Actions } from "../redux/actions";
+import { EMPTY_PLAN } from "../redux/reducers";
 import IconButton from "../components/IconButton";
 import { generatePlanName } from "../utils/generatePlanName";
 
 const CreatePlan = ({ plans, handleCreate, handleChangePlan }) => {
   const handleCreateEmptyPlan = () => {
     const name = generatePlanName(plans);
-    handleCreate({ [name]: {} });
+    handleCreate(name, EMPTY_PLAN);
     handleChangePlan(name);
   };
 
@@ -59,7 +60,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  handleCreate: (plan) => dispatch(Actions.addPlan(plan)),
+  handleCreate: (name, plan) => dispatch(Actions.addPlan(name, plan)),
   handleChangePlan: (name) => dispatch(Actions.changePlan(name)),
 });
 
