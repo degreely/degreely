@@ -21,7 +21,7 @@ const SelectionModal = ({ open, title, options = [], handleSubmit, handleClose }
   };
 
   return (
-    <Modal show={open} onHide={handleClose}>
+    <Modal centered show={open} onHide={handleClose}>
       <Modal.Header closeButton>
         <Modal.Title>
           <Typography variant="h4">{title}</Typography>
