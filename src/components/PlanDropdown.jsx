@@ -16,6 +16,13 @@ const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan }) => {
   const items = Object.keys(plans).filter((plan) => plan !== selected);
 
   const handleOpenMoreOptions = () => console.log("more clicked");
+
+  const handleConditionalDelete = (name) => {
+    if (window.confirm("Are you sure? Once delete, this plan cannot be recovered.")) {
+      handleDelete(name);
+    }
+  };
+
   const handleAdd = () => history.push("create-plan");
 
   return (
@@ -31,7 +38,7 @@ const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan }) => {
             hasMoreOptions
             items={items}
             onClick={handleChangePlan}
-            onDelete={handleDelete}
+            onDelete={handleConditionalDelete}
             onAdd={handleAdd}
             onOpenMoreOptions={handleOpenMoreOptions}
             addLabel={`Add a new plan`}
