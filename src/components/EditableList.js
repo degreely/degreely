@@ -9,7 +9,16 @@ import AddIcon from "@material-ui/icons/Add";
 
 import IconButton from "./IconButton";
 
-const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpenMoreOptions, ...props }) => {
+const EditableList = ({
+  items,
+  onDelete,
+  onAdd,
+  onClick,
+  addLabel,
+  hasMoreOptions,
+  onOpenMoreOptions,
+  ...props
+}) => {
   return (
     <ListGroup variant="flush" {...props}>
       {items.map((item) => (
@@ -18,7 +27,15 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
           className="d-flex justify-content-between align-items-center"
           style={{ border: 0, padding: "0.375rem 1.25rem" }}
         >
-          {item}
+          <span
+            onClick={(e) => {
+              e.preventDefault();
+              if (onClick) onClick(item);
+            }}
+            style={{ width: "100%" }}
+          >
+            {item}
+          </span>
           <ButtonGroup>
             {hasMoreOptions && (
               <IconButton
