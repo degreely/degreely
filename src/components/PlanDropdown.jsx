@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
+import CustomDropdownToggle from "../components/CustomDropdownToggle";
 import { Actions } from "../redux/actions";
 import EditableList from "./EditableList";
 
@@ -20,8 +21,8 @@ const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan }) => {
   return (
     <Container className="d-flex flex-row align-items-center selector-root">
       <span>You are viewing</span>
-      <Dropdown navbar className="selector-dropdown">
-        <Dropdown.Toggle className="selector-dropdown-toggle">
+      <Dropdown navbar className="selector-dropdown custom-dropdown">
+        <Dropdown.Toggle className="selector-dropdown-toggle" as={CustomDropdownToggle}>
           {selected}
           <KeyboardArrowDownIcon />
         </Dropdown.Toggle>

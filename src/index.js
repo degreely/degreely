@@ -8,8 +8,8 @@ import { PersistGate } from "redux-persist/integration/react";
 
 import App from "./App";
 import rootReducer, { INITIAL_STATE } from "./redux/reducers";
-import "./scss/index.scss";
 import "./scss/theme.scss";
+import "./scss/index.scss";
 import * as serviceWorker from "./serviceWorker";
 
 const persistConfig = { key: "root", storage };
