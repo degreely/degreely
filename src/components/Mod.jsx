@@ -1,6 +1,6 @@
 import React from "react";
 import { Draggable } from "react-beautiful-dnd";
-import "../css/Mod.css";
+import "../css/dashboard/Mod.css";
 
 function Mod({index, modData, modColor}) {
     return (

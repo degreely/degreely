@@ -8,6 +8,8 @@ import Sem from "./Sem";
 
 import { Actions } from "../redux/actions";
 
+import "../css/dashboard/Sem.css";
+
 function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
     const sems = currentPlan.sems;
 
@@ -64,19 +66,20 @@ function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
         let modColor = 0;
         let gradientIncreasing = false;
         const advanceModColorGradient = () => {
+            // warning: modColor is hard-coded to range between 0 and 4
             if (modColor === 0 || modColor === 4) gradientIncreasing = !gradientIncreasing;
             modColor += gradientIncreasing ? 1 : -1;
         }
 
         return (
-            <Container>
+            <Container className="sems-container">
                 {semPairs.map(semPair => {
                     const [first, second] = semPair;
                     return (
-                        <Row key={row++}>
-                            <Col key={first.name}><Sem semData={first} modColor={`gradient-color-${modColor % 5}`}></Sem></Col>
-                            <div hidden></div>{advanceModColorGradient()}
-                            <Col key={second.name}><Sem semData={second} modColor={`gradient-color-${modColor % 5}`}></Sem></Col>
+                        <Row className="sems-row" key={row++}>
+                            <Col key={first.name}><Sem semData={first} modColor={`gradient-color-${modColor}`}></Sem></Col>
+                            {advanceModColorGradient()}
+                            <Col key={second.name}><Sem semData={second} modColor={`gradient-color-${modColor}`}></Sem></Col>
                         </Row>
                     );
                 })}
