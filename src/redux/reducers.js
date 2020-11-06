@@ -16,20 +16,26 @@ const DEFAULT_SEMS = {
   Y4S2: { name: "Y4S2", mods: [] },
 };
 
-// TODO: dummy mods for testing; remove and fill using degree template mods later
-const SAMPLE_PLAN_DEFAULT = {
-  sems: {
-    ...DEFAULT_SEMS,
-    Y1S1: {
-      ...DEFAULT_SEMS.Y1S1,
-      mods: Object.entries(simplifiedModules).slice(0, 5).map(([code, data]) => { return { code, ...data }; }),
-    },
-  }, specialisations: [], majors: [], minors: [],
-};
+// dummy mods for testing
+const generateTestMods = (sems) => {
+  let modIndex = 0;
+  Object.entries(sems).forEach(([key, semData]) => {
+    sems[key] = {
+      ...semData,
+      mods: Object.entries(simplifiedModules).slice(modIndex, modIndex + 5).map(([code, data]) => { return { code, ...data }; }),
+    };
+    modIndex += 5;
+  });
+  return sems;
+}
 
 export const INITIAL_STATE = {
   currentPlan: "sample plan",
-  plans: { "sample plan": SAMPLE_PLAN_DEFAULT, "second major": EMPTY_PLAN, "without hons": EMPTY_PLAN },
+  plans: {
+    "sample plan": { ...EMPTY_PLAN, sems: generateTestMods({ ...DEFAULT_SEMS }) },
+    "second major": EMPTY_PLAN,
+    "without hons": EMPTY_PLAN
+  },
 };
 
 export const changePlan = (state = INITIAL_STATE, { name }) => {
