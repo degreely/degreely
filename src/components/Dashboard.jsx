@@ -48,15 +48,37 @@ function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
         }
     };
 
+    const displaySemsGrid = () => {
+        const semsData = Object.values(sems);
+        let semPairs = [];
+        for (let i = 0; i < semsData.length; i += 2) {
+            if (i === semsData.length - 1) {
+                semPairs.push([semsData[i]]);
+                break;
+            }
+
+            semPairs.push([semsData[i], semsData[i + 1]]);
+        }
+
+        let row = 0;
+        return (
+            <Container>
+                {semPairs.map(semPair => {
+                    const [first, second] = semPair;
+                    return (
+                        <Row key={row++}>
+                            <Col key={first.name}><Sem semData={first}></Sem></Col>
+                            <Col key={second.name}><Sem semData={second}></Sem></Col>
+                        </Row>
+                    );
+                })}
+            </Container>
+        );
+    };
+
     return (
         <DragDropContext onDragEnd={result => onDragEnd(result)}>
-            <Container>
-                <Row>
-                    {Object.entries(sems).map(([key, semData]) => {
-                        return <Col key={key}><Sem semData={semData} /></Col>;
-                    })}
-                </Row>
-            </Container>
+            {displaySemsGrid()}
         </DragDropContext>
     );
 }
