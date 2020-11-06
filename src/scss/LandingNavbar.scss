@@ -11,3 +11,19 @@
   height: 10vh;
   background-color: #F5F8FF;
 }
+
+.logo {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  width: 60vw;
+}
+
+.sso {
+  width: 20vw;
+  display: flex;
+  flex-direction: row-reverse;
+}

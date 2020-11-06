@@ -9,16 +9,33 @@ import AddIcon from "@material-ui/icons/Add";
 
 import IconButton from "./IconButton";
 
-const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpenMoreOptions, ...props }) => {
+const EditableList = ({
+  items,
+  onDelete,
+  onAdd,
+  onClick,
+  addLabel,
+  hasMoreOptions,
+  onOpenMoreOptions,
+  ...props
+}) => {
   return (
     <ListGroup variant="flush" {...props}>
       {items.map((item) => (
         <ListGroup.Item
           key={item}
           className="d-flex justify-content-between align-items-center"
-          style={{ border: 0 }}
+          style={{ border: 0, padding: "0.375rem 1.25rem" }}
         >
-          {item}
+          <span
+            onClick={(e) => {
+              e.preventDefault();
+              if (onClick) onClick(item);
+            }}
+            style={{ width: "100%" }}
+          >
+            {item}
+          </span>
           <ButtonGroup>
             {hasMoreOptions && (
               <IconButton
@@ -30,7 +47,7 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
             )}
             <IconButton
               type="button"
-              onClick={onDelete}
+              onClick={() => onDelete(item)}
               className="btn btn-small"
               icon={<DeleteIcon fontSize="small" />}
             />
@@ -42,7 +59,7 @@ const EditableList = ({ items, onDelete, onAdd, addLabel, hasMoreOptions, onOpen
         as="button"
         onClick={onAdd}
         className="d-flex justify-content-between align-items-center"
-        style={{ color: "inherit", borderTop: !items.length && 0 }}
+        style={{ color: "inherit", borderTopWidth: items.length ? "1px" : "0px" }}
       >
         {addLabel}
         <AddIcon fontSize="small" />

@@ -7,6 +7,8 @@ import SupportPage from "./pages/Support";
 import LandingPage from "./pages/Landing";
 import SettingsPage from "./pages/Settings";
 import Dashboard from "./components/Dashboard";
+import CreatePlanPage from "./pages/CreatePlan";
+import TemplateSelectionPage from "./pages/TemplateSelection";
 
 import "./scss/App.scss";
 import LandingNavbar from "./components/LandingNavbar";
@@ -16,13 +18,15 @@ const App = () => {
   const isAuthenticated = !!localStorage.token;
 
   return (
-    <Router basename="/degreely" forceRefresh>
+    <Router basename={process.env.PUBLIC_URL} forceRefresh>
       {isAuthenticated ? <UserNavbar /> : <LandingNavbar />}
       <Switch>
         <Route path="/about" component={AboutPage} />
         <Route path="/support" component={SupportPage} />
         <ProtectedRoute path="/dashboard" component={Dashboard} />
         <ProtectedRoute path="/settings" component={SettingsPage} />
+        <ProtectedRoute path="/create-plan" component={CreatePlanPage} />
+        <ProtectedRoute path="/templates" component={TemplateSelectionPage} />
         <Route path="/" component={LandingPage} />
       </Switch>
     </Router>
