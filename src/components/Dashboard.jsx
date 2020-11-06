@@ -61,14 +61,22 @@ function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
         }
 
         let row = 0;
+        let modColor = 0;
+        let gradientIncreasing = false;
+        const advanceModColorGradient = () => {
+            if (modColor === 0 || modColor === 4) gradientIncreasing = !gradientIncreasing;
+            modColor += gradientIncreasing ? 1 : -1;
+        }
+
         return (
             <Container>
                 {semPairs.map(semPair => {
                     const [first, second] = semPair;
                     return (
                         <Row key={row++}>
-                            <Col key={first.name}><Sem semData={first}></Sem></Col>
-                            <Col key={second.name}><Sem semData={second}></Sem></Col>
+                            <Col key={first.name}><Sem semData={first} modColor={`gradient-color-${modColor % 5}`}></Sem></Col>
+                            <div hidden></div>{advanceModColorGradient()}
+                            <Col key={second.name}><Sem semData={second} modColor={`gradient-color-${modColor % 5}`}></Sem></Col>
                         </Row>
                     );
                 })}

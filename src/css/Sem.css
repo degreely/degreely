@@ -2,13 +2,31 @@
     border: 1px solid lightgrey;
     border-radius: 2px;
     background-color: white;
+    padding: 0.75rem 0.8rem;
 }
 
 .sem-name {
+    margin: 0.5rem 0.75rem 0.75rem 0.75rem;
     text-align: left;
-    margin: 10px;
+}
+
+.sem-total {
+    margin: 0.5rem 0.75rem;
+    text-align: right;
+}
+
+.sem-total-num {
+    font-size: larger;
 }
 
 .sem-droppable {
-    min-height: 42rem;
+    min-height: 15.5rem;
+}
+
+.sem-droppable > div > :first-child {
+    margin-bottom: 0.75rem;
+}
+
+.sem-droppable > div > :not(:last-child).mod {
+    margin-bottom: 0.5rem;
 }

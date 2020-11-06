@@ -1,23 +1,14 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import { Draggable } from "react-beautiful-dnd";
 import "../css/Mod.css";
 
-function Mod({index, modData}) {
+function Mod({index, modData, modColor}) {
     return (
         <Draggable draggableId={modData.code} index={index} key={modData.code}>
             {(provided, snapshot) => {
                 return (
-                    <div className="mod" ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
-                        <Card style={{backgroundColor: snapshot.isDragging ? 'lightgrey' : 'white', ...provided.dragHandleProps.style}}>
-                            <Card.Body>
-                                <Card.Title className="mod-code">{modData.code}</Card.Title>
-                                <Card.Subtitle className="mod-mcs mb-2 text-muted">{modData.mcs} MCs</Card.Subtitle>
-                                <Card.Text className="mod-name">
-                                    {modData.name}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                    <div className={`mod ${modColor}`} ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+                        <span className="font-weight-medium">{modData.code}</span> <span>{modData.name}</span>
                     </div>
                 );
             }}
