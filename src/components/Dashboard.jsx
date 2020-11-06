@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+import { connect } from "react-redux";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { DragDropContext } from "react-beautiful-dnd";
 import Sem from "./Sem";
 
-import { sems, mods } from "../data/dashboard-data";
+import { Actions } from "../redux/actions";
 
-const DEFAULT_SEMS = {
-    ...sems,
-    Y1S1: {
-        ...sems.Y1S1,
-        mods: mods,
-    },
-}
+function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
+    const sems = currentPlan.sems;
 
-function Dashboard() {
-    const [sems, setSems] = useState(DEFAULT_SEMS);
+    const updateSems = (updatedSems) => {
+        handleEditPlan(currentPlanName, {
+            ...currentPlan,
+            sems: { ...currentPlan.sems, ...updatedSems, },
+        });
+    };
 
     const onDragEnd = (result) => {
         const { source, destination } = result;
@@ -28,12 +28,9 @@ function Dashboard() {
             const updatedMods = [...sem.mods];
             const [movedMod] = updatedMods.splice(source.index, 1);
             updatedMods.splice(destination.index, 0, movedMod);
-            setSems({
+            updateSems({
                 ...sems,
-                [sem.name]: {
-                    ...sem,
-                    mods: updatedMods,
-                },
+                [sem.name]: { ...sem, mods: updatedMods, },
             });
         } else {
             // moved mod to another sem
@@ -43,19 +40,13 @@ function Dashboard() {
             const destMods = [...destSem.mods];
             const [movedMod] = sourceMods.splice(source.index, 1);
             destMods.splice(destination.index, 0, movedMod);
-            setSems({
+            updateSems({
                 ...sems,
-                [sourceSem.name]: {
-                    ...sourceSem,
-                    mods: sourceMods,
-                },
-                [destSem.name]: {
-                    ...destSem,
-                    mods: destMods,
-                },
+                [sourceSem.name]: { ...sourceSem, mods: sourceMods, },
+                [destSem.name]: { ...destSem, mods: destMods, },
             });
         }
-    }
+    };
 
     return (
         <DragDropContext onDragEnd={result => onDragEnd(result)}>
@@ -70,4 +61,13 @@ function Dashboard() {
     );
 }
 
-export default Dashboard;
+const mapStateToProps = (state) => ({
+    currentPlanName: state.currentPlan,
+    currentPlan: state.plans[state.currentPlan],
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    handleEditPlan: (name, plan) => dispatch(Actions.editPlan(name, plan)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

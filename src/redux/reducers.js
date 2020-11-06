@@ -3,9 +3,33 @@ import { Types } from "./actions";
 
 export const EMPTY_PLAN = { sems: {}, specialisations: [], majors: [], minors: [] };
 
+const simplifiedModules = getSimplifiedModuleInfo();
+
+const DEFAULT_SEMS = {
+  Y1S1: { name: "Y1S1", mods: [] },
+  Y1S2: { name: "Y1S2", mods: [] },
+  Y2S1: { name: "Y2S1", mods: [] },
+  Y2S2: { name: "Y2S2", mods: [] },
+  Y3S1: { name: "Y3S1", mods: [] },
+  Y3S2: { name: "Y3S2", mods: [] },
+  Y4S1: { name: "Y4S1", mods: [] },
+  Y4S2: { name: "Y4S2", mods: [] },
+};
+
+// TODO: dummy mods for testing; remove and fill using degree template mods later
+const SAMPLE_PLAN_DEFAULT = {
+  sems: {
+    ...DEFAULT_SEMS,
+    Y1S1: {
+      ...DEFAULT_SEMS.Y1S1,
+      mods: Object.entries(simplifiedModules).slice(0, 5).map(([code, data]) => { return { code, ...data }; }),
+    },
+  }, specialisations: [], majors: [], minors: [],
+};
+
 export const INITIAL_STATE = {
   currentPlan: "sample plan",
-  plans: { "sample plan": EMPTY_PLAN, "second major": EMPTY_PLAN, "without hons": EMPTY_PLAN },
+  plans: { "sample plan": SAMPLE_PLAN_DEFAULT, "second major": EMPTY_PLAN, "without hons": EMPTY_PLAN },
 };
 
 export const changePlan = (state = INITIAL_STATE, { name }) => {
