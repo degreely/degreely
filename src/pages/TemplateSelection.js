@@ -27,7 +27,7 @@ const TemplateSelection = ({ plans, handleCreate, handleChangePlan }) => {
 
   return (
     <Container>
-      <Row className="d-flex justify-content-between">
+      <Row className="d-flex justify-content-between align-items-center">
         <Typography variant="h4">Select a template</Typography>
         <Button
           variant="outline-primary"
