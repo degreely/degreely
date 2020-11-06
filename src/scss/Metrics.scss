@@ -15,20 +15,19 @@
     margin-bottom: 0.5rem;
 }
 
-.progress {
-    background-color: #E5E5E5;
-    min-height: 1.5rem;
-}
-
-.Planned {
-    background-color: #BFC0FF;
+.progress-main {
     min-height: 1.5rem;
 
-}
+    .Planned {
+        background-color: #BFC0FF;
+        min-height: 1.5rem;
 
-.Completed {
-    background-color: #5E60CE;
-    min-height: 1.5rem;
+    }
+
+    .Completed {
+        background-color: #5E60CE;
+        min-height: 1.5rem;
+    }
 }
 
 #legend {
@@ -44,24 +43,25 @@
     font-weight: 500;
 }
 
-.card {
+.card.requirement {
     background-color: transparent;
     border-color: transparent;
-}
+    
+    .card-header {
+        background-color: transparent;
+        border-color: transparent;
+        font-weight: 500;
+        padding-left: 0;
+        padding-bottom: 0.25rem;
+    }
 
-.card-header {
-    background-color: transparent;
-    border-color: transparent;
-    font-weight: 500;
-    padding-left: 0;
-    padding-bottom: 0.25rem;
-}
+    .card-body {
+        padding-left: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 
-.card-body {
-    padding-left: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
 }

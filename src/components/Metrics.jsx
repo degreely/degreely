@@ -17,7 +17,7 @@ function Metrics() {
       <Row id="header">
         <h4>Degree Progress</h4>
       </Row>
-      <ProgressBar>
+      <ProgressBar className="progress-main">
         <ProgressBar className="Completed" now={50} key={1} />
         <ProgressBar className="Planned" now={20} key={2} />
       </ProgressBar>
@@ -50,7 +50,7 @@ function Metrics() {
 function DegreeRequirements() {
   return (
     <Accordion>
-      <Card>
+      <Card className="requirement">
         <Accordion.Toggle as={Card.Header} eventKey="0">
           University Level Requirements
         </Accordion.Toggle>
@@ -62,7 +62,7 @@ function DegreeRequirements() {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      <Card>
+      <Card className="requirement">
         <Accordion.Toggle as={Card.Header} eventKey="1">
           Computer Science Foundation
         </Accordion.Toggle>
@@ -74,7 +74,7 @@ function DegreeRequirements() {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      <Card>
+      <Card className="requirement">
         <Accordion.Toggle as={Card.Header} eventKey="2">
           Computer Science Breadth & Depth
         </Accordion.Toggle>
@@ -86,7 +86,7 @@ function DegreeRequirements() {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      <Card>
+      <Card className="requirement">
         <Accordion.Toggle as={Card.Header} eventKey="3">
           IT Professionalism
         </Accordion.Toggle>
@@ -98,7 +98,7 @@ function DegreeRequirements() {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      <Card>
+      <Card className="requirement">
         <Accordion.Toggle as={Card.Header} eventKey="4">
           Mathematics & Science
         </Accordion.Toggle>
