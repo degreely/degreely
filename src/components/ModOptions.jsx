@@ -6,6 +6,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import "../css/dashboard/ModOptions.css";
 
 import caret from "../img/caret-right.png";
+import tick from "../img/tick.png";
 
 function ModOptions({position, modData, sem, sems}) {
     const style = {
@@ -40,15 +41,28 @@ function ModOptions({position, modData, sem, sems}) {
         </div>
     );
 
-    const displaySemsDropdown = (
-        <DropdownButton className="options-dropdown" drop="right" title={displaySem}>
-            {Object.keys(sems).map(semName => {
-                return (
-                    <Dropdown.Item className="options-dropdown-item" key={semName} eventKey={semName}>{semName}</Dropdown.Item>
-                );
-            })}
-        </DropdownButton>
-    );
+    const displaySemsDropdown = () =>  {
+        const semsNames = Object.keys(sems);
+        let semsCount = 0;
+        return (
+            <DropdownButton className="options-dropdown" drop="right" title={displaySem}>
+                {semsNames.map(semName => {
+                    semsCount++;
+                    return (
+                        <div>
+                            <Dropdown.Item className="options-dropdown-item" key={semName} eventKey={semName}
+                                style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}
+                            >
+                                {semName}
+                                {semName === sem && <img src={tick} alt="tick" height="14px"/>}
+                            </Dropdown.Item>
+                            {semsCount % 2 === 0 && semsCount < semsNames.length && <Dropdown.Divider/>}
+                        </div>
+                    );
+                })}
+            </DropdownButton>
+        );
+    };
 
     return (
         <div id="mod-options-menu" style={style}>
@@ -63,7 +77,7 @@ function ModOptions({position, modData, sem, sems}) {
                     {displayGradeDropdown("Actual")}
                 </ListGroup.Item>
                 <ListGroup.Item className="mod-options-menu-item">
-                    {displaySemsDropdown}
+                    {displaySemsDropdown()}
                 </ListGroup.Item>
             </ListGroup>
         </div>

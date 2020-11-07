@@ -37,3 +37,13 @@
 .options-dropdown .options-dropdown-label {
     text-align: left;
 }
+
+.options-dropdown-item {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.options-dropdown-item:active, .options-dropdown-item.active {
+    color: black !important;
+    background: white !important;
+}
