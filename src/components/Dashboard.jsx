@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { DragDropContext } from "react-beautiful-dnd";
 import Sem from "./Sem";
+import ModOptions from "./ModOptions";
 
 import { Actions } from "../redux/actions";
 
@@ -12,6 +13,35 @@ import "../css/dashboard/Sem.css";
 
 function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
     const sems = currentPlan.sems;
+
+    // mod options menu
+    const [modOptionsPos, setModOptionsPos] = useState({x: 0, y: 0});
+    const [modOptions, setModOptions] = useState(null);
+    
+    const handleModRightClick = (clickPos, modData) => {
+        setModOptionsPos(clickPos);
+        for (const semData of Object.values(sems)) {
+            for (const mod of semData.mods) {
+                if (mod.code === modData.code) {
+                    setModOptions({modData: modData, sem: semData.name});
+                    return;
+                }
+            }
+        }
+    };
+
+    useEffect(() => {
+        // close menu by left-clicking outside it
+        const handleLeftClick = (event) => {
+            const modOptionsMenuNode = document.querySelector("#mod-options-menu");
+            if (modOptionsMenuNode === null || !modOptionsMenuNode.contains(event.target)) {
+                setModOptions(null);
+            }
+        };
+
+        document.addEventListener('click', handleLeftClick);
+        return () => document.removeEventListener('click', handleLeftClick);
+    }, []);
 
     const updateSems = (updatedSems) => {
         handleEditPlan(currentPlanName, {
@@ -77,9 +107,13 @@ function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
                     const [first, second] = semPair;
                     return (
                         <Row className="sems-row" key={row++}>
-                            <Col key={first.name}><Sem semData={first} modColor={`gradient-color-${modColor}`}></Sem></Col>
+                            <Col key={first.name}>
+                                <Sem semData={first} handleModRightClick={handleModRightClick} modColor={`gradient-color-${modColor}`}/>
+                            </Col>
                             {advanceModColorGradient()}
-                            <Col key={second.name}><Sem semData={second} modColor={`gradient-color-${modColor}`}></Sem></Col>
+                            <Col key={second.name}>
+                                <Sem semData={second} handleModRightClick={handleModRightClick} modColor={`gradient-color-${modColor}`}/>
+                            </Col>
                         </Row>
                     );
                 })}
@@ -88,9 +122,12 @@ function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
     };
 
     return (
-        <DragDropContext onDragEnd={result => onDragEnd(result)}>
-            {displaySemsGrid()}
-        </DragDropContext>
+        <div className="dashboard">
+            <DragDropContext onDragEnd={result => onDragEnd(result)}>
+                {displaySemsGrid()}
+            </DragDropContext>
+            {modOptions === null ? null : <ModOptions position={modOptionsPos} modData={modOptions.modData} sem={modOptions.sem} sems={sems} />}
+        </div>
     );
 }
 

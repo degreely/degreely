@@ -1,0 +1,39 @@
+#mod-options-menu {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.mod-options-menu-item {
+    border: none !important;
+}
+
+.mod-options-menu-item:last-child {
+    padding-bottom: 24px;
+}
+
+.mod-options-menu-title {
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
+}
+
+.options-dropdown .dropdown-toggle {
+    min-width: 100%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.options-dropdown .dropdown-toggle,
+.options-dropdown .dropdown-toggle:hover,
+.options-dropdown .dropdown-toggle:active,
+.options-dropdown .dropdown-toggle:focus {
+    color: black !important;
+    background: white !important;
+    border-color: white !important;
+    outline: none !important;
+}
+
+.options-dropdown .dropdown-toggle:after {
+    content: none !important;
+}
+
+.options-dropdown .options-dropdown-label {
+    text-align: left;
+}

@@ -3,7 +3,7 @@ import { Droppable } from "react-beautiful-dnd";
 import Mod from "./Mod";
 import "../css/dashboard/Sem.css";
 
-function Sem({semData, modColor}) {
+function Sem({semData, handleModRightClick, modColor}) {
     const calculateTotalMcs = () => {
         let total = 0;
         semData.mods.forEach(mod => {
@@ -20,7 +20,11 @@ function Sem({semData, modColor}) {
                     return (
                         <div className="sem-droppable" {...provided.droppableProps} ref={provided.innerRef}>
                             <div /*style={{backgroundColor: snapshot.isDraggingOver ? 'lightgray' : 'white'}}*/>
-                                {semData.mods.map((modData, index) => <Mod key={index} index={index} modData={modData} modColor={modColor} />)}
+                                {semData.mods.map((modData, index) => {
+                                    return (
+                                        <Mod key={index} index={index} modData={modData} handleModRightClick={handleModRightClick} modColor={modColor} />
+                                    );
+                                })}
                                 {provided.placeholder}
                             </div>
                         </div>
