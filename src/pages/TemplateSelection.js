@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -15,16 +16,22 @@ import { Actions } from "../redux/actions";
 import { generatePlanName } from "../utils/generatePlanName";
 import { generateSemsFromTemplate } from "../utils/generateSemsFromTemplate";
 
-const TemplateSelection = ({ plans, handleCreate, handleChangePlan }) => {
+const TemplateSelection = ({ currentPlanName, plans, handleCreate, handleChangePlan, ...props }) => {
   const [submitButtonEnabled, setSubmitButtonEnabled] = useState(false);
+  const [newPlanName, setNewPlanName] = useState(null);
 
   const handleSubmit = (value) => {
     const template = templates[value];
     const plan = Object.assign(EMPTY_PLAN, generateSemsFromTemplate(template));
     const name = generatePlanName(plans);
+    setNewPlanName(name);
     handleCreate(name, plan);
     handleChangePlan(name);
   };
+
+  useEffect(() => {
+    if (newPlanName === currentPlanName) props.history.push("/dashboard");
+  }, [currentPlanName, newPlanName, props.history]);
 
   return (
     <Container>
@@ -33,11 +40,10 @@ const TemplateSelection = ({ plans, handleCreate, handleChangePlan }) => {
         <Button
           variant="outline-primary"
           size="sm"
-          disabled={!submitButtonEnabled}
+          disabled={newPlanName !== null || !submitButtonEnabled}
           onClick={() =>
             handleSubmit(document.querySelector(`input[name="template-selection"]:checked`).value)
           }
-          href="dashboard"
         >
           Continue
         </Button>
@@ -62,6 +68,7 @@ const TemplateSelection = ({ plans, handleCreate, handleChangePlan }) => {
 };
 
 const mapStateToProps = (state) => ({
+  currentPlanName: state.currentPlan,
   plans: state.plans,
 });
 
@@ -70,4 +77,4 @@ const mapDispatchToProps = (dispatch) => ({
   handleChangePlan: (name) => dispatch(Actions.changePlan(name)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(TemplateSelection);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TemplateSelection));
