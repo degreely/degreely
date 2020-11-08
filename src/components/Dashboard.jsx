@@ -44,6 +44,7 @@ function Dashboard({currentPlan, handleEditPlan}) {
     }, []);
 
     const updateSems = (updatedSems) => {
+        setModOptions(null);
         handleEditPlan({
             ...currentPlan,
             sems: { ...currentPlan.sems, ...updatedSems, },
@@ -126,7 +127,7 @@ function Dashboard({currentPlan, handleEditPlan}) {
             <DragDropContext onDragEnd={result => onDragEnd(result)}>
                 {displaySemsGrid()}
             </DragDropContext>
-            {modOptions === null ? null : <ModOptions position={modOptionsPos} modData={modOptions.modData} sem={modOptions.sem} sems={sems} />}
+            {modOptions !== null && <ModOptions position={modOptionsPos} modData={modOptions.modData} sem={modOptions.sem} updateSems={updateSems} />}
         </div>
     );
 }
