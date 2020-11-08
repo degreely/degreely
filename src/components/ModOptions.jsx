@@ -10,11 +10,36 @@ import "../css/dashboard/ModOptions.css";
 import caret from "../img/caret-right.png";
 import tick from "../img/tick.png";
 
-function ModOptions({position, modData, sem, currentPlan, updateSems}) {
+function ModOptions({position, modData, semName, currentPlan, updateSems}) {
     const sems = currentPlan.sems;
 
+    const changeProjectedGrade = (eventKey) => {
+        const newGrade = eventKey;
+        const modsToUpdate = [...sems[semName].mods];
+        for (let i = 0; i < modsToUpdate.length; i++) {
+            if (modsToUpdate[i].code === modData.code) {
+                modsToUpdate[i].projectedGrade = newGrade;
+                updateSems({
+                    ...sems,
+                    [semName]: {
+                        ...sems[semName],
+                        mods: modsToUpdate,
+                    },
+                }, false);
+                return;
+            }
+        }
+    };
+
+    const displayGrade = (type) => (
+        <div className="options-dropdown-label">
+            <span className="text-muted">{type} Grade</span><br/>
+            {modData[`${type.toLowerCase()}Grade`]}
+        </div>
+    );
+
     const moveMod = (eventKey) => {
-        const sourceSemName = sem;
+        const sourceSemName = semName;
         const destSemName = eventKey;
         const sourceMods = [...currentPlan.sems[sourceSemName].mods];
         const destMods = [...currentPlan.sems[destSemName].mods];
@@ -34,16 +59,9 @@ function ModOptions({position, modData, sem, currentPlan, updateSems}) {
         });
     };
 
-    const displayGrade = (type) => (
-        <div className="options-dropdown-label">
-            <span className="text-muted">{type} Grade</span><br/>
-            {modData[`${type.toLowerCase()}Grade`]}
-        </div>
-    );
-
     const displaySem = (
         <div className="options-dropdown-label" style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
-            <span>{sem}</span>
+            <span>{semName}</span>
             <img src={caret} alt="caret-right" height="14px" style={{marginBottom: "1px"}} />
         </div>
     );
@@ -53,15 +71,15 @@ function ModOptions({position, modData, sem, currentPlan, updateSems}) {
         let semsCount = 0;
         return (
             <DropdownButton className="options-dropdown" drop="right" title={displaySem}>
-                {semsNames.map(semName => {
+                {semsNames.map(currSemName => {
                     semsCount++;
                     return (
-                        <div key={semName}>
-                            <Dropdown.Item disabled={semName === sem} className="options-dropdown-item" eventKey={semName} onSelect={moveMod}
+                        <div key={currSemName}>
+                            <Dropdown.Item disabled={currSemName === semName} className="options-dropdown-item" eventKey={currSemName} onSelect={moveMod}
                                 style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}
                             >
-                                {semName}
-                                {semName === sem && <img src={tick} alt="tick" height="14px"/>}
+                                {currSemName}
+                                {currSemName === semName && <img src={tick} alt="tick" height="14px"/>}
                             </Dropdown.Item>
                             {semsCount % 2 === 0 && semsCount < semsNames.length && <Dropdown.Divider/>}
                         </div>
@@ -81,7 +99,9 @@ function ModOptions({position, modData, sem, currentPlan, updateSems}) {
                     <DropdownButton disabled={modData.taken} className="options-dropdown" drop="right" title={displayGrade("Projected")}>
                         {grades.map(grade => {
                             return (
-                                <Dropdown.Item className="options-dropdown-item" key={grade} eventKey={grade}>{grade}</Dropdown.Item>
+                                <Dropdown.Item className="options-dropdown-item" key={grade} eventKey={grade} onSelect={changeProjectedGrade}>
+                                    {grade}
+                                </Dropdown.Item>
                             );
                         })}
                     </DropdownButton>

@@ -23,7 +23,7 @@ function Dashboard({currentPlan, handleEditPlan}) {
         for (const semData of Object.values(sems)) {
             for (const mod of semData.mods) {
                 if (mod.code === modData.code) {
-                    setModOptions({modData: modData, sem: semData.name});
+                    setModOptions({modData: modData, semName: semData.name});
                     return;
                 }
             }
@@ -43,8 +43,8 @@ function Dashboard({currentPlan, handleEditPlan}) {
         return () => document.removeEventListener('click', handleLeftClick);
     }, []);
 
-    const updateSems = (updatedSems) => {
-        setModOptions(null);
+    const updateSems = (updatedSems, closeModOptions = true) => {
+        if (closeModOptions) setModOptions(null);
         handleEditPlan({
             ...currentPlan,
             sems: { ...currentPlan.sems, ...updatedSems, },
@@ -127,7 +127,7 @@ function Dashboard({currentPlan, handleEditPlan}) {
             <DragDropContext onDragEnd={result => onDragEnd(result)}>
                 {displaySemsGrid()}
             </DragDropContext>
-            {modOptions !== null && <ModOptions position={modOptionsPos} modData={modOptions.modData} sem={modOptions.sem} updateSems={updateSems} />}
+            {modOptions !== null && <ModOptions position={modOptionsPos} modData={modOptions.modData} semName={modOptions.semName} updateSems={updateSems} />}
         </div>
     );
 }
