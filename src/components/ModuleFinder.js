@@ -4,7 +4,7 @@ import _ from "lodash";
 import SearchBar from "./SearchBar";
 import Card from "./ModuleFinderResultCard";
 
-import allModules from "../data/computing-modules-detailed";
+import allModules from "../data/computing-modules";
 import "../css/ModuleFinder.css";
 
 const ModuleFinder = ({
