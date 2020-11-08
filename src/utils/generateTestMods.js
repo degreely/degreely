@@ -7,7 +7,12 @@ export const generateTestMods = (sems) => {
     Object.entries(sems).forEach(([key, semData]) => {
         sems[key] = {
             ...semData,
-            mods: Object.entries(simplifiedModules).slice(modIndex, modIndex + 5).map(([code, data]) => { return { code, ...data }; }),
+            mods: Object.entries(simplifiedModules).slice(modIndex, modIndex + 5).map(([code, data]) => {
+                const taken = semData.name === "Y1S1";
+                const projectedGrade = taken ? "-" : "A";
+                const actualGrade = taken ? "B" : "-";
+                return { code, ...data, taken, projectedGrade, actualGrade };
+            }),
         };
         modIndex += 5;
     });
