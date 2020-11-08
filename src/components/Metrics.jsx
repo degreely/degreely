@@ -3,11 +3,9 @@ import Container from "react-bootstrap/Container";
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Accordion from "react-bootstrap/Accordion";
-import Card from "react-bootstrap/Card";
 
 import Legend from "./Legend";
-import ModBtn from "./ModBtn";
+import DegreeRequirements from "./DegreeRequirements";
 
 import "../scss/Metrics.scss";
 
@@ -44,73 +42,6 @@ function Metrics() {
       </Row>
       <DegreeRequirements />
     </Container>
-  );
-}
-
-function DegreeRequirements() {
-  return (
-    <Accordion>
-      <Card className="requirement">
-        <Accordion.Toggle as={Card.Header} eventKey="0">
-          University Level Requirements
-        </Accordion.Toggle>
-        <Accordion.Collapse eventKey="0">
-          <Card.Body>
-            <ModBtn title="ES2660" type="unallocated" />
-            <ModBtn title="IS1103" type="allocated" />
-            <ModBtn title="CS2101" type="allocated" />
-          </Card.Body>
-        </Accordion.Collapse>
-      </Card>
-      <Card className="requirement">
-        <Accordion.Toggle as={Card.Header} eventKey="1">
-          Computer Science Foundation
-        </Accordion.Toggle>
-        <Accordion.Collapse eventKey="1">
-          <Card.Body>
-            <ModBtn title="ES2660" type="unallocated" />
-            <ModBtn title="IS1103" type="allocated" />
-            <ModBtn title="CS2101" type="allocated" />
-          </Card.Body>
-        </Accordion.Collapse>
-      </Card>
-      <Card className="requirement">
-        <Accordion.Toggle as={Card.Header} eventKey="2">
-          Computer Science Breadth & Depth
-        </Accordion.Toggle>
-        <Accordion.Collapse eventKey="2">
-          <Card.Body>
-            <ModBtn title="ES2660" type="unallocated" />
-            <ModBtn title="IS1103" type="allocated" />
-            <ModBtn title="CS2101" type="allocated" />
-          </Card.Body>
-        </Accordion.Collapse>
-      </Card>
-      <Card className="requirement">
-        <Accordion.Toggle as={Card.Header} eventKey="3">
-          IT Professionalism
-        </Accordion.Toggle>
-        <Accordion.Collapse eventKey="3">
-          <Card.Body>
-            <ModBtn title="ES2660" type="unallocated" />
-            <ModBtn title="IS1103" type="allocated" />
-            <ModBtn title="CS2101" type="allocated" />
-          </Card.Body>
-        </Accordion.Collapse>
-      </Card>
-      <Card className="requirement">
-        <Accordion.Toggle as={Card.Header} eventKey="4">
-          Mathematics & Science
-        </Accordion.Toggle>
-        <Accordion.Collapse eventKey="4">
-          <Card.Body>
-            <ModBtn title="ES2660" type="unallocated" />
-            <ModBtn title="IS1103" type="allocated" />
-            <ModBtn title="CS2101" type="allocated" />
-          </Card.Body>
-        </Accordion.Collapse>
-      </Card>
-    </Accordion>
   );
 }
 
