@@ -11,7 +11,7 @@ import { Actions } from "../redux/actions";
 
 import "../css/dashboard/Sem.css";
 
-function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
+function Dashboard({currentPlan, handleEditPlan}) {
     const sems = currentPlan.sems;
 
     // mod options menu
@@ -44,7 +44,7 @@ function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
     }, []);
 
     const updateSems = (updatedSems) => {
-        handleEditPlan(currentPlanName, {
+        handleEditPlan({
             ...currentPlan,
             sems: { ...currentPlan.sems, ...updatedSems, },
         });
@@ -132,7 +132,6 @@ function Dashboard({currentPlanName, currentPlan, handleEditPlan}) {
 }
 
 const mapStateToProps = (state) => ({
-    currentPlanName: state.currentPlan,
     currentPlan: state.plans[state.currentPlan],
 });
 

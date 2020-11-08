@@ -39,8 +39,8 @@ export const renamePlan = (state = INITIAL_STATE, { prevName, newName }) => {
   return { ...state, plans };
 };
 
-export const editPlan = (state = INITIAL_STATE, { name, plan }) => {
-  const plans = { ...state.plans, [name]: plan };
+export const editPlan = (state = INITIAL_STATE, { plan }) => {
+  const plans = { ...state.plans, [state.currentPlan]: plan };
   return { ...state, plans };
 };
 
