@@ -1,16 +1,12 @@
-.page-actions {
-  width: 100%;
-  margin-bottom: 64px;
-}
-
-.page-actions :not(:first-child) {
-  margin-left: 24px;
-}
-
-.page-root {
+.container.page-root {
   margin: 0px;
   max-width: none;
   margin-top: 36px;
+}
+
+.page-actions {
+  width: 100%;
+  margin-bottom: 64px;
 }
 
 .page-sidebar {
