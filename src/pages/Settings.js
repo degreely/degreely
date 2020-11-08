@@ -91,13 +91,13 @@ const Settings = ({ currentPlanName, plan, handleEditPlan }) => {
                   style={{
                     border: 0,
                     borderRadius: "50%",
-                    height: "2rem",
-                    width: "2rem",
+                    height: "2.5rem",
+                    width: "2.5rem",
                     padding: "0",
                     marginLeft: "1rem",
                   }}
                 >
-                  <EditIcon color="inherit" fontSize="small" />
+                  <EditIcon color="inherit" fontSize="default" />
                 </Button>
               </div>
               <div />
