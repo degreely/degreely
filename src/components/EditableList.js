@@ -40,7 +40,7 @@ const EditableList = ({
             {hasMoreOptions && (
               <IconButton
                 type="button"
-                onClick={onOpenMoreOptions}
+                onClick={() => onOpenMoreOptions(item)}
                 className="btn btn-small"
                 icon={<MoreIcon fontSize="small" />}
               />
