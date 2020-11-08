@@ -5,22 +5,26 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 const PlanOptionForm = ({ show, plans, planName, onSubmit, onClose }) => {
-  const [submissionDisabled, setSubmissionDisabled] = useState(false);
+  const [formErrorMessage, setFormErrorMessage] = useState("");
+
+  const getInputValue = (inputName) => document.querySelector(`input[name="${inputName}"]`).value.trim();
 
   const handleSubmit = () => {
-    onSubmit(document.querySelector('input[name="plan-name"]').value.trim());
+    onSubmit(getInputValue("plan-name"));
     onClose();
   };
 
-  const isValidForm = () => {
-    const newName = document.querySelector(`input[name="plan-name"]`).value;
+  const getFormErrors = () => {
+    const newName = getInputValue("plan-name");
     if (!newName) {
-      return false;
-    } else if (newName === planName) {
-      return undefined;
-    } else {
-      return !plans[planName];
+      return "This is a required field.";
     }
+
+    if (plans[newName]) {
+      return "Please enter a unique plan name.";
+    }
+
+    return "";
   };
 
   return (
@@ -32,19 +36,18 @@ const PlanOptionForm = ({ show, plans, planName, onSubmit, onClose }) => {
       <Modal.Body
         as={Form}
         onSubmit={(e) => e.preventDefault()}
-        onChange={() => setSubmissionDisabled(!document.querySelector(`input[name="plan-name"]`).value)}
-        validated={isValidForm}
+        onChange={() => setFormErrorMessage(getFormErrors())}
       >
         <Form.Group controlId="plan-name-input">
           <Form.Label>Plan Name</Form.Label>
           <Form.Control
-            required
             type="input"
             name="plan-name"
             placeholder="Plan name"
             defaultValue={planName}
+            isInvalid={!!formErrorMessage}
           />
-          <Form.Control.Feedback type="invalid">Please enter a unique plan name.</Form.Control.Feedback>
+          <Form.Control.Feedback type="invalid">{formErrorMessage}</Form.Control.Feedback>
         </Form.Group>
       </Modal.Body>
 
@@ -52,7 +55,7 @@ const PlanOptionForm = ({ show, plans, planName, onSubmit, onClose }) => {
         <Button variant="outline-secondary" onClick={onClose}>
           Cancel
         </Button>
-        <Button variant="primary" disabled={submissionDisabled} onClick={handleSubmit}>
+        <Button variant="primary" disabled={!!formErrorMessage} onClick={handleSubmit}>
           Save Changes
         </Button>
       </Modal.Footer>
