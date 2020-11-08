@@ -1,7 +1,7 @@
 import React from "react";
 import StopIcon from "@material-ui/icons/Stop";
 
-import "../scss/Legend.scss";
+import "../../scss/Legend.scss";
 
 function Legend(props) {
   return (

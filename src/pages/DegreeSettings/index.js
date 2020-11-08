@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import HomeIcon from "@material-ui/icons/HomeRounded";
 
 import SelectionModal from "../../components/SelectionModal";
-import Metrics from "../../components/Metrics";
+import Metrics from "../../components/Metrics/Metrics";
 import { options as selectionOptions } from "../../data/settings-options";
 import { Actions } from "../../redux/actions";
 

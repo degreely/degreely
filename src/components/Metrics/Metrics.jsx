@@ -5,9 +5,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import Legend from "./Legend";
-import DegreeRequirements from "./DegreeRequirements";
+import DegreeRequirements from "./DegreeRequirements/DegreeRequirements";
 
-import "../scss/Metrics.scss";
+import "../../scss/Metrics.scss";
 
 function Metrics() {
   return (
