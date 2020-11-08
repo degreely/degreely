@@ -1,5 +1,6 @@
 import { createReducer } from "reduxsauce";
 import { Types } from "./actions";
+import { getSimplifiedModuleInfo } from "../utils/getSimplifiedModuleInfo";
 
 export const EMPTY_PLAN = { sems: {}, specialisations: [], majors: [], minors: [] };
 
