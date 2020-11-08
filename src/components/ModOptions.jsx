@@ -19,18 +19,8 @@ function ModOptions({position, modData, sem, sems}) {
     const displayGrade = (type) => (
         <div className="options-dropdown-label">
             <span className="text-muted">{type} Grade</span><br/>
-            A+
+            {modData[`${type.toLowerCase()}Grade`]}
         </div>
-    );
-
-    const displayGradeDropdown = (type) => (
-        <DropdownButton className="options-dropdown" drop="right" title={displayGrade(type)}>
-            {grades.map(grade => {
-                return (
-                    <Dropdown.Item className="options-dropdown-item" key={grade} eventKey={grade}>{grade}</Dropdown.Item>
-                );
-            })}
-        </DropdownButton>
     );
 
     const displaySem = (
@@ -70,10 +60,18 @@ function ModOptions({position, modData, sem, sems}) {
                     <b>{modData.code}</b>
                 </ListGroup.Item>
                 <ListGroup.Item className="mod-options-menu-item">
-                    {displayGradeDropdown("Projected")}
+                    <DropdownButton disabled={modData.taken} className="options-dropdown" drop="right" title={displayGrade("Projected")}>
+                        {grades.map(grade => {
+                            return (
+                                <Dropdown.Item className="options-dropdown-item" key={grade} eventKey={grade}>{grade}</Dropdown.Item>
+                            );
+                        })}
+                    </DropdownButton>
                 </ListGroup.Item>
                 <ListGroup.Item className="mod-options-menu-item">
-                    {displayGradeDropdown("Actual")}
+                    <div className="options-actual-grade rounded-1">
+                        {displayGrade("Actual")}
+                    </div>
                 </ListGroup.Item>
                 <ListGroup.Item className="mod-options-menu-item">
                     {displaySemsDropdown()}
