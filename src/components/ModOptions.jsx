@@ -2,6 +2,7 @@ import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import { grades } from "../data/grades";
 
 import "../css/dashboard/ModOptions.css";
 
@@ -21,8 +22,6 @@ function ModOptions({position, modData, sem, sems}) {
             A+
         </div>
     );
-
-    const grades = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "D+", "D", "F", "S", "U"];
 
     const displayGradeDropdown = (type) => (
         <DropdownButton className="options-dropdown" drop="right" title={displayGrade(type)}>
@@ -49,8 +48,8 @@ function ModOptions({position, modData, sem, sems}) {
                 {semsNames.map(semName => {
                     semsCount++;
                     return (
-                        <div>
-                            <Dropdown.Item className="options-dropdown-item" key={semName} eventKey={semName}
+                        <div key={semName}>
+                            <Dropdown.Item className="options-dropdown-item" eventKey={semName}
                                 style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}
                             >
                                 {semName}

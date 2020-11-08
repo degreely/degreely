@@ -2,8 +2,6 @@ import { createReducer } from "reduxsauce";
 import { Types } from "./actions";
 import { generateTestMods } from "../utils/generateTestMods";
 
-export const EMPTY_PLAN = { sems: {}, specialisations: [], majors: [], minors: [] };
-
 const DEFAULT_SEMS = {
   Y1S1: { name: "Y1S1", mods: [] },
   Y1S2: { name: "Y1S2", mods: [] },
@@ -14,6 +12,8 @@ const DEFAULT_SEMS = {
   Y4S1: { name: "Y4S1", mods: [] },
   Y4S2: { name: "Y4S2", mods: [] },
 };
+
+export const EMPTY_PLAN = { sems: DEFAULT_SEMS, specialisations: [], majors: [], minors: [] };
 
 export const INITIAL_STATE = {
   currentPlan: "sample plan",
