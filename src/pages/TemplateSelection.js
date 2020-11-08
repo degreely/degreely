@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
@@ -7,19 +9,26 @@ import Button from "react-bootstrap/Button";
 import Typography from "@material-ui/core/Typography";
 
 import Option from "../components/TemplateOption";
-
 import { templates } from "../data/templates";
+import { EMPTY_PLAN } from "../redux/reducers";
+import { Actions } from "../redux/actions";
+import { generatePlanName } from "../utils/generatePlanName";
+import { generateSemsFromTemplate } from "../utils/generateSemsFromTemplate";
 
-const TemplateSelection = () => {
+const TemplateSelection = ({ plans, handleCreate, handleChangePlan }) => {
   const [submitButtonEnabled, setSubmitButtonEnabled] = useState(false);
 
   const handleSubmit = (value) => {
-    console.log(value);
+    const template = templates[value];
+    const plan = Object.assign(EMPTY_PLAN, generateSemsFromTemplate(template));
+    const name = generatePlanName(plans);
+    handleCreate(name, plan);
+    handleChangePlan(name);
   };
 
   return (
     <Container>
-      <Row className="d-flex justify-content-between">
+      <Row className="d-flex justify-content-between align-items-center">
         <Typography variant="h4">Select a template</Typography>
         <Button
           variant="outline-primary"
@@ -28,6 +37,7 @@ const TemplateSelection = () => {
           onClick={() =>
             handleSubmit(document.querySelector(`input[name="template-selection"]:checked`).value)
           }
+          href="dashboard"
         >
           Continue
         </Button>
@@ -51,4 +61,13 @@ const TemplateSelection = () => {
   );
 };
 
-export default TemplateSelection;
+const mapStateToProps = (state) => ({
+  plans: state.plans,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  handleCreate: (name, plan) => dispatch(Actions.addPlan(name, plan)),
+  handleChangePlan: (name) => dispatch(Actions.changePlan(name)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(TemplateSelection);

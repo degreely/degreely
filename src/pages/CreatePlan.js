@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -7,9 +8,19 @@ import Button from "react-bootstrap/Button";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import HelpIcon from "@material-ui/icons/Help";
-import IconButton from "../components/IconButton";
 
-const CreatePlan = () => {
+import { Actions } from "../redux/actions";
+import { EMPTY_PLAN } from "../redux/reducers";
+import IconButton from "../components/IconButton";
+import { generatePlanName } from "../utils/generatePlanName";
+
+const CreatePlan = ({ plans, handleCreate, handleChangePlan }) => {
+  const handleCreateEmptyPlan = () => {
+    const name = generatePlanName(plans);
+    handleCreate(name, EMPTY_PLAN);
+    handleChangePlan(name);
+  };
+
   return (
     <Container className="page-root d-flex flex-column justify-content-center align-items-center">
       <Typography variant="h4" style={{ marginBottom: "1.5rem" }}>
@@ -36,7 +47,7 @@ const CreatePlan = () => {
             />
           </OverlayTrigger>
         </div>
-        <Button variant="primary" size="lg" href="dashboard">
+        <Button variant="primary" size="lg" onClick={handleCreateEmptyPlan} href="dashboard">
           Start with an empty plan
         </Button>
       </Row>
@@ -44,4 +55,13 @@ const CreatePlan = () => {
   );
 };
 
-export default CreatePlan;
+const mapStateToProps = (state) => ({
+  plans: state.plans,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  handleCreate: (name, plan) => dispatch(Actions.addPlan(name, plan)),
+  handleChangePlan: (name) => dispatch(Actions.changePlan(name)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CreatePlan);
