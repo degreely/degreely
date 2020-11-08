@@ -28,7 +28,7 @@ const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan, handleR
   };
 
   const handleConditionalDelete = (name) => {
-    if (window.confirm("Are you sure? Once delete, this plan cannot be recovered.")) {
+    if (window.confirm("Are you sure? Once deleted, this plan cannot be recovered.")) {
       handleDelete(name);
     }
   };
