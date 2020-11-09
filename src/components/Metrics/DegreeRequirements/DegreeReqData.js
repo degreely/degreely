@@ -1,11 +1,13 @@
+import { MetricsModState } from "../Metrics";
+
 export const buckets = {
-    ulr: { GEQ: null, GER: null, GEH: null, GES: null, GET: null },
+    ulr: { GEQ: false, GER: false, GEH: false, GES: false, GET: false, },
     csFoundation: {
         CS1101S: false, CS1231S: false, CS2030: false, CS2040S: false,
         CS2100: false, CS2103T: false, CS2106: false, CS3230: false,
     },
     itProf: { IS1103: false, CS2101: false, ES2660: false },
-    mathSci: { MA1521: false, MA1101R: false, ST2334: false, SCI: null }
+    mathSci: { MA1521: false, MA1101R: false, ST2334: false, SCI: false }
 };
 
 export const specPrimaries = {
@@ -49,15 +51,17 @@ export const ieMods = {
     CP3880: false, CP3200: false, CP3202: false, IS4010: false, TR3202: false
 };
 
-export const isUlrBucketFulfilled = () => !Object.values(buckets.ulr).some(geMod => geMod === null);
+const isAllocated = (state) => state === MetricsModState.COMPLETED || state === MetricsModState.PLANNED;
 
-export const isCsFoundationFulfilled = () => !Object.values(buckets.csFoundation).some(taken => !taken);
+export const isUlrBucketFulfilled = () => Object.values(buckets.ulr).every(state => isAllocated(state));
+
+export const isCsFoundationFulfilled = () => Object.values(buckets.csFoundation).every(state => isAllocated(state));
 
 export const isFocusAreaFulfilled = (specialisations) => {
     let primaryCount = 0;
     for (const spec of specialisations) {
-        for (const taken of Object.values(specPrimaries[spec])) {
-            if (taken) primaryCount++;
+        for (const state of Object.values(specPrimaries[spec])) {
+            if (isAllocated(state)) primaryCount++;
             if (primaryCount >= 3) return true;
         }
         
@@ -67,14 +71,14 @@ export const isFocusAreaFulfilled = (specialisations) => {
     return false;
 };
 
-export const isProjectModsFulfilled = () => projectMods.CS3203
-    || (projectMods.CS3216 && projectMods.CS3217)
-    || (projectMods.CS3281 && projectMods.CS3282);
+export const isProjectModsFulfilled = () => isAllocated(projectMods.CS3203)
+    || (isAllocated(projectMods.CS3216) && isAllocated(projectMods.CS3217))
+    || (isAllocated(projectMods.CS3281) && isAllocated(projectMods.CS3282));
 
-export const isIeModsFulfilled = () => ieMods.CP3880
-    || (ieMods.CP3200 && ieMods.CP3202)
-    || ieMods.IS4010 || ieMods.TR3202;
+export const isIeModsFulfilled = () => isAllocated(ieMods.CP3880)
+    || (isAllocated(ieMods.CP3200) && isAllocated(ieMods.CP3202))
+    || isAllocated(ieMods.IS4010) || isAllocated(ieMods.TR3202);
 
-export const isItProfFulfilled = () => !Object.values(buckets.itProf).some(taken => !taken);
+export const isItProfFulfilled = () => Object.values(buckets.itProf).every(state => isAllocated(state));
 
-export const isMathSciFulfilled = () => !Object.values(buckets.mathSci).some(taken => !taken);
+export const isMathSciFulfilled = () => Object.values(buckets.mathSci).every(state => isAllocated(state));

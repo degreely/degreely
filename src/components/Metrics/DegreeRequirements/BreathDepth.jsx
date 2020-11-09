@@ -6,7 +6,7 @@ import ModBtn from "./ModBtn";
 import { specPrimaries, projectMods, isFocusAreaFulfilled, isProjectModsFulfilled, isIeModsFulfilled, ieMods } from "./DegreeReqData";
 import BucketTitle from "./BucketTitle";
 
-function BreadthDepth({specialisations, bndMcs, fourKMcs, isAllocated}) {
+function BreadthDepth({specialisations, bndMcs, fourKMcs, getModState}) {
 
     const isTot = bndMcs >= 28;
     const is4kM = fourKMcs >= 12;
@@ -24,7 +24,7 @@ function BreadthDepth({specialisations, bndMcs, fourKMcs, isAllocated}) {
                         <div key={spec}>
                             <div>{spec}</div>
                             {Object.keys(specPrimaries[spec]).map(primary => {
-                                return <ModBtn key={primary} title={primary} type={isAllocated(specPrimaries[spec][primary])} />
+                                return <ModBtn key={primary} title={primary} type={getModState(primary, specPrimaries[spec], isFoA)} />
                             })}
                         </div>
                     );
@@ -58,14 +58,14 @@ function BreadthDepth({specialisations, bndMcs, fourKMcs, isAllocated}) {
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="2.3">
                             <Card.Body style={{display: "block"}}>
-                                <div><ModBtn title="CS3203" type={isAllocated(projectMods.CS3203)} /></div>
+                                <div><ModBtn title="CS3203" type={getModState("CS3203", projectMods, isPro)} /></div>
                                 <div>
-                                    <ModBtn title="CS3216" type={isAllocated(projectMods.CS3216)} />
-                                    <ModBtn title="CS3217" type={isAllocated(projectMods.CS3217)} />
+                                    <ModBtn title="CS3216" type={getModState("CS3216", projectMods, isPro)} />
+                                    <ModBtn title="CS3217" type={getModState("CS3217", projectMods, isPro)} />
                                 </div>
                                 <div>
-                                    <ModBtn title="CS3281" type={isAllocated(projectMods.CS3281)} />
-                                    <ModBtn title="CS3282" type={isAllocated(projectMods.CS3282)} />
+                                    <ModBtn title="CS3281" type={getModState("CS3281", projectMods, isPro)} />
+                                    <ModBtn title="CS3282" type={getModState("CS3282", projectMods, isPro)} />
                                 </div>
                             </Card.Body>
                         </Accordion.Collapse>
@@ -74,13 +74,13 @@ function BreadthDepth({specialisations, bndMcs, fourKMcs, isAllocated}) {
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="2.4">
                             <Card.Body style={{display: "block"}}>
-                                <div><ModBtn title="CP3880" type={isAllocated(ieMods.CP3880)} /></div>
+                                <div><ModBtn title="CP3880" type={getModState("CP3880", ieMods, isIeM)} /></div>
                                 <div>
-                                    <ModBtn title="CP3200" type={isAllocated(ieMods.CP3200)} />
-                                    <ModBtn title="CP3202" type={isAllocated(ieMods.CP3202)} />
+                                    <ModBtn title="CP3200" type={getModState("CP3200", ieMods, isIeM)} />
+                                    <ModBtn title="CP3202" type={getModState("CP3202", ieMods, isIeM)} />
                                 </div>
-                                <div><ModBtn title="IS4010" type={isAllocated(ieMods.IS4010)} /></div>
-                                <div><ModBtn title="TR3202" type={isAllocated(ieMods.TR3202)} /></div>
+                                <div><ModBtn title="IS4010" type={getModState("IS4010", ieMods, isIeM)} /></div>
+                                <div><ModBtn title="TR3202" type={getModState("TR3202", ieMods, isIeM)} /></div>
                                 </Card.Body>
                         </Accordion.Collapse>
                     </Accordion>

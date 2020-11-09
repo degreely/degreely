@@ -9,6 +9,20 @@ import DegreeRequirements from "./DegreeRequirements/DegreeRequirements";
 
 import "../../scss/Metrics.scss";
 
+export const MetricsModState = Object.freeze({
+  COMPLETED: "COMPLETED",
+  PLANNED: "PLANNED",
+  UNPLANNED: "UNPLANNED",
+  UNALLOCATED: "UNALLOCATED",
+});
+
+export const MetricsModColors = Object.freeze({
+  COMPLETED: "#5E60CE",
+  PLANNED: "#BFC0FF",
+  UNPLANNED: "#E5E5E5",
+  UNALLOCATED: "red",
+});
+
 function Metrics() {
   return (
     <Container className="Metrics">
@@ -20,9 +34,9 @@ function Metrics() {
         <ProgressBar className="Planned" now={20} key={2} />
       </ProgressBar>
       <div id="legend">
-        <Legend colorHex="#5E60CE" title="Completed" />
-        <Legend colorHex="#BFC0FF" title="Planned" />
-        <Legend colorHex="#E5E5E5" title="Unplanned" />
+        <Legend colorHex={MetricsModColors.COMPLETED} title="Completed" />
+        <Legend colorHex={MetricsModColors.PLANNED} title="Planned" />
+        <Legend colorHex={MetricsModColors.UNPLANNED} title="Unplanned" />
       </div>
       <Row id="header">
         <h4>CAP</h4>

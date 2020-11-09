@@ -1,33 +1,36 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { MetricsModColors, MetricsModState } from "../Metrics";
 
-function ModBtn(props) {
-  if (props.type === "allocated") {
-    return <Button style={allocatedStyle}>{props.title}</Button>;
-  } else if (props.type === "unallocated") {
-    return <Button style={unallocatedStyle}>{props.title}</Button>;
-  }
-}
+import "../../../scss/Metrics.scss";
 
-const allocatedStyle = {
-  backgroundColor: "#5E60CE",
-  borderColor: "#5E60CE",
-  paddingTop: "0.25rem",
-  paddingBottom: "0.25rem",
-  paddingLeft: "0.5rem",
-  paddingRight: "0.5rem",
-  margin: "0.25rem",
-};
-
-const unallocatedStyle = {
-  backgroundColor: "#E86870",
+const baseStyle = {
   color: "#FFFFFF",
-  borderColor: "#E86870",
   paddingTop: "0.25rem",
   paddingBottom: "0.25rem",
   paddingLeft: "0.5rem",
   paddingRight: "0.5rem",
   margin: "0.25rem",
 };
+
+function ModBtn({title, type}) {
+  const isStatic = type === MetricsModState.COMPLETED || type === MetricsModState.PLANNED;
+
+  let style = {
+    ...baseStyle,
+    backgroundColor: MetricsModColors[type],
+    borderColor: MetricsModColors[type],
+  };
+
+  if (type === MetricsModState.PLANNED) {
+    style.color = "black";
+  } else if (type === MetricsModState.UNPLANNED) {
+    style.color = "gray";
+  }
+
+  return (
+    <Button className={`mod-btn ${isStatic ? "btn-static" : ""}`} style={style}>{title}</Button>
+  );
+}
 
 export default ModBtn;
