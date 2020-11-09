@@ -52,7 +52,7 @@ function Metrics({ plan }) {
   );
 
   return (
-    <div>
+    <div id="metrics">
       <h4 className="metrics-header">Degree Progress</h4>
       <ProgressBar>
         <ProgressBar className="progress-completed" now={(numCompleted / total * 100)} key={1} />
