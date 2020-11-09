@@ -17,8 +17,9 @@ export const gradeToCap = (grade) => {
             return 2.0;
         case "D+":
             return 1.5;
-        case "D+":
+        case "D":
             return 1.0;
+
         case "F":
             return 0.0;
         default:
