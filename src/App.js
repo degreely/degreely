@@ -5,7 +5,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import AboutPage from "./pages/About";
 import SupportPage from "./pages/Support";
 import LandingPage from "./pages/Landing";
-import SettingsPage from "./pages/Settings";
+import SettingsPage from "./pages/DegreeSettings";
 import Dashboard from "./components/Dashboard";
 import CreatePlanPage from "./pages/CreatePlan";
 import TemplateSelectionPage from "./pages/TemplateSelection";
