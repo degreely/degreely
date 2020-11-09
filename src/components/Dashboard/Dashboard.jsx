@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { DragDropContext } from "react-beautiful-dnd";
+import Metrics from "../Metrics/Metrics";
 import Sem from "./Sem";
 import ModOptions from "./ModOptions";
 
@@ -103,7 +104,7 @@ function Dashboard({currentPlan, handleEditPlan}) {
         }
 
         return (
-            <Container className="sems-container">
+            <div className="sems-container">
                 {semPairs.map(semPair => {
                     const [first, second] = semPair;
                     return (
@@ -118,14 +119,23 @@ function Dashboard({currentPlan, handleEditPlan}) {
                         </Row>
                     );
                 })}
-            </Container>
+            </div>
         );
     };
 
     return (
         <div className="dashboard">
             <DragDropContext onDragEnd={result => onDragEnd(result)}>
-                {displaySemsGrid()}
+                <Container fluid>
+                    <Row style={{display: "flex", justifyContent: "center"}}>
+                        <Col>
+                            {displaySemsGrid()}
+                        </Col>
+                        <Col sm="auto">
+                            <Metrics />
+                        </Col>
+                    </Row>
+                </Container>
             </DragDropContext>
             {modOptions !== null && <ModOptions position={modOptionsPos} modData={modOptions.modData} semName={modOptions.semName} updateSems={updateSems} />}
         </div>
