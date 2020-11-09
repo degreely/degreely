@@ -3,11 +3,11 @@ import Typography from "@material-ui/core/Typography";
 
 import "../../css/TemplateOption.css";
 
-const Plan = ({ plan }) => {
-  const rows = getRows(plan);
+const Plan = ({ sems }) => {
+  const rows = getRows(sems);
 
   return (
-    <div className="plan">
+    <div className="sems">
       {rows.map((row, rIndex) => (
         <div key={`Y${rIndex + 1}`} className="d-flex year">
           {Object.entries(row).map(([key, { label, modules }]) => (
@@ -28,12 +28,12 @@ const Plan = ({ plan }) => {
   );
 };
 
-const getRows = (plan) => {
+const getRows = (sems) => {
   const rows = [];
   let row = {};
   let prev = "";
 
-  Object.entries(plan).forEach(([sem, modules]) => {
+  Object.entries(sems).forEach(([sem, modules]) => {
     if (!prev) prev = sem.substring(0, 2);
 
     if (sem.includes(prev)) {

@@ -2,7 +2,7 @@ export const templates = {
   basic: {
     title: "Basic Template",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -84,7 +84,8 @@ export const templates = {
   algorithm: {
     title: "Theory and Algorithm Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Algorithms & Theory"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -166,7 +167,8 @@ export const templates = {
   AI: {
     title: "Artificial Intelligence Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Artificial Intelligence"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -248,7 +250,8 @@ export const templates = {
   network: {
     title: "Networking and Distributed Systems Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Networking and Distributed Systems"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -330,7 +333,8 @@ export const templates = {
   database: {
     title: "Database Systems Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Database Systems"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -412,7 +416,8 @@ export const templates = {
   multimedia: {
     title: "Multimedia Information Retrieval Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Multimedia Information Retrieval"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -495,7 +500,8 @@ export const templates = {
   comsec: {
     title: "Computer Security Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Computer Security"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -577,7 +583,8 @@ export const templates = {
   games: {
     title: "Computer Graphics and Games Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Computer Graphics and Games"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -659,7 +666,8 @@ export const templates = {
   parallel: {
     title: "Parallel Computing Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Parallel Computing"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -741,7 +749,8 @@ export const templates = {
   languages: {
     title: "Programming Languages Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Programming Languages"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -823,7 +832,8 @@ export const templates = {
   swe: {
     title: "Software Engineering Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    specialisations: ["Software Engineering"],
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
