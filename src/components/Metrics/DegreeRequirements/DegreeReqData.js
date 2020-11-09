@@ -59,7 +59,7 @@ export const isCsFoundationFulfilled = () => Object.values(buckets.csFoundation)
 
 export const isFocusAreaFulfilled = (specialisations) => {
     if (specialisations.length === 0) return false;
-    
+
     let primaryCount = 0;
     for (const spec of specialisations) {
         for (const state of Object.values(specPrimaries[spec])) {
@@ -84,3 +84,45 @@ export const isIeModsFulfilled = () => isAllocated(ieMods.CP3880)
 export const isItProfFulfilled = () => Object.values(buckets.itProf).every(state => isAllocated(state));
 
 export const isMathSciFulfilled = () => Object.values(buckets.mathSci).every(state => isAllocated(state));
+
+export const calculateProgress = (specialisations) => {
+    let numCompleted = 0, numPlanned = 0, numUnallocated = 0;
+
+    for (const bucket of Object.values(buckets)) {
+        for (const state of Object.values(bucket)) {
+            if (state === MetricsModState.COMPLETED) numCompleted++;
+            else if (state === MetricsModState.PLANNED) numPlanned++;
+            else numUnallocated++;
+        }
+    }
+
+    for (const state of [...Object.values(projectMods), ...Object.values(ieMods)]) {
+        if (state === MetricsModState.COMPLETED) numCompleted++;
+        else if (state === MetricsModState.PLANNED) numPlanned++;
+        else numUnallocated++;
+    }
+
+    for (const spec of specialisations) {
+        let numThrees = 0, numFours = 0;
+        for (const [code, state] of Object.entries(specPrimaries[spec])) {
+            if (numThrees >= 2 && numFours >= 1) break;
+
+            const level = parseInt(code.charAt(2));
+            if (level === 3 && numThrees < 2) {
+                if (state === MetricsModState.COMPLETED) numCompleted++;
+                else if (state === MetricsModState.PLANNED) numPlanned++;
+                else continue;
+                numThrees++;
+            } else if (level === 4 && numFours < 1) {
+                if (state === MetricsModState.COMPLETED) numCompleted++;
+                else if (state === MetricsModState.PLANNED) numPlanned++;
+                else continue;
+                numFours++;
+            }
+        }
+        
+        numUnallocated += (2 - numThrees) + (1 - numFours);
+    }
+
+    return { numCompleted, numPlanned, numUnallocated };
+};

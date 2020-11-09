@@ -2,12 +2,12 @@ import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import ModBtn from "./ModBtn";
-import BucketTitle from "./BucketTitle";
 import ContextAwareAccordionToggle from "./ContextAwareAccordionToggle";
 
 import { specPrimaries, projectMods, isFocusAreaFulfilled, isProjectModsFulfilled, isIeModsFulfilled, ieMods } from "./DegreeReqData";
 
 import "../../../scss/Metrics.scss";
+import { connect } from "react-redux";
 
 function FocusAreas({specialisations, getModState, isFoA}) {
     if (specialisations.length === 0) return <div className="focus-areas">No focus area selected for this plan</div>
@@ -87,4 +87,8 @@ function BreadthDepth({specialisations, bndMcs, fourKMcs, getModState}) {
     );
 }
 
-export default BreadthDepth;
+const mapStateToProps = (state) => ({
+    specialisations: state.plans[state.currentPlan].specialisations,
+});
+
+export default connect(mapStateToProps)(BreadthDepth);
