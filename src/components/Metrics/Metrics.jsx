@@ -10,6 +10,7 @@ import DegreeRequirements from "./DegreeRequirements/DegreeRequirements";
 
 import { fillDegreeReqData } from "./DegreeRequirements/fillDegreeReqData";
 import { calculateProgress } from "./DegreeRequirements/DegreeReqData";
+import { calculateProjectedCap, calculateActualCap } from "../../utils/calculateCaps";
 
 import "../../scss/Metrics.scss";
 
@@ -85,8 +86,8 @@ function Metrics({ plan }) {
           <div className="cap-type">Actual</div>
         </div>
         <div className="cap">
-          <div className="cap-number">4.18</div>
-          <div className="cap-number">3.96</div>
+          <div className="cap-number">{calculateProjectedCap(plan)}</div>
+          <div className="cap-number">{calculateActualCap(plan)}</div>
         </div>
         <div className="cap" />
       </div>

@@ -27,6 +27,8 @@ export const gradeToCap = (grade) => {
     }
 };
 
+const roundTo2dp = (number) => Math.floor((number + Number.EPSILON) * 100) / 100;
+
 export const calculateProjectedCap = (plan) => {
     let numerator = 0; // sum(mod CAP * mod MCs)
     let denominator = 0; // sum(mod MCs)
@@ -42,7 +44,7 @@ export const calculateProjectedCap = (plan) => {
         }
     }
 
-    return denominator === 0 ? denominator : numerator / denominator;
+    return roundTo2dp(denominator === 0 ? denominator : numerator / denominator);
 };
 
 export const calculateActualCap = (plan) => {
@@ -57,5 +59,5 @@ export const calculateActualCap = (plan) => {
         }
     }
 
-    return denominator === 0 ? denominator : numerator / denominator;
+    return roundTo2dp(denominator === 0 ? denominator : numerator / denominator);
 };
