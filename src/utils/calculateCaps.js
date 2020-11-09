@@ -31,6 +31,11 @@ export const calculateProjectedCap = (plan) => {
     let denominator = 0; // sum(mod MCs)
     for (const sem of Object.values(plan.sems)) {
         for (const mod of sem.mods) {
+            // check if mod's grade is S/U
+            if ((mod.taken && (mod.actualGrade === "S" || mod.actualGrade === "U"))
+                || (!mod.taken && (mod.projectedGrade === "S" || mod.projectedGrade === "U")))
+                continue;
+            
             numerator += (mod.taken ? gradeToCap(mod.actualGrade) : gradeToCap(mod.projectedGrade)) * mod.mcs;
             denominator += mod.mcs;
         }
@@ -44,8 +49,8 @@ export const calculateActualCap = (plan) => {
     let denominator = 0; // sum(mod MCs)
     for (const sem of Object.values(plan.sems)) {
         for (const mod of sem.mods) {
-            // only taken mods used in calculation
-            if (!mod.taken) continue;
+            // only non-SUed taken mods used in calculation
+            if (!mod.taken || (mod.actualGrade === "S" || mod.actualGrade === "U")) continue;
             numerator += gradeToCap(mod.actualGrade) * mod.mcs;
             denominator += mod.mcs;
         }
