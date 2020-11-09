@@ -4,14 +4,15 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import ModBtn from "./ModBtn";
 import BreadthDepth from "./BreathDepth";
+import ContextAwareAccordionToggle from "./ContextAwareAccordionToggle";
 
-import "../../../scss/Metrics.scss";
 import {
     buckets, specPrimaries, projectMods, ieMods,
     isUlrBucketFulfilled, isCsFoundationFulfilled, isItProfFulfilled, isMathSciFulfilled } from "./DegreeReqData";
 import { getSimplifiedModuleInfo } from "../../../utils/getSimplifiedModuleInfo";
-import BucketTitle from "./BucketTitle";
 import { MetricsModState } from "../Metrics";
+
+import "../../../scss/Metrics.scss";
 
 const simplifiedMods = getSimplifiedModuleInfo();
 
@@ -95,9 +96,7 @@ function DegreeRequirements({ plan }) {
     return (
         <Accordion>
             <Card className="requirement">
-                <Accordion.Toggle as={Card.Header} eventKey="0">
-                    <BucketTitle title={"University Level Requirements"} fulfilled={isUlr} />
-                </Accordion.Toggle>
+                <ContextAwareAccordionToggle eventKey="0" title={"University Level Requirements"} fulfilled={isUlr} />
                 <Accordion.Collapse eventKey="0">
                     <Card.Body>
                         <div>
@@ -107,9 +106,7 @@ function DegreeRequirements({ plan }) {
                 </Accordion.Collapse>
             </Card>
             <Card className="requirement">
-                <Accordion.Toggle as={Card.Header} eventKey="1">
-                    <BucketTitle title={"Computer Science Foundation"} fulfilled={isCsF} />
-                </Accordion.Toggle>
+                <ContextAwareAccordionToggle eventKey="1" title={"Computer Science Foundation"} fulfilled={isCsF} />
                 <Accordion.Collapse eventKey="1">
                     <Card.Body>
                         <div>
@@ -122,9 +119,7 @@ function DegreeRequirements({ plan }) {
                 <BreadthDepth specialisations={plan.specialisations} bndMcs={bndMcs} fourKMcs={fourKMcs} getModState={getModState} />
             </Card>
             <Card className="requirement">
-                <Accordion.Toggle as={Card.Header} eventKey="3">
-                    <BucketTitle title={"IT Professionalism"} fulfilled={isItP} />
-                </Accordion.Toggle>
+                <ContextAwareAccordionToggle eventKey="3" title={"IT Professionalism"} fulfilled={isItP} />
                 <Accordion.Collapse eventKey="3">
                     <Card.Body>
                         <div>
@@ -134,9 +129,7 @@ function DegreeRequirements({ plan }) {
                 </Accordion.Collapse>
             </Card>
             <Card className="requirement">
-                <Accordion.Toggle as={Card.Header} eventKey="4">
-                    <BucketTitle title={"Mathematics & Science"} fulfilled={isMSc} />
-                </Accordion.Toggle>
+                <ContextAwareAccordionToggle eventKey="4" title={"Mathematics & Science"} fulfilled={isMSc} />
                 <Accordion.Collapse eventKey="4">
                     <Card.Body>
                         <div>

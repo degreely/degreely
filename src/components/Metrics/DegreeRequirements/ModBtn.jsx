@@ -6,11 +6,8 @@ import "../../../scss/Metrics.scss";
 
 const baseStyle = {
   color: "#FFFFFF",
-  paddingTop: "0.25rem",
-  paddingBottom: "0.25rem",
-  paddingLeft: "0.5rem",
-  paddingRight: "0.5rem",
-  margin: "0.25rem",
+  padding: "0.25rem 0.5rem",
+  margin: "0.25rem 0.5rem 0.25rem 0rem",
 };
 
 function ModBtn({title, type}) {

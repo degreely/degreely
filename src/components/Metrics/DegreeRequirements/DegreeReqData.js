@@ -58,6 +58,8 @@ export const isUlrBucketFulfilled = () => Object.values(buckets.ulr).every(state
 export const isCsFoundationFulfilled = () => Object.values(buckets.csFoundation).every(state => isAllocated(state));
 
 export const isFocusAreaFulfilled = (specialisations) => {
+    if (specialisations.length === 0) return false;
+    
     let primaryCount = 0;
     for (const spec of specialisations) {
         for (const state of Object.values(specPrimaries[spec])) {
