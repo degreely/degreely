@@ -1,0 +1,124 @@
+#metrics {
+    width: 21rem;
+}
+
+.metrics-header {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress {
+    min-height: 2rem;
+    max-width: 19rem;
+
+    .progress-completed {
+        background-color: #5E60CE;
+        min-height: 1.5rem;
+    }
+
+    .progress-planned {
+        background-color: #BFC0FF;
+        min-height: 1.5rem;
+
+    }
+}
+
+#progress-legend {
+    margin-top: 0.5rem;
+    display: inline-block;
+
+    .legend {
+        padding-left: 0;
+        padding-right: 24px;
+        margin-left: -2%;
+    }
+}
+
+.cap-container {
+    display: grid;
+    
+    .cap {
+        grid-row: 1;
+
+        .cap-type, .cap-number {
+            grid-column: 1;
+            padding-bottom: 1rem;
+        }
+
+        .cap-type {
+            font-weight: bold;
+        }
+    }
+}
+
+.popover {
+    border: none !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+
+    .popover-body {
+        padding: 1.2rem;
+    }
+}
+
+.card.requirement {
+    background-color: transparent;
+    border-color: transparent;
+    
+    .card-header {
+        background-color: transparent;
+        border-color: transparent;
+        font-weight: 500;
+        padding-left: 0;
+        padding-bottom: 0.25rem;
+    }
+
+    .card-body {
+        padding-left: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+.bucket-title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .bucket-title-text-unfulfilled {
+        color: red;
+    }
+
+    .bucket-title-chevron {
+        padding-left: 0.5rem;
+    }
+}
+
+.bnd-buckets {
+    padding-left: 2rem;
+}
+
+.focus-areas {
+    padding-left: 1rem;
+}
+
+.focus-area-title {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.btn-static {
+    cursor: default !important;
+
+    &:active, &:focus {
+        -moz-box-shadow:    inset 0 0 0px white !important;
+        -webkit-box-shadow: inset 0 0 0px white !important;
+        box-shadow:         inset 0 0 0px white !important;
+    }
+}

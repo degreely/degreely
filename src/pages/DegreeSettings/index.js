@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import HomeIcon from "@material-ui/icons/HomeRounded";
 
 import SelectionModal from "../../components/SelectionModal";
+import Metrics from "../../components/Metrics/Metrics";
 import { options as selectionOptions } from "../../data/settings-options";
 import { Actions } from "../../redux/actions";
 
@@ -71,7 +72,7 @@ const DegreeSettings = ({ currentPlanName, plan, handleEditPlan }) => {
   return (
     <>
       <Container className="d-flex justify-content-between page-root">
-        <Col sm={1}>
+        <Col sm="auto">
           {mode === "view" && (
             <Button
               as={Link}
@@ -86,7 +87,7 @@ const DegreeSettings = ({ currentPlanName, plan, handleEditPlan }) => {
           )}
         </Col>
 
-        <Col sm={9} className="page-body" style={{ flexDirection: "column" }}>
+        <Col sm="auto" className="page-body" style={{ flexDirection: "column" }}>
           <Typography variant="h4">Settings</Typography>
           {mode === "view" ? (
             <ViewMode startEdit={handleStartEditMode} degreeInfo={degreeInfo} labels={labels} />
@@ -102,8 +103,8 @@ const DegreeSettings = ({ currentPlanName, plan, handleEditPlan }) => {
           )}
         </Col>
 
-        <Col sm={2} className="page-sidebar">
-          degree progress thing here
+        <Col sm="auto" className="page-sidebar">
+          <Metrics />
         </Col>
       </Container>
 
