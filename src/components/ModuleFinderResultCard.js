@@ -4,7 +4,6 @@ import Dropdown from "react-bootstrap/Dropdown";
 const ModuleFinderResultCard = ({
   moduleCode: code,
   title,
-  description,
   moduleCredit: mcs,
   department,
   semesterData,
@@ -29,8 +28,6 @@ const ModuleFinderResultCard = ({
 
       <p className="text-muted text-small" style={{ marginBottom: 0 }}>{`${department} • ${mcs} MCs`}</p>
       <p className="text-muted text-small">{semesters}</p>
-
-      <p className="text-small">{description}</p>
 
       <div
         style={{

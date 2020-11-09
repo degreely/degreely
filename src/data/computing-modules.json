@@ -1,0 +1,5418 @@
+[
+  {
+    "moduleCode": "BT1101",
+    "title": "Introduction to Business Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/BT1101/introduction-to-business-analytics",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T09:00:00.000Z",
+        "examDuration": 150,
+        "covidZones": ["B", "Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-05-04T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT2010",
+    "title": "Business Analytics Immersion Programme",
+    "moduleCredit": "6",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT2010/business-analytics-immersion-programme",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "BT2101",
+    "title": "Decision Making Methods and Tools",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT2101/decision-making-methods-and-tools",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-02T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-28T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT2102",
+    "title": "Data Management and Visualisation",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT2102/data-management-and-visualisation",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT3101",
+    "title": "Business Analytics Capstone Project",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT3101/business-analytics-capstone-project",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "BT3102",
+    "title": "Computational Methods for Business Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT3102/computational-methods-for-business-analytics",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-26T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-05-04T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT3103",
+    "title": "Application Systems Development for Business Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT3103/application-systems-development-for-business-analytics",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT4010",
+    "title": "Business Analytics Internship Programme",
+    "moduleCredit": "12",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4010/business-analytics-internship-programme",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "BT4011",
+    "title": "Business Analytics Capstone Industry Project",
+    "moduleCredit": "14",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4011/business-analytics-capstone-industry-project",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "BT4012",
+    "title": "Fraud Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4012/fraud-analytics",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "BT4013",
+    "title": "Analytics for Capital Market Trading and Investment",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4013/analytics-for-capital-market-trading-and-investment",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-04-27T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT4014",
+    "title": "Analytics Driven Design of Adaptive Systems",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4014/analytics-driven-design-of-adaptive-systems",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "BT4015",
+    "title": "Geospatial Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4015/geospatial-analytics",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "BT4016",
+    "title": "Risk Analytics for Financial Services",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4016/risk-analytics-for-financial-services",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-30T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "BT4101",
+    "title": "B.Sc. (Business Analytics) Dissertation",
+    "moduleCredit": "12",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4101/dissertation",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "BT4103",
+    "title": "Business Analytics Capstone Project",
+    "moduleCredit": "8",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4103/business-analytics-capstone-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT4211",
+    "title": "Data-Driven Marketing",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4211/marketing",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-04-29T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT4212",
+    "title": "Search Engine Optimization and Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4212/search-engine-optimization-and-analytics",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-30T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "BT4221",
+    "title": "Big Data Techniques and Technologies",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4221/big-data-techniques-and-technologies",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "BT4222",
+    "title": "Mining Web Data for Business Insights",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4222/mining-web-data-for-business-insights",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "BT4240",
+    "title": "Machine Learning for Predictive Data Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT4240/machine-learning-for-predictive-data-analytics",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-23T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "BT5110",
+    "title": "Data Management and Warehousing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT5110/data-management-and-warehousing",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "BT5126",
+    "title": "Hands-on with Business Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT5126/with-business-analytics",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "BT5151",
+    "title": "Advanced Analytics and Machine Learning",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT5151/advanced-analytics-and-machine-learning",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "BT5152",
+    "title": "Decision Making Technology for Business",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT5152/decision-making-technology-for-business",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "BT5152E",
+    "title": "Decision Making Technology for Business and Economics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/BT5152E/decision-making-technology-for-business-and-economics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "BT5153",
+    "title": "Applied Machine Learning for Business Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/BT5153/applied-machine-learning-for-business-analytics",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "BT5154",
+    "title": "Foundation in Business Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/BT5154/foundation-in-business-analytics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP2106",
+    "title": "Independent Software Development Project (Orbital)",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP2106/independent-software-development-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP2201",
+    "title": "Journey of the Innovator",
+    "moduleCredit": "2",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CP2201/journey-of-the-innovator",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CP2202",
+    "title": "Work Experience Internship",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP2202/work-experience-internship",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP3101",
+    "title": "Topics in Computing",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3101/topics-in-computing",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP3101A",
+    "title": "Global Open Source Project",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3101A/global-open-source-project",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP3106",
+    "title": "Independent Project",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3106/independent-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP3107",
+    "title": "Computing for Voluntary Welfare Organisations",
+    "moduleCredit": "6",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3107/computing-for-voluntary-welfare-organisations",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "CP3108A",
+    "title": "Independent Work",
+    "moduleCredit": "2",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CP3108A/independent-work",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP3108B",
+    "title": "Independent Work",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CP3108B/independent-work",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP3109",
+    "title": "Overseas Exploratory Project",
+    "moduleCredit": "2",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CP3109/overseas-exploratory-project",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP3110",
+    "title": "Computing for Voluntary Welfare Organisations II",
+    "moduleCredit": "6",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3110/computing-for-voluntary-welfare-organisations-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP3200",
+    "title": "Internship",
+    "moduleCredit": "6",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "corequisite": "Students can only take this module after completing 70",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3200/internship",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP3201",
+    "title": "Industry Seminar",
+    "moduleCredit": "2",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3201/industry-seminar",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CP3202",
+    "title": "Internship II",
+    "moduleCredit": "6",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3202/internship-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP3208",
+    "title": "Undergraduate Research in Computing I",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3208/undergraduate-research-in-computing-i",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP3209",
+    "title": "Undergraduate Research Project in Computing",
+    "moduleCredit": "8",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3209/undergraduate-research-project-in-computing",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP3880",
+    "title": "Advanced Technology Attachment Programme",
+    "moduleCredit": "12",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP3880/advanced-technology-attachment-programme",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP3881",
+    "title": "Incubation Project",
+    "moduleCredit": "12",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CP3881/incubation-project",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CP4101",
+    "title": "B.Comp. Dissertation",
+    "moduleCredit": "12",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP4101/dissertation",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP4106",
+    "title": "Computing Project",
+    "moduleCredit": "8",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP4106/computing-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP5010",
+    "title": "Graduate Research Paper",
+    "moduleCredit": "0",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CP5010/graduate-research-paper",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP5101",
+    "title": "MComp Dissertation",
+    "moduleCredit": "16",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CP5101/mcomp-dissertation",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP5102",
+    "title": "MComp Information Security Project",
+    "moduleCredit": "8",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP5102/mcomp-information-security-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP5103",
+    "title": "Master of Computing Project",
+    "moduleCredit": "8",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP5103/master-of-computing-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP5104",
+    "title": "Graduate Project in Computing",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CP5104/graduate-project-in-computing",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CP6010",
+    "title": "Doctoral Seminar",
+    "moduleCredit": "0",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CP6010/doctoral-seminar",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CS1010",
+    "title": "Programming Methodology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1010/programming-methodology",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-29T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS1010E",
+    "title": "Programming Methodology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1010E/programming-methodology",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-27T06:30:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-28T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS1010J",
+    "title": "Programming Methodology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1010J/programming-methodology",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS1010R",
+    "title": "Programming Methodology",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS1010R/programming-methodology",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "CS1010S",
+    "title": "Programming Methodology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1010S/programming-methodology",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T09:00:00.000Z",
+        "examDuration": 90,
+        "covidZones": ["Unknown", "B"]
+      },
+      {
+        "semester": 2,
+        "examDate": "2021-04-29T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS1010X",
+    "title": "Programming Methodology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1010X/programming-methodology",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS1010XCP",
+    "title": "Programming Methodology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1010XCP/programming-methodology",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS1020",
+    "title": "Data Structures and Algorithms I",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS1020/data-structures-and-algorithms-i",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS1020E",
+    "title": "Data Structures and Algorithms I",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS1020E/data-structures-and-algorithms-i",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS1101S",
+    "title": "Programming Methodology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1101S/programming-methodology",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-29T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS1105A",
+    "title": "Computing and Society",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1105A/computing-and-society",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS1231",
+    "title": "Discrete Structures",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS1231/discrete-structures",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-05-03T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS1231R",
+    "title": "Discrete Structures",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS1231R/discrete-structures",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS1231S",
+    "title": "Discrete Structures",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS1231S/discrete-structures",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-05-03T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS1300",
+    "title": "Unrestricted Electives for Poly Candidates",
+    "moduleCredit": "8",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS1300/unrestricted-electives-for-poly-candidates",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2002",
+    "title": "External Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS2002/external-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2003",
+    "title": "Exchange CS Module",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS2003/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2004",
+    "title": "Exchange CS Module",
+    "moduleCredit": "1",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS2004/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2006",
+    "title": "Exchange CS Module",
+    "moduleCredit": "3",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS2006/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2010",
+    "title": "Data Structures and Algorithms II",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2010/data-structures-and-algorithms-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2010R",
+    "title": "Data Structures and Algorithms II",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2010R/data-structures-and-algorithms-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2020",
+    "title": "Data Structures and Algorithms Accelerated",
+    "moduleCredit": "6",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "Obtain a grade of at least A\u2212 in either CS1010 or  CS1101S Programming Methodology",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2020/data-structures-and-algorithms-accelerated",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2030",
+    "title": "Programming Methodology II",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2030/programming-methodology-ii",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-30T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-28T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2030S",
+    "title": "Programming Methodology II",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2030S/programming-methodology-ii",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-30T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-28T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2040",
+    "title": "Data Structures and Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2040/data-structures-and-algorithms",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-24T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2040C",
+    "title": "Data Structures and Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2040C/data-structures-and-algorithms",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-24T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2040S",
+    "title": "Data Structures and Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2040S/data-structures-and-algorithms",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-24T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2100",
+    "title": "Computer Organisation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2100/computer-organisation",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-27T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-27T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2100R",
+    "title": "Computer Organisation",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2100R/computer-organisation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2101",
+    "title": "Effective Communication for Computing Professionals",
+    "moduleCredit": "4",
+    "department": "Center for Engl Lang Comms",
+    "faculty": "Computing",
+    "corequisite": "Students have to read CS2103T Software Engineering at the same time as this module.",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2101/effective-communication-for-computing-professionals",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2102",
+    "title": "Database Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2102/database-systems",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-27T06:30:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-30T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2102R",
+    "title": "Database Systems",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2102R/database-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2103",
+    "title": "Software Engineering",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2103/software-engineering",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-02T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-24T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2103R",
+    "title": "Software Engineering",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2103R/software-engineering",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2103T",
+    "title": "Software Engineering",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "Students have to read CS2101 Effective Communication for Computing Professionals at the same time as this module",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2103T/software-engineering",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-02T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-24T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2104",
+    "title": "Programming Language Concepts",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2104/programming-language-concepts",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown", "B"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS2104R",
+    "title": "Programming Language Concepts",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2104R/programming-language-concepts",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2105",
+    "title": "Introduction to Computer Networks",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2105/introduction-to-computer-networks",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-30T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-29T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2105R",
+    "title": "Introduction to Computer Networks",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2105R/introduction-to-computer-networks",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2106",
+    "title": "Introduction to Operating Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2106/introduction-to-operating-systems",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-05-04T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2106R",
+    "title": "Introduction to Operating Systems",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2106R/introduction-to-operating-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2107",
+    "title": "Introduction to Information Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2107/introduction-to-information-security",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-26T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-05-04T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2108",
+    "title": "Introduction to Media Computing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2108/introduction-to-media-computing",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS2113",
+    "title": "Software Engineering & Object-Oriented Programming",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "CS2101 Effective Communication for Computing Professionals is co-requisite for CS2113T. Students exempted from CS2101 will take CS2113 which does not have CS2101 as co-req. Otherwise, CS2113 and CS2113T are identical.",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2113/software-engineering-programming",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-01T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-29T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2113T",
+    "title": "Software Engineering & Object-Oriented Programming",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "CS2101 Effective Communication for Computing Professionals is co-requisite for CS2113T. Students exempted from CS2101 will take CS2113 which does not have CS2101 as co-req. Otherwise, CS2113 and CS2113T are identical.",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2113T/software-engineering-programming",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-01T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-29T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS2220",
+    "title": "Introduction to Computational Biology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2220/introduction-to-computational-biology",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-30T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS2220R",
+    "title": "Introduction to Computational Biology",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2220R/introduction-to-computational-biology",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS2309",
+    "title": "CS Research Methodology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS2309/cs-research-methodology",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS3001",
+    "title": "External Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS3001/external-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3002",
+    "title": "Exchange CS Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS3002/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3003",
+    "title": "Exchange CS Module",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS3003/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3004",
+    "title": "Exchange CS Module",
+    "moduleCredit": "1",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS3004/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3005",
+    "title": "Exchange CS Module",
+    "moduleCredit": "2",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS3005/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3006",
+    "title": "Exchange CS Module",
+    "moduleCredit": "3",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS3006/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3103",
+    "title": "Computer Networks Practice",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3103/computer-networks-practice",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS3201",
+    "title": "Software Engineering Project I",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "CS3202 Software Engineering Project II",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3201/software-engineering-project-i",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3201R",
+    "title": "Software Engineering Project I",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "CS3202 Software Engineering Project II",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3201R/software-engineering-project-i",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3202",
+    "title": "Software Engineering Project II",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "CS3201 Software Engineering Project I",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3202/software-engineering-project-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3202R",
+    "title": "Software Engineering Project II",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3202R/software-engineering-project-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3203",
+    "title": "Software Engineering Project",
+    "moduleCredit": "8",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3203/software-engineering-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B", "Unknown"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3210",
+    "title": "Parallel Computing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3210/parallel-computing",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-30T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS3211",
+    "title": "Parallel and Concurrent Programming",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3211/parallel-and-concurrent-programming",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-05T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3216",
+    "title": "Software Product Engineering for Digital Markets",
+    "moduleCredit": "5",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3216/software-product-engineering-for-digital-markets",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS3217",
+    "title": "Software Engineering on Modern Application Platforms",
+    "moduleCredit": "5",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3217/software-engineering-on-modern-application-platforms",
+    "semesterData": [{ "semester": 2, "covidZones": ["B", "Unknown"] }]
+  },
+  {
+    "moduleCode": "CS3218",
+    "title": "Multimodal Processing in Mobile Platforms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3218/multimodal-processing-in-mobile-platforms",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3219",
+    "title": "Software Engineering Principles and Patterns",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3219/software-engineering-principles-and-patterns",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS3219R",
+    "title": "Software Engineering Principles and Patterns",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3219R/software-engineering-principles-and-patterns",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3220",
+    "title": "Computer Architecture",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3220/computer-architecture",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3221",
+    "title": "Operating Systems Design and Pragmatics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3221/operating-systems-design-and-pragmatics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3223",
+    "title": "Database Systems Implementation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3223/database-systems-implementation",
+    "semesterData": [
+      {
+        "semester": 2,
+        "examDate": "2021-04-28T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS3223R",
+    "title": "Database Systems Implementation",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3223R/database-systems-implementation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3225",
+    "title": "Combinatorial Methods in Bioinformatics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3225/combinatorial-methods-in-bioinformatics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3226",
+    "title": "Web Programming and Applications",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3226/web-programming-and-applications",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3230",
+    "title": "Design and Analysis of Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3230/design-and-analysis-of-algorithms",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-01T09:00:00.000Z",
+        "examDuration": 150,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-29T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3230R",
+    "title": "Design and Analysis of Algorithms",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3230R/design-and-analysis-of-algorithms",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "CS3231",
+    "title": "Theory of Computation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3231/theory-of-computation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3233",
+    "title": "Competitive Programming",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3233/competitive-programming",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS3233R",
+    "title": "Competitive Programming",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3233R/competitive-programming",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3234",
+    "title": "Logic for Proofs and Programs",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3234/logic-for-proofs-and-programs",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS3234R",
+    "title": "Logic and Formal Systems",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3234R/logic-and-formal-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3235",
+    "title": "Computer Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3235/computer-security",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3236",
+    "title": "Introduction to Information Theory",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3236/introduction-to-information-theory",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS3236R",
+    "title": "Introduction to Information Theory",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3236R/introduction-to-information-theory",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "CS3237",
+    "title": "Introduction to Internet of Things",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3237/introduction-to-internet-of-things",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS3240",
+    "title": "Interaction Design",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3240/interaction-design",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3240R",
+    "title": "Interaction Design",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3240R/interaction-design",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3241",
+    "title": "Computer Graphics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3241/computer-graphics",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS3241R",
+    "title": "Computer Graphics",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3241R/computer-graphics",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "CS3242",
+    "title": "3D Modeling and Animation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3242/3d-modeling-and-animation",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-04-26T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3243",
+    "title": "Introduction to Artificial Intelligence",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3243/introduction-to-artificial-intelligence",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3243R",
+    "title": "Introduction to Artificial Intelligence",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3243R/introduction-to-artificial-intelligence",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3244",
+    "title": "Machine Learning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3244/machine-learning",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "examDate": "2021-05-03T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3244R",
+    "title": "Machine Learning",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3244R/machine-learning",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3245",
+    "title": "Information Retrieval",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3245/information-retrieval",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-04-30T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS3245R",
+    "title": "Information Retrieval",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3245R/information-retrieval",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "CS3247",
+    "title": "Game Development",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3247/game-development",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS3249",
+    "title": "User Interface Development",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3249/user-interface-development",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3271",
+    "title": "Software Engineering for Reactive Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3271/software-engineering-for-reactive-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3281",
+    "title": "Thematic Systems Project I",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3281/thematic-systems-project-i",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS3281R",
+    "title": "Thematic Systems Project I",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3281R/thematic-systems-project-i",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3282",
+    "title": "Thematic Systems Project II",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3282/thematic-systems-project-ii",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS3282R",
+    "title": "Thematic Systems Project II",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3282R/thematic-systems-project-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3283",
+    "title": "Media Technology Project I",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3283/media-technology-project-i",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3284",
+    "title": "Media Technology Project II",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3284/media-technology-project-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS3882",
+    "title": "Breakthrough Ideas for Digital Markets",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS3882/breakthrough-ideas-for-digital-markets",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4001",
+    "title": "SEP Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS4001/sep-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4002",
+    "title": "Exchange CS Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS4002/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4003",
+    "title": "Exchange CS Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS4003/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4004",
+    "title": "Exchange CS Module",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS4004/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4005",
+    "title": "Exchange CS Module",
+    "moduleCredit": "2",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS4005/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4007",
+    "title": "Exchange CS Module",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS4007/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4008",
+    "title": "Exchange CS Module",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS4008/exchange-cs-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4211",
+    "title": "Formal Methods for Software Engineering",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4211/formal-methods-for-software-engineering",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS4212",
+    "title": "Compiler Design",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4212/compiler-design",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS4214",
+    "title": "Formal Semantics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4214/formal-semantics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4215",
+    "title": "Programming Language Implementation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4215/programming-language-implementation",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS4215R",
+    "title": "Programming Language Implementation",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4215R/programming-language-implementation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4216",
+    "title": "Constraint Logic Programming",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4216/constraint-logic-programming",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4218",
+    "title": "Software Testing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4218/software-testing",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-04T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4220",
+    "title": "Knowledge Discovery Methods in Bioinformatics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4220/knowledge-discovery-methods-in-bioinformatics",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-06T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4220R",
+    "title": "Knowledge Discovery Methods in Bioinformatics",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4220R/knowledge-discovery-methods-in-bioinformatics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4221",
+    "title": "Database Applications Design and Tuning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4221/database-applications-design-and-tuning",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS4222",
+    "title": "Wireless Networking",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4222/wireless-networking",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-03T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4223",
+    "title": "Multi-core Architectures",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4223/architectures",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS4223R",
+    "title": "Multi-core Architectures",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4223R/architectures",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4224",
+    "title": "Distributed Databases",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4224/distributed-databases",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-28T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS4225",
+    "title": "Big Data Systems for Data Science",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4225/big-data-systems-for-data-science",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS4226",
+    "title": "Internet Architecture",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4226/internet-architecture",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-01T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS4231",
+    "title": "Parallel and Distributed Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4231/parallel-and-distributed-algorithms",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-04T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4232",
+    "title": "Theory of Computation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4232/theory-of-computation",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS4232R",
+    "title": "Theory of Computation",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4232R/theory-of-computation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4234",
+    "title": "Optimisation Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4234/optimisation-algorithms",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-01T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS4234R",
+    "title": "Optimisation Algorithms",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4234R/optimisation-algorithms",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4235",
+    "title": "Computational Geometry",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4235/computational-geometry",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4236",
+    "title": "Cryptography Theory and Practice",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4236/cryptography-theory-and-practice",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS4238",
+    "title": "Computer Security Practice",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4238/computer-security-practice",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["B", "Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4239",
+    "title": "Software Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4239/software-security",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-02T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS4240",
+    "title": "Interaction Design for Virtual and Augmented Reality",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4240/interaction-design-for-virtual-and-augmented-reality",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS4240R",
+    "title": "Interaction Design for Virtual and Augmented Reality",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4240R/interaction-design-for-virtual-and-augmented-reality",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4241",
+    "title": "Multimedia Information Retrieval",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4241/multimedia-information-retrieval",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4242",
+    "title": "Social Media Computing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4242/social-media-computing",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-05T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4243",
+    "title": "Computer Vision and Pattern Recognition",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4243/computer-vision-and-pattern-recognition",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS4243R",
+    "title": "Computer Vision and Pattern Recognition",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4243R/computer-vision-and-pattern-recognition",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4244",
+    "title": "Knowledge Representation and Reasoning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4244/knowledge-representation-and-reasoning",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS4246",
+    "title": "AI Planning and Decision Making",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4246/ai-planning-and-decision-making",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-21T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-24T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4246R",
+    "title": "AI Planning and Decision Making",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4246R/ai-planning-and-decision-making",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4247",
+    "title": "Graphics Rendering Techniques",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4247/graphics-rendering-techniques",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-06T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4248",
+    "title": "Natural Language Processing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4248/natural-language-processing",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-24T01:00:00.000Z",
+        "examDuration": 90,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4248R",
+    "title": "Natural Language Processing",
+    "moduleCredit": "1",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4248R/natural-language-processing",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4249",
+    "title": "Phenomena and Theories of Human-Computer Interaction",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4249/phenomena-and-theories-of-interaction",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS4257",
+    "title": "Algorithmic Foundations of Privacy",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4257/algorithmic-foundations-of-privacy",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4261",
+    "title": "Algorithmic Mechanism Design",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4261/algorithmic-mechanism-design",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4268",
+    "title": "Quantum Computing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4268/quantum-computing",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-06T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4269",
+    "title": "Fundamentals of Logic in Computer Science",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4269/fundamentals-of-logic-in-computer-science",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4276",
+    "title": "IoT Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4276/iot-security",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS4277",
+    "title": "3D Computer Vision",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4277/3d-computer-vision",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-04-26T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS4278",
+    "title": "Intelligent Robots: Algorithms and Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4278/intelligent-algorithms-and-systems",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS4330",
+    "title": "Combinatorial Methods in Bioinformatics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4330/combinatorial-methods-in-bioinformatics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4344",
+    "title": "Networked and Mobile Gaming",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4344/networked-and-mobile-gaming",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4345",
+    "title": "General-Purpose Computation on GPU",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4345/computation-on-gpu",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4347",
+    "title": "Sound and Music Computing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4347/sound-and-music-computing",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS4350",
+    "title": "Game Development Project",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4350/game-development-project",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS4351",
+    "title": "Real-Time Graphics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4351/graphics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS4880",
+    "title": "Digital Entrepreneurship",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS4880/digital-entrepreneurship",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5201",
+    "title": "Foundation in Theoretical CS",
+    "moduleCredit": "0",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS5201/foundation-in-theoretical-cs",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5202",
+    "title": "Foundation in Computer Systems",
+    "moduleCredit": "0",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS5202/foundation-in-computer-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5205",
+    "title": "Foundation in Programming Languages",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5205/foundation-in-programming-languages",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5206",
+    "title": "Foundation in Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5206/foundation-in-algorithms",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5207",
+    "title": "Foundation in Operating Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS5207/foundation-in-operating-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5208",
+    "title": "Foundation in Database Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5208/foundation-in-database-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5209",
+    "title": "Foundation in Logic and AI",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5209/foundation-in-logic-and-ai",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5214",
+    "title": "Design of Optimising Compilers",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5214/design-of-optimising-compilers",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5215",
+    "title": "Constraint Processing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5215/constraint-processing",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5216",
+    "title": "Logic Programming and Constraints",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS5216/logic-programming-and-constraints",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5218",
+    "title": "Principles and Practice of Program Analysis",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5218/principles-and-practice-of-program-analysis",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5219",
+    "title": "Automated Software Validation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5219/automated-software-validation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5222",
+    "title": "Advanced Computer Architecture",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5222/advanced-computer-architecture",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5223",
+    "title": "Distributed Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5223/distributed-systems",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5224",
+    "title": "Cloud Computing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS5224/cloud-computing",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5226",
+    "title": "Database Tuning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5226/database-tuning",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5228",
+    "title": "Knowledge Discovery and Data Mining",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5228/knowledge-discovery-and-data-mining",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5229",
+    "title": "Advanced Computer Networks",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5229/advanced-computer-networks",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS5230",
+    "title": "Computational Complexity",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5230/computational-complexity",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5231",
+    "title": "Systems Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5231/systems-security",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS5232",
+    "title": "Formal Specification and Design Techniques",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5232/formal-specification-and-design-techniques",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-04-29T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5233",
+    "title": "Simulation and Modelling Techniques",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5233/simulation-and-modelling-techniques",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-04T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5234",
+    "title": "Algorithms at Scale",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5234/algorithms-at-scale",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS5236",
+    "title": "Advanced Automata Theory",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5236/advanced-automata-theory",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-02T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS5237",
+    "title": "Computational Geometry and Applications",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5237/computational-geometry-and-applications",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5238",
+    "title": "Advanced Combinatorial Methods in Bioinformatics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5238/advanced-combinatorial-methods-in-bioinformatics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5239",
+    "title": "Computer System Performance Analysis",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5239/computer-system-performance-analysis",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS5240",
+    "title": "Theoretical Foundations in MultiMedia",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5240/theoretical-foundations-in-multimedia",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS5241",
+    "title": "Speech Processing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5241/speech-processing",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5242",
+    "title": "Neural Networks and Deep Learning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5242/neural-networks-and-deep-learning",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5246",
+    "title": "Text Mining",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5246/text-mining",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5248",
+    "title": "Systems Support for Continuous Media",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5248/systems-support-for-continuous-media",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5249",
+    "title": "Audio in Multimedia Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5249/audio-in-multimedia-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5250",
+    "title": "Advanced Operating Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5250/advanced-operating-systems",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-07T06:30:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5260",
+    "title": "Neural Networks and Deep Learning II",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5260/neural-networks-and-deep-learning-ii",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5271",
+    "title": "Performance Analysis of Embedded Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5271/performance-analysis-of-embedded-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5272",
+    "title": "Embedded Software Design",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5272/embedded-software-design",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5321",
+    "title": "Network Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5321/network-security",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5322",
+    "title": "Database Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5322/database-security",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-30T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS5330",
+    "title": "Randomized Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5330/randomized-algorithms",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5331",
+    "title": "Web Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5331/web-security",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5332",
+    "title": "Biometric Authentication",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5332/biometric-authentication",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5338",
+    "title": "Principles of Planning and Decision Making",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5338/principles-of-planning-and-decision-making",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5339",
+    "title": "Theory and Algorithms for Machine Learning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5339/theory-and-algorithms-for-machine-learning",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-04T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5340",
+    "title": "Uncertainty Modelling in AI",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5340/uncertainty-modelling-in-ai",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5342",
+    "title": "Multimedia Computing and Applications",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5342/multimedia-computing-and-applications",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5343",
+    "title": "Advanced Computer Animation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5343/advanced-computer-animation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5344",
+    "title": "Big-Data Analytics Technology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5344/analytics-technology",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5345",
+    "title": "Social and Digital Media Analytics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS5345/social-and-digital-media-analytics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5346",
+    "title": "Information Visualisation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5346/information-visualisation",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5351",
+    "title": "The Business of Software",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5351/the-business-of-software",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5421",
+    "title": "Database Applications Design and Tuning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5421/database-applications-design-and-tuning",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS5422",
+    "title": "Wireless Networking",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5422/wireless-networking",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-03T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5424",
+    "title": "Distributed Databases",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5424/distributed-databases",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-28T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS5425",
+    "title": "Big Data Systems for Data Science",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5425/big-data-systems-for-data-science",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS5439",
+    "title": "Software Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5439/software-security",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-02T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "CS5446",
+    "title": "AI Planning and Decision Making",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5446/ai-planning-and-decision-making",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-21T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-04-24T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5461",
+    "title": "Algorithmic Mechanism Design",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5461/algorithmic-mechanism-design",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5469",
+    "title": "Fundamentals of Logic in Computer Science",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5469/fundamentals-of-logic-in-computer-science",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS5476",
+    "title": "IoT Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5476/iot-security",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS5477",
+    "title": "3D Computer Vision",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5477/3d-computer-vision",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-04-26T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "CS5478",
+    "title": "Intelligent Robots: Algorithms and Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS5478/intelligent-algorithms-and-systems",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6101",
+    "title": "Exploration of Computer Science Research",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS6101/exploration-of-computer-science-research",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "CS6202",
+    "title": "Advanced Topics in Programming Languages",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6202/advanced-topics-in-programming-languages",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6203",
+    "title": "Advanced Topics in Database Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6203/advanced-topics-in-database-systems",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS6204",
+    "title": "Advanced Topics in Networking",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6204/advanced-topics-in-networking",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6205",
+    "title": "Advanced Modelling & Simulation",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6205/advanced-modelling-simulation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6206",
+    "title": "Advanced Topics in Human-Computer Interaction",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6206/advanced-topics-in-interaction",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6207",
+    "title": "Advanced Natural Language Processing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6207/advanced-natural-language-processing",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6208",
+    "title": "Advanced Topics in Artificial Intelligence",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6208/advanced-topics-in-artificial-intelligence",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6209",
+    "title": "Topics in Cryptography",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS6209/topics-in-cryptography",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6210",
+    "title": "The Art of Computer Science Research",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6210/the-art-of-computer-science-research",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6211",
+    "title": "Analytical Performance Modelling for Computer Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6211/analytical-performance-modelling-for-computer-systems",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6212",
+    "title": "Topics in Media",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6212/topics-in-media",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6213",
+    "title": "Special Topics in Distributed Computing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6213/special-topics-in-distributed-computing",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6215",
+    "title": "Advanced Topics in Program Analysis",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6215/advanced-topics-in-program-analysis",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6216",
+    "title": "Advanced Topics in Machine Learning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6216/advanced-topics-in-machine-learning",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6217",
+    "title": "Topics in Prog. Languages & Software Engineering",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS6217/topics-in-languages-software-engineering",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6218",
+    "title": "Principles of Prog. Languages & Software Engineering",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS6218/principles-of-languages-software-engineering",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6219",
+    "title": "Advanced Topics in Computer Systems",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6219/advanced-topics-in-computer-systems",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6220",
+    "title": "Advanced Topics in Data Mining",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6220/advanced-topics-in-data-mining",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6222",
+    "title": "Advanced Topics in Computational Biology",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6222/advanced-topics-in-computational-biology",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6230",
+    "title": "Topics in Information Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6230/topics-in-information-security",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6231",
+    "title": "Advanced Topics in Security and Privacy",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6231/advanced-topics-in-security-and-privacy",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS6234",
+    "title": "Advanced Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6234/advanced-algorithms",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS6235",
+    "title": "Advanced Topics in Theoretical Computer Science",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6235/advanced-topics-in-theoretical-computer-science",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6240",
+    "title": "Multimedia Analysis",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6240/multimedia-analysis",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6241",
+    "title": "Advanced Topics in Computer Graphics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS6241/advanced-topics-in-computer-graphics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6242",
+    "title": "Digital Libraries",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6242/digital-libraries",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6244",
+    "title": "Advanced Topics in Robotics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6244/advanced-topics-in-robotics",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6270",
+    "title": "Virtual Machines",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6270/virtual-machines",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6280",
+    "title": "Topics in Computer Science: Systems Design for Next Gen Hardware",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6280/topics-in-computer-systems-design-for-next-gen-hardware",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "CS6281",
+    "title": "Topics in Computer Science: Property Testing",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6281/topics-in-computer-property-testing",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6282",
+    "title": "Topics in Computer Science: Internet-of-Things Security",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6282/topics-in-computer-security",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6283",
+    "title": "Topics in Computer Science: Trustworthy Machine Learning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6283/topics-in-computer-trustworthy-machine-learning",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS6284",
+    "title": "Topics in Computer Science: Big Data Meets New Hardware",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6284/topics-in-computer-big-data-meets-new-hardware",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6285",
+    "title": "Topics in Computer Science: Bridging System and Deep Learning",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6285/topics-in-computer-bridging-system-and-deep-learning",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "CS6290",
+    "title": "Lecture Series in Computer Science I",
+    "moduleCredit": "2",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS6290/lecture-series-in-computer-science-i",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6291",
+    "title": "Lecture Series in Computer Science II",
+    "moduleCredit": "2",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS6291/lecture-series-in-computer-science-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6292",
+    "title": "Lecture Series in Computer Science III",
+    "moduleCredit": "2",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CS6292/lecture-series-in-computer-science-iii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CS6880",
+    "title": "Advanced Topics in Software Engineering",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/CS6880/advanced-topics-in-software-engineering",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX2991",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX2991/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX2992",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "1",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX2992/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX2994",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "3",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX2994/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX2995",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX2995/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX3991",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX3991/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX3992",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "1",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX3992/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX4991",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX4991/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX4992",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "1",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX4992/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX4993",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "2",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX4993/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "CSX4994",
+    "title": "Exchange Breadth Module",
+    "moduleCredit": "3",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/CSX4994/exchange-breadth-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "DMC1401",
+    "title": "Design Your Own Module",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/DMC1401/design-your-own-module",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "DMC1401CS",
+    "title": "Design Your Own Module",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/DMC1401CS/design-your-own-module",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "DMC1401IS",
+    "title": "Design Your Own Module",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/DMC1401IS/design-your-own-module",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "GET1031",
+    "title": "Computational Thinking",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/GET1031/computational-thinking",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IFS2200",
+    "title": "Information Security Immersion Programme",
+    "moduleCredit": "6",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IFS2200/information-security-immersion-programme",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IFS4101",
+    "title": "Legal Aspects of Information Security",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IFS4101/legal-aspects-of-information-security",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-04-29T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IFS4102",
+    "title": "Digital Forensics",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IFS4102/digital-forensics",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IFS4103",
+    "title": "Penetration Testing Practice",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IFS4103/penetration-testing-practice",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "IFS4201",
+    "title": "Information Security Industry Capstone Project",
+    "moduleCredit": "8",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IFS4201/information-security-industry-capstone-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "IFS4202",
+    "title": "Information Security Practicum Programme",
+    "moduleCredit": "6",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IFS4202/information-security-practicum-programme",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "IFS4205",
+    "title": "Information Security Capstone Project.",
+    "moduleCredit": "8",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IFS4205/information-security-capstone",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS1103",
+    "title": "Ethics in Computing",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS1103/ethics-in-computing",
+    "semesterData": [{ "semester": 1, "covidZones": [] }]
+  },
+  {
+    "moduleCode": "IS2102",
+    "title": "Enterprise Systems Architecture and Design",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS2102/enterprise-systems-architecture-and-design",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["B", "Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS2103",
+    "title": "Enterprise Systems Server-side Design and Development",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS2103/enterprise-systems-design-and-development",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-28T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown", "B"]
+      },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS2150",
+    "title": "E-Business Design and Implementation",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS2150/design-and-implementation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS3101",
+    "title": "Management of Information Systems",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3101/management-of-information-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS3102",
+    "title": "Enterprise Systems Development Project",
+    "moduleCredit": "8",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3102/enterprise-systems-development-project",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS3103",
+    "title": "Information Systems Leadership and Communication",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3103/information-systems-leadership-and-communication",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS3106",
+    "title": "Enterprise Systems Interface Design and Development",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3106/enterprise-systems-interface-design-and-development",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "examDate": "2021-04-26T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS3150",
+    "title": "Digital Media Marketing",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3150/digital-media-marketing",
+    "semesterData": [{ "semester": 1, "covidZones": ["B", "Unknown"] }]
+  },
+  {
+    "moduleCode": "IS3221",
+    "title": "ERP Systems with Analytics Solutions",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3221/erp-systems-with-analytics-solutions",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS3223",
+    "title": "IT and Supply Chain Management",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3223/it-and-supply-chain-management",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS3240",
+    "title": "Digital Platform Strategy and Architecture",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3240/digital-platform-strategy-and-architecture",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-02T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "IS3251",
+    "title": "Principles of Technology Entrepreneurship",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3251/principles-of-technology-entrepreneurship",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS3261",
+    "title": "Mobile Apps Development for Enterprise",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS3261/mobile-apps-development-for-enterprise",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS4010",
+    "title": "Industry Internship Programme",
+    "moduleCredit": "12",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4010/industry-internship-programme",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "IS4100",
+    "title": "IT Project Management",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4100/it-project-management",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown", "B"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS4102",
+    "title": "E-Business Capstone Project",
+    "moduleCredit": "8",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4102/capstone-project",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS4103",
+    "title": "Information Systems Capstone Project",
+    "moduleCredit": "8",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4103/information-systems-capstone-project",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS4150",
+    "title": "Mobile and Ubiquitous Commerce",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4150/mobile-and-ubiquitous-commerce",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS4151",
+    "title": "Pervasive Technology Solutions and Development",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4151/pervasive-technology-solutions-and-development",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-06T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS4152",
+    "title": "Affective Computing",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4152/affective-computing",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS4204",
+    "title": "IT Governance",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4204/it-governance",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T09:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["B", "Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "IS4228",
+    "title": "Information Technologies in Financial Services",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4228/information-technologies-in-financial-services",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS4231",
+    "title": "Information Security Management",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4231/information-security-management",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-02T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "IS4233",
+    "title": "Legal Aspects of Information Technology",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4233/legal-aspects-of-information-technology",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS4234",
+    "title": "Compliance and Regulation Technology",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4234/compliance-and-regulation-technology",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS4240",
+    "title": "Business Intelligence Systems",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4240/business-intelligence-systems",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS4241",
+    "title": "Social Media Network Analysis",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4241/social-media-network-analysis",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-06T09:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS4242",
+    "title": "Intelligent Systems and Techniques",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4242/intelligent-systems-and-techniques",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS4243",
+    "title": "Information Systems Consulting",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4243/information-systems-consulting",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS4250",
+    "title": "IT-enabled Healthcare Solutioning",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4250/healthcare-solutioning",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS4260",
+    "title": "E-Commerce Business Models",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4260/business-models",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS4261",
+    "title": "Designing IT-enabled Business Innovations",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4261/designing-business-innovations",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS4301",
+    "title": "Agile IT with DevOps",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4301/agile-it-with-devops",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS4302",
+    "title": "Blockchain and Distributed Ledger Technologies",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4302/blockchain-and-distributed-ledger-technologies",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS4303",
+    "title": "IT-mediated financial solutions and platforms",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS4303/financial-solutions-and-platforms",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS5002",
+    "title": "Digital Transformation",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5002/digital-transformation",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS5003",
+    "title": "Platform Design and Economy",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5003/platform-design-and-economy",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS5004",
+    "title": "Enterprise Architecture",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5004/enterprise-architecture",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS5005",
+    "title": "Digital Engagement",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5005/digital-engagement",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-11-25T05:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      }
+    ]
+  },
+  {
+    "moduleCode": "IS5006",
+    "title": "Intelligent System Deployment",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5006/intelligent-system-deployment",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS5007",
+    "title": "Strategising for Global IT-enabled Business Success",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5007/strategising-for-global-business-success",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS5008",
+    "title": "Technology Risk & Cyber Resilience",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS5008/technology-risk-cyber-resilience",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS5009",
+    "title": "Topics in Financial Technology Solutions",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS5009/topics-in-financial-technology-solutions",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS5110",
+    "title": "Software Project Management",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5110/software-project-management",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS5111",
+    "title": "IT Strategy and Governance",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5111/it-strategy-and-governance",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-03T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS5114",
+    "title": "Global IT Project and Vendor Management",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5114/global-it-project-and-vendor-management",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS5116",
+    "title": "Digital Entrepreneurship",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5116/digital-entrepreneurship",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS5117",
+    "title": "Digital Government",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5117/digital-government",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS5126",
+    "title": "Hands-on with Applied Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS5126/with-applied-analytics",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS5128",
+    "title": "Digital Innovation",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5128/digital-innovation",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS5151",
+    "title": "Information Security Policy and Management",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5151/information-security-policy-and-management",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS5152",
+    "title": "Data-Driven Decision Making",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IS5152/decision-making",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS5451",
+    "title": "Pervasive Technology Solutions and Development",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS5451/pervasive-technology-solutions-and-development",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-06T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS6000",
+    "title": "Qualifying Examination in IS",
+    "moduleCredit": "6",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6000/qualifying-examination-in-is",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "IS6001",
+    "title": "Qualitative Methods for IS Research",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6001/qualitative-methods-for-is-research",
+    "semesterData": [{ "semester": 1, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS6002",
+    "title": "Quantitative Methods for IS Research",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6002/quantitative-methods-for-is-research",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IS6003",
+    "title": "Contemporary Theories for IS Research",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6003/contemporary-theories-for-is-research",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IS6004",
+    "title": "Econometrics for IS Research",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6004/econometrics-for-is-research",
+    "semesterData": [
+      { "semester": 1, "examDate": "2020-11-23T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS6005",
+    "title": "Seminars in Information Systems I",
+    "moduleCredit": "2",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6005/seminars-in-information-systems-i",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS6100",
+    "title": "Information Systems Research",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6100/information-systems-research",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS6102",
+    "title": "Topics in Information Systems Ii",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6102/topics-in-information-systems-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS6103",
+    "title": "Design Science Research in Information Systems",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6103/design-science-research-in-information-systems",
+    "semesterData": [
+      { "semester": 2, "examDate": "2021-05-04T01:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IS6201",
+    "title": "Seminars in Information System Ii",
+    "moduleCredit": "2",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6201/seminars-in-information-system-ii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IS6202",
+    "title": "Seminars in Information System Iii",
+    "moduleCredit": "2",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IS6202/seminars-in-information-system-iii",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IT1001",
+    "title": "Introduction to Computing",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IT1001/introduction-to-computing",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IT1007",
+    "title": "Introduction to Programming with Python and C",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IT1007/introduction-to-programming-with-python-and-c",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IT2001",
+    "title": "Network Technology and Applications",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IT2001/network-technology-and-applications",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IT2002",
+    "title": "Database Technology and Management",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IT2002/database-technology-and-management",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IT3010",
+    "title": "Data Management for Business Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IT3010/data-management-for-business-analytics",
+    "semesterData": [
+      {
+        "semester": 1,
+        "examDate": "2020-12-01T01:00:00.000Z",
+        "examDuration": 120,
+        "covidZones": ["Unknown"]
+      },
+      { "semester": 2, "examDate": "2021-05-05T05:00:00.000Z", "examDuration": 120, "covidZones": ["B"] }
+    ]
+  },
+  {
+    "moduleCode": "IT3011",
+    "title": "Introduction to Machine Learning and Applications",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IT3011/introduction-to-machine-learning-and-applications",
+    "semesterData": [{ "semester": 2, "covidZones": ["B"] }]
+  },
+  {
+    "moduleCode": "IT5001",
+    "title": "Software Development Fundamentals",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IT5001/software-development-fundamentals",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IT5002",
+    "title": "Computer Systems and Applications",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "IT5001",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IT5002/computer-systems-and-applications",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IT5003",
+    "title": "Data Structures and Algorithms",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "corequisite": "IT5001",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IT5003/data-structures-and-algorithms",
+    "semesterData": [{ "semester": 1, "covidZones": ["Unknown"] }]
+  },
+  {
+    "moduleCode": "IT5004",
+    "title": "Enterprise Systems Architecture Fundamentals",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "corequisite": "IT5001",
+    "hasPreclusion": true,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/IT5004/enterprise-systems-architecture-fundamentals",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IT5005",
+    "title": "Artificial Intelligence",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IT5005/artificial-intelligence",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "IT5006",
+    "title": "Fundamentals of Data Analytics",
+    "moduleCredit": "4",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/IT5006/fundamentals-of-data-analytics",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS2951R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS2951R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS2952R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS2952R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3951CS",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "5",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS3951CS/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3951R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/UIS3951R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3952CS",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "5",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS3952CS/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3952R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/UIS3952R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3953R",
+    "title": "Independent Project",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/UIS3953R/independent-project",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3954R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "8",
+    "department": "Information Systems and Analytics",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/UIS3954R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3955R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "8",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS3955R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3956R",
+    "title": "Independent Study Module (Ride-on)",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS3956R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3957R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "4",
+    "department": "Computer Science",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS3957R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS3958R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS3958R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS4935R",
+    "title": "Independent Study Module (Ride-on)",
+    "moduleCredit": "8",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS4935R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS4951R",
+    "title": "Independent Study Module (Ride-on)",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS4951R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS4952R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "4",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS4952R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS4953R",
+    "title": "Independent Study Module (Ride-on)",
+    "moduleCredit": "8",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS4953R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS5951R",
+    "title": "Independent Study Module (Ride-on)",
+    "moduleCredit": "4",
+    "department": "University Scholars Programme",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/UIS5951R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "UIS6951R",
+    "title": "Independent Study Module (Ride-On)",
+    "moduleCredit": "4",
+    "department": "University Scholars Programme",
+    "faculty": "Computing",
+    "hasPreclusion": false,
+    "hasPrerequisite": false,
+    "url": "https://nusmods.com/modules/UIS6951R/independent-study-module",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "XFC4101",
+    "title": "Integrated Honours Thesis",
+    "moduleCredit": "12",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/XFC4101/integrated-honours-thesis",
+    "semesterData": [
+      { "semester": 1, "covidZones": [] },
+      { "semester": 2, "covidZones": [] }
+    ]
+  },
+  {
+    "moduleCode": "XFC4102",
+    "title": "Integrated Honours Dissertation",
+    "moduleCredit": "15",
+    "department": "SoC Dean's Office",
+    "faculty": "Computing",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/XFC4102/integrated-honours-dissertation",
+    "semesterData": []
+  },
+  {
+    "moduleCode": "ES2660",
+    "title": "Communicating in the Information Age",
+    "moduleCredit": "4",
+    "department": "Center for Engl Lang Comms",
+    "faculty": "NUS",
+    "hasPreclusion": true,
+    "hasPrerequisite": true,
+    "url": "https://nusmods.com/modules/ES2660/communicating-in-the-information-age",
+    "semesterData": [
+      { "semester": 1, "covidZones": ["Unknown"] },
+      { "semester": 2, "covidZones": ["B"] }
+    ]
+  }
+]

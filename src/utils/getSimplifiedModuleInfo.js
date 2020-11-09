@@ -1,4 +1,4 @@
-import detailedModules from "../data/computing-modules-detailed";
+import detailedModules from "../data/computing-modules";
 
 export const getSimplifiedModuleInfo = () => {
   const modules = {};
