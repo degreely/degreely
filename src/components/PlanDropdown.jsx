@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
@@ -12,8 +12,11 @@ import PlanOptionForm from "./PlanOptionForm";
 
 import "../scss/Dropdown.scss";
 
+const BLACKLISTED_PAGES = ["/create-plan", "/templates"];
+
 const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan, handleRenamePlan }) => {
   const history = useHistory();
+  const { pathname } = useLocation();
   const [optionModalProps, setOptionModalProps] = useState({ show: false });
   const items = Object.keys(plans).filter((plan) => plan !== selected);
 
@@ -34,6 +37,10 @@ const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan, handleR
   };
 
   const handleAdd = () => history.push("create-plan");
+
+  if (!Object.keys(plans).length || BLACKLISTED_PAGES.includes(pathname)) {
+    return null;
+  }
 
   return (
     <>
