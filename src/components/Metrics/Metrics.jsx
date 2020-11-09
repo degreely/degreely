@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
-import Badge from 'react-bootstrap/Badge';
+import HelpIcon from "@material-ui/icons/Help";
+import IconButton from "../IconButton";
 import Legend from "./Legend";
 import DegreeRequirements from "./DegreeRequirements/DegreeRequirements";
 
@@ -25,6 +26,17 @@ export const MetricsModColors = Object.freeze({
   UNPLANNED: "#E5E5E5",
   UNALLOCATED: "red",
 });
+
+function TooltipButton({content}) {
+  return (
+    <OverlayTrigger trigger="click" placement="top" overlay={content}>
+      <IconButton
+        icon={<HelpIcon color="disabled" />}
+        style={{ marginRight: "1.3rem", marginLeft: "0.5rem", color: "grey" }}
+      />
+    </OverlayTrigger>
+  );
+}
 
 function Metrics({ plan }) {
   const { bndMcs, fourKMcs } = fillDegreeReqData(plan);
@@ -65,9 +77,7 @@ function Metrics({ plan }) {
       </div>
       <h4 className="metrics-header">
         <span>CAP</span>
-        <OverlayTrigger trigger="click" placement="top" overlay={capTooltip}>
-          <Badge>?</Badge>
-        </OverlayTrigger>
+        <TooltipButton content={capTooltip} />
       </h4>
       <div className="cap-container">
         <div className="cap">
@@ -82,9 +92,7 @@ function Metrics({ plan }) {
       </div>
       <h4 className="metrics-header">
         <span>Degree Requirements</span>
-        <OverlayTrigger trigger="click" placement="top" overlay={degreeReqTooltip}>
-          <Badge>?</Badge>
-        </OverlayTrigger>
+        <TooltipButton content={degreeReqTooltip} />
       </h4>
       <DegreeRequirements bndMcs={bndMcs} fourKMcs={fourKMcs} />
     </div>
