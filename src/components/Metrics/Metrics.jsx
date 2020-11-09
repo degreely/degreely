@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import Container from "react-bootstrap/Container";
 import ProgressBar from 'react-bootstrap/ProgressBar'
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
+import Badge from 'react-bootstrap/Badge';
 import Legend from "./Legend";
 import DegreeRequirements from "./DegreeRequirements/DegreeRequirements";
 
@@ -30,6 +30,27 @@ function Metrics({ plan }) {
   const { bndMcs, fourKMcs } = fillDegreeReqData(plan);
   const { numCompleted, numPlanned, numUnallocated } = calculateProgress(plan.specialisations);
   const total = numCompleted + numPlanned + numUnallocated;
+
+  const capTooltip = (
+    <Popover className="metrics-tooltip">
+      <Popover.Content>
+        A student's CAP is the sum of the module grade points multiplied by the number of MCs for
+        the corresponding module, divided by the total number of MCs.<br/><br/>
+        Visit <a href="http://www.nus.edu.sg/registrar/academic-information-policies/non-graduating/modular-system">this page</a> for
+        more information.
+      </Popover.Content>
+    </Popover>
+  );
+
+  const degreeReqTooltip = (
+    <Popover className="metrics-tooltip">
+      <Popover.Content>
+        These are baskets of modules you need to fulfil based on the degree programme you are enrolled in.
+        Red baskets indicate that there are modules in that basket which are unallocated in your module plan.
+      </Popover.Content>
+    </Popover>
+  );
+
   return (
     <div>
       <h4 className="metrics-header">Degree Progress</h4>
@@ -42,7 +63,12 @@ function Metrics({ plan }) {
         <Legend colorHex={MetricsModColors.PLANNED} title="Planned" />
         <Legend colorHex={MetricsModColors.UNPLANNED} title="Unplanned" />
       </div>
-      <h4 className="metrics-header">CAP</h4>
+      <h4 className="metrics-header">
+        <span>CAP</span>
+        <OverlayTrigger trigger="click" placement="top" overlay={capTooltip}>
+          <Badge>?</Badge>
+        </OverlayTrigger>
+      </h4>
       <div className="cap-container">
         <div className="cap">
           <div className="cap-type">Projected</div>
@@ -54,7 +80,12 @@ function Metrics({ plan }) {
         </div>
         <div className="cap" />
       </div>
-      <h4 className="metrics-header">Degree Requirements</h4>
+      <h4 className="metrics-header">
+        <span>Degree Requirements</span>
+        <OverlayTrigger trigger="click" placement="top" overlay={degreeReqTooltip}>
+          <Badge>?</Badge>
+        </OverlayTrigger>
+      </h4>
       <DegreeRequirements bndMcs={bndMcs} fourKMcs={fourKMcs} />
     </div>
   );

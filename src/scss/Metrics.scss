@@ -1,6 +1,18 @@
 .metrics-header {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .badge {
+        cursor: pointer;
+        margin-right: 1.6rem;
+        border-radius: 100px;
+        background-color: darkgray;
+        color: white;
+        font-size: small;
+    }
 }
 
 .progress {
