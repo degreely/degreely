@@ -103,25 +103,25 @@ export const calculateProgress = (specialisations) => {
     }
 
     for (const spec of specialisations) {
-        let numThrees = 0, numFours = 0;
+        let numThreesAndBelow = 0, numFoursAndAbove = 0;
         for (const [code, state] of Object.entries(specPrimaries[spec])) {
-            if (numThrees >= 2 && numFours >= 1) break;
+            if (numThreesAndBelow >= 2 && numFoursAndAbove >= 1) break;
 
             const level = parseInt(code.charAt(2));
-            if (level === 3 && numThrees < 2) {
+            if (level <= 3 && numThreesAndBelow < 2) {
                 if (state === MetricsModState.COMPLETED) numCompleted++;
                 else if (state === MetricsModState.PLANNED) numPlanned++;
                 else continue;
-                numThrees++;
-            } else if (level === 4 && numFours < 1) {
+                numThreesAndBelow++;
+            } else if (level >= 4 && numFoursAndAbove < 1) {
                 if (state === MetricsModState.COMPLETED) numCompleted++;
                 else if (state === MetricsModState.PLANNED) numPlanned++;
                 else continue;
-                numFours++;
+                numFoursAndAbove++;
             }
         }
         
-        numUnallocated += (2 - numThrees) + (1 - numFours);
+        numUnallocated += (2 - numThreesAndBelow) + (1 - numFoursAndAbove);
     }
 
     return { numCompleted, numPlanned, numUnallocated };
