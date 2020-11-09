@@ -1,53 +1,50 @@
-.Metrics {
-    position: absolute;
-    right: 0;
-    padding-top: 1.5rem;
+.metrics-header {
+    padding-top: 3rem;
     padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    // background-color: #ffafaf;
 }
 
-#header {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.progress-main {
+.progress {
     min-height: 2rem;
     max-width: 19rem;
 
-    .Planned {
+    .progress-completed {
+        background-color: #5E60CE;
+        min-height: 1.5rem;
+    }
+
+    .progress-planned {
         background-color: #BFC0FF;
         min-height: 1.5rem;
 
     }
-
-    .Completed {
-        background-color: #5E60CE;
-        min-height: 1.5rem;
-    }
 }
 
-#legend {
+#progress-legend {
     margin-top: 0.5rem;
     display: inline-block;
 
-    .Legend {
+    .legend {
         padding-left: 0;
-        padding-right: 8;
+        padding-right: 24px;
         margin-left: -2%;
     }
 }
 
-.col {
-    padding-left: 0;
-}
+.cap-container {
+    display: grid;
+    
+    .cap {
+        grid-row: 1;
 
-.CapHeader {
-    font-weight: 500;
+        .cap-type, .cap-number {
+            grid-column: 1;
+            padding-bottom: 1rem;
+        }
+
+        .cap-type {
+            font-weight: bold;
+        }
+    }
 }
 
 .card.requirement {
@@ -70,7 +67,6 @@
         flex-direction: row;
         justify-content: flex-start;
     }
-
 }
 
 .bucket-title {

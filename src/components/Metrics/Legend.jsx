@@ -5,9 +5,9 @@ import "../../scss/Legend.scss";
 
 function Legend(props) {
   return (
-    <div className="Legend">
+    <div className="legend">
       <StopIcon style={{color: props.colorHex}} />
-      <div className="LegendName">{props.title}</div>
+      <div className="legendName">{props.title}</div>
     </div>
   );
 }

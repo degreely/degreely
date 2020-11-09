@@ -31,37 +31,32 @@ function Metrics({ plan }) {
   const { numCompleted, numPlanned, numUnallocated } = calculateProgress(plan.specialisations);
   const total = numCompleted + numPlanned + numUnallocated;
   return (
-    <Container className="Metrics">
-      <Row id="header">
-        <h4>Degree Progress</h4>
-      </Row>
-      <ProgressBar className="progress-main">
-        <ProgressBar className="Completed" now={(numCompleted / total * 100)} key={1} />
-        <ProgressBar className="Planned" now={(numPlanned / total) * 100} key={2} />
+    <div>
+      <h4 className="metrics-header">Degree Progress</h4>
+      <ProgressBar>
+        <ProgressBar className="progress-completed" now={(numCompleted / total * 100)} key={1} />
+        <ProgressBar className="progress-planned" now={(numPlanned / total) * 100} key={2} />
       </ProgressBar>
-      <div id="legend">
+      <div id="progress-legend">
         <Legend colorHex={MetricsModColors.COMPLETED} title="Completed" />
         <Legend colorHex={MetricsModColors.PLANNED} title="Planned" />
         <Legend colorHex={MetricsModColors.UNPLANNED} title="Unplanned" />
       </div>
-      <Row id="header">
-        <h4>CAP</h4>
-        <Container>
-          <Row>
-            <Col className="CapHeader">Projected</Col>
-            <Col>4.18</Col>
-          </Row>
-          <Row>
-            <Col className="CapHeader">Actual</Col>
-            <Col>3.96</Col>
-          </Row>
-        </Container>
-      </Row>
-      <Row id="header">
-        <h4>Degree Requirements</h4>
-      </Row>
+      <h4 className="metrics-header">CAP</h4>
+      <div className="cap-container">
+        <div className="cap">
+          <div className="cap-type">Projected</div>
+          <div className="cap-type">Actual</div>
+        </div>
+        <div className="cap">
+          <div className="cap-number">4.18</div>
+          <div className="cap-number">3.96</div>
+        </div>
+        <div className="cap" />
+      </div>
+      <h4 className="metrics-header">Degree Requirements</h4>
       <DegreeRequirements bndMcs={bndMcs} fourKMcs={fourKMcs} />
-    </Container>
+    </div>
   );
 }
 
