@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import SettingsIcon from "@material-ui/icons/Settings";
+
 import logo from "../img/logo.svg";
 import "../scss/LandingNavbar.scss";
 
@@ -16,15 +18,17 @@ function UserNavbar() {
           <img src={logo} className="App-logo" alt="logo" />
         </Nav.Link>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="m-auto">
-          <PlanDropdown />
-        </Nav>
+      <Nav className="m-auto">
+        <PlanDropdown />
+      </Nav>
+      <div className="d-flex align-items-center">
+        <Nav.Link as={Link} to="settings">
+          <SettingsIcon style={{ fontSize: "2rem", color: "#777777" }} />
+        </Nav.Link>
         <Nav className="ml-auto">
           <UserDropdown />
         </Nav>
-      </Navbar.Collapse>
+      </div>
     </Navbar>
   );
 }
