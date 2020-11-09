@@ -6,7 +6,7 @@ export const buckets = {
     },
     itProf: { IS1103: false, CS2101: false, ES2660: false },
     mathSci: { MA1521: false, MA1101R: false, ST2334: false, SCI: null }
-}
+};
 
 export const specPrimaries = {
     "Algorithms & Theory": {
@@ -48,3 +48,33 @@ export const projectMods = {
 export const ieMods = {
     CP3880: false, CP3200: false, CP3202: false, IS4010: false, TR3202: false
 };
+
+export const isUlrBucketFulfilled = () => !Object.values(buckets.ulr).some(geMod => geMod === null);
+
+export const isCsFoundationFulfilled = () => !Object.values(buckets.csFoundation).some(taken => !taken);
+
+export const isFocusAreaFulfilled = (specialisations) => {
+    let primaryCount = 0;
+    for (const spec of specialisations) {
+        for (const taken of Object.values(specPrimaries[spec])) {
+            if (taken) primaryCount++;
+            if (primaryCount >= 3) return true;
+        }
+        
+        primaryCount = 0;
+    }
+
+    return false;
+};
+
+export const isProjectModsFulfilled = () => projectMods.CS3203
+    || (projectMods.CS3216 && projectMods.CS3217)
+    || (projectMods.CS3281 && projectMods.CS3282);
+
+export const isIeModsFulfilled = () => ieMods.CP3880
+    || (ieMods.CP3200 && ieMods.CP3202)
+    || ieMods.IS4010 || ieMods.TR3202;
+
+export const isItProfFulfilled = () => !Object.values(buckets.itProf).some(taken => !taken);
+
+export const isMathSciFulfilled = () => !Object.values(buckets.mathSci).some(taken => !taken);
