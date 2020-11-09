@@ -3,12 +3,12 @@ import { connect } from "react-redux";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import { grades } from "../data/grades";
+import { grades } from "../../data/grades";
 
-import "../css/dashboard/ModOptions.css";
+import "../../css/dashboard/ModOptions.css";
 
-import caret from "../img/caret-right.png";
-import tick from "../img/tick.png";
+import caret from "../../img/caret-right.png";
+import tick from "../../img/tick.png";
 
 function ModOptions({position, modData, semName, currentPlan, updateSems}) {
     const sems = currentPlan.sems;

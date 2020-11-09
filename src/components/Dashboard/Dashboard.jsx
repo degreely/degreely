@@ -7,9 +7,9 @@ import { DragDropContext } from "react-beautiful-dnd";
 import Sem from "./Sem";
 import ModOptions from "./ModOptions";
 
-import { Actions } from "../redux/actions";
+import { Actions } from "../../redux/actions";
 
-import "../css/dashboard/Sem.css";
+import "../../css/dashboard/Sem.css";
 
 function Dashboard({currentPlan, handleEditPlan}) {
     const sems = currentPlan.sems;

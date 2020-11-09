@@ -1,7 +1,7 @@
 import React from "react";
 import { Droppable } from "react-beautiful-dnd";
 import Mod from "./Mod";
-import "../css/dashboard/Sem.css";
+import "../../css/dashboard/Sem.css";
 
 function Sem({semData, handleModRightClick, modColor}) {
     const calculateTotalMcs = () => {
