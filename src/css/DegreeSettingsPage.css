@@ -1,7 +1,7 @@
 .container.page-root {
   margin: 0px;
   max-width: none;
-  margin-top: 36px;
+  padding-top: 36px;
 }
 
 .page-body {
