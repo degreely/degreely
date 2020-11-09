@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -26,10 +26,13 @@ const labels = {
 
 const Settings = ({ currentPlanName, plan, handleEditPlan }) => {
   const { specialisations, majors, minors } = plan;
-
   const [mode, setMode] = useState("view");
-  const [degreeInfo, setDegreeInfo] = useState({ specialisations, majors, minors });
+  const [degreeInfo, setDegreeInfo] = useState({});
   const [selectionType, setSelectionType] = useState("");
+
+  useEffect(() => {
+    setDegreeInfo({ specialisations, majors, minors });
+  }, [currentPlanName]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleStartEditMode = () => setMode("edit");
   const handleCancel = () => {
