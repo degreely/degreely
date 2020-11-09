@@ -48,7 +48,7 @@ function Metrics({ plan }) {
       <Popover.Content>
         A student's CAP is the sum of the module grade points multiplied by the number of MCs for
         the corresponding module, divided by the total number of MCs.<br/><br/>
-        Visit <a href="http://www.nus.edu.sg/registrar/academic-information-policies/non-graduating/modular-system">this page</a> for
+        Visit <a href="http://www.nus.edu.sg/registrar/academic-information-policies/non-graduating/modular-system" target="_blank" rel="noopener noreferrer">this page</a> for
         more information.
       </Popover.Content>
     </Popover>
