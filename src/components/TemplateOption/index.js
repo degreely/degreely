@@ -9,7 +9,7 @@ import ModuleDisplay from "./ModuleDisplay";
 
 import "../../css/TemplateOption.css";
 
-const TemplateOption = ({ title, subtitle, plan }) => {
+const TemplateOption = ({ title, subtitle, sems }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -32,7 +32,7 @@ const TemplateOption = ({ title, subtitle, plan }) => {
         </Accordion.Toggle>
         <Accordion.Collapse eventKey={title}>
           <Card.Body style={{ padding: "2rem" }}>
-            <ModuleDisplay plan={plan} />
+            <ModuleDisplay sems={sems} />
           </Card.Body>
         </Accordion.Collapse>
       </Card>

@@ -2,7 +2,7 @@ export const templates = {
   basic: {
     title: "Basic Template",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -84,7 +84,7 @@ export const templates = {
   algorithm: {
     title: "Theory and Algorithm Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -166,7 +166,7 @@ export const templates = {
   AI: {
     title: "Artificial Intelligence Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -248,7 +248,7 @@ export const templates = {
   network: {
     title: "Networking and Distributed Systems Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -330,7 +330,7 @@ export const templates = {
   database: {
     title: "Database Systems Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -412,7 +412,7 @@ export const templates = {
   multimedia: {
     title: "Multimedia Information Retrieval Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -495,7 +495,7 @@ export const templates = {
   comsec: {
     title: "Computer Security Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -577,7 +577,7 @@ export const templates = {
   games: {
     title: "Computer Graphics and Games Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -659,7 +659,7 @@ export const templates = {
   parallel: {
     title: "Parallel Computing Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -741,7 +741,7 @@ export const templates = {
   languages: {
     title: "Programming Languages Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [
@@ -823,7 +823,7 @@ export const templates = {
   swe: {
     title: "Software Engineering Focus Area",
     subtitle: "B.Comp(CS) Cohort AY19/20",
-    plan: {
+    sems: {
       Y1S1: {
         label: "Y1S1",
         modules: [

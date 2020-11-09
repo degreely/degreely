@@ -22,10 +22,10 @@ const TemplateSelection = ({ currentPlanName, plans, handleCreate, handleChangeP
 
   const handleSubmit = (value) => {
     const template = templates[value];
-    const plan = Object.assign(EMPTY_PLAN, generateSemsFromTemplate(template));
+    const sems = Object.assign(EMPTY_PLAN, generateSemsFromTemplate(template));
     const name = generatePlanName(plans);
     setNewPlanName(name);
-    handleCreate(name, plan);
+    handleCreate(name, sems);
     handleChangePlan(name);
   };
 
