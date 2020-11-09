@@ -1,10 +1,7 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
-
-import SettingsIcon from "@material-ui/icons/Settings";
-import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
-import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import Button from "react-bootstrap/Button";
 
 import CustomDropdownToggle from "../components/CustomDropdownToggle";
 import Avatar from "../img/avatar.jpg";
@@ -17,25 +14,21 @@ function UserDropdown() {
 
   return (
     <Dropdown className="custom-dropdown">
-      <Dropdown.Toggle as={CustomDropdownToggle}>
+      <Dropdown.Toggle as={CustomDropdownToggle} style={{ width: "unset" }}>
         <img src={Avatar} alt="Logo" style={circleCrop} />
-        Welcome, Jolyn!
-        <KeyboardArrowDownIcon />
       </Dropdown.Toggle>
 
-      <Dropdown.Menu>
-        <Dropdown.Item id="user-dropdown" as={Link} to="/settings">
-          <div className="IconLeft">
-            <SettingsIcon />
+      <Dropdown.Menu className="dropdown-menu-right">
+        <div className="d-flex flex-column align-items-center" style={{ padding: "2rem" }}>
+          <img src={Avatar} alt="Logo" style={circleCrop} />
+          <div className="d-flex flex-column align-items-center" style={{ margin: "2rem 0rem" }}>
+            <span className="font-weight-medium">Jolyn Tan Shi Min</span>
+            <span>e0123456@u.nus.edu</span>
           </div>
-          Degree settings
-        </Dropdown.Item>
-        <Dropdown.Item onClick={() => logout(history)}>
-          <div className="IconLeft">
-            <PowerSettingsNewIcon />
-          </div>
-          Sign out
-        </Dropdown.Item>
+          <Button variant="outline-primary" onClick={() => logout(history)}>
+            Sign out
+          </Button>
+        </div>
       </Dropdown.Menu>
     </Dropdown>
   );
@@ -44,8 +37,8 @@ function UserDropdown() {
 const circleCrop = {
   borderRadius: "50%",
   display: "inline",
-  width: "2rem",
-  height: "2rem",
+  width: "3rem",
+  height: "3rem",
 };
 
 export default UserDropdown;
