@@ -35,7 +35,7 @@
         justify-content: space-between;
     }
 
-    .btn {
+    .btn:not(#tooltip-icon) {
         color: white;
         border-color: white;
         &:hover {

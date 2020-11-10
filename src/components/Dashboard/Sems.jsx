@@ -2,6 +2,10 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
+import HelpIcon from "@material-ui/icons/Help";
+import IconButton from "../IconButton";
 import Sem from "./Sem";
 
 import "../../scss/Sems.scss";
@@ -19,7 +23,7 @@ const generateSemPairs = (sems) => {
         "Y8S1", "Y8S2", "Y8ST1", "Y8ST2",
         "Y9S1", "Y9S2", "Y9ST1", "Y9ST2"
     ];
-    
+
     let semPairs = [];
     let currPair = [];
     for (const semData of semsData) {
@@ -61,7 +65,7 @@ const generateSemPairs = (sems) => {
         currPair.push({ name: "-" }); // instruction to not return a sem or an add sem button
         semPairs.push(currPair);
     }
-    
+
     return semPairs;
 };
 
@@ -80,7 +84,23 @@ function Sems({inEditMode, sems, handleModRightClick, handleEditModeClick}) {
         <div id={`sems${inEditMode ? "-edit" : ""}`}>
             <Row className={`add-remove-mods${inEditMode ? "-edit" : ""}`}>
                 <Col>
-                    {inEditMode && <h4>Add / Remove Modules</h4>}
+                    {inEditMode && (
+            <div className="d-flex align-items-center">
+              <h4>Add / Remove Modules</h4>
+              <OverlayTrigger
+                placement="top"
+                overlay={
+                  <Tooltip>Your changes will be saved automatically.</Tooltip>
+                }
+              >
+                <IconButton
+                  id="tooltip-icon"
+                  icon={<HelpIcon color="inherit" fontSize="small"/>}
+                  style={{ marginLeft: "0.5rem", color: "#F5F8FF" }}
+                />
+              </OverlayTrigger>
+            </div>
+          )}
                     <Button onClick={handleEditModeClick} variant="outline-primary">
                         {inEditMode ? "Save Changes" : "Add / Remove Modules"}
                     </Button>
