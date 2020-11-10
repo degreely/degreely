@@ -1,0 +1,15 @@
+.add-sem-button {
+    display: flex !important;
+    align-items: center !important;
+    background-color: #e4e4e4 !important;
+    color: #666666 !important;
+    border: none !important;
+}
+
+.add-sem-button svg {
+    color: #666666;
+}
+
+.add-sem-button svg, .add-sem-button span {
+    margin-right: 0.45rem;
+}

@@ -115,7 +115,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    handleEditPlan: (name, plan) => dispatch(Actions.editPlan(name, plan)),
+    handleEditPlan: (plan) => dispatch(Actions.editPlan(plan)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

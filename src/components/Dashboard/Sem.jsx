@@ -1,9 +1,21 @@
 import React from "react";
 import { Droppable } from "react-beautiful-dnd";
+import AddSemButton from "./AddSemButton";
 import Mod from "./Mod";
+
 import "../../css/dashboard/Sem.css";
 
 function Sem({inEditMode, semData, handleModRightClick, modColor}) {
+    const missingSemIndicator = semData.name.charAt(0);
+    if (missingSemIndicator === "!") {
+        // sem doesn't exist; return an option to add it if in edit mode
+        const name = semData.name.substring(1);
+        return inEditMode ? <AddSemButton semName={name} /> : <></>
+    } else if (missingSemIndicator === "-") {
+        // return nothing
+        return <></>;
+    }
+
     const calculateTotalMcs = () => {
         let total = 0;
         semData.mods.forEach(mod => {
