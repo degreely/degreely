@@ -70,7 +70,7 @@ const ModuleFinderResultCard = ({
                   <span className="text-small font-weight-medium">{containingSemester}</span>
                 </div>
               ) : (
-                <Dropdown navbar className="selector-dropdown">
+                <Dropdown className="selector-dropdown">
                   <Dropdown.Toggle
                     id={`${code}-dropdown`}
                     data-toggle="dropdown"
