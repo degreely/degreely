@@ -22,7 +22,7 @@ function Dashboard({currentPlan, handleEditPlan}) {
     const [modOptions, setModOptions] = useState(null);
 
     // edit mode
-    const [inEditMode, setInEditMode] = useState(true);
+    const [inEditMode, setInEditMode] = useState(false);
 
     const handleEditModeClick = (event) => {
         setInEditMode(!inEditMode);
