@@ -12,7 +12,8 @@ export const generateTestMods = (sems) => {
                 const taken = semData.name === "Y1S1";
                 const projectedGrade = taken ? "-" : "A";
                 const actualGrade = taken ? "B" : "-";
-                return { code, ...data, taken, projectedGrade, actualGrade };
+                const draggableId = `${code}-${Math.floor(Math.random() * 1000) + 1}`;
+                return { code, ...data, taken, projectedGrade, actualGrade, draggableId };
             }),
         };
         modIndex += 5;

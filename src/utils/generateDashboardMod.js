@@ -7,7 +7,8 @@ export const generateDashboardMod = (code, sem) => {
     const taken = sem === "Y1S1";
     const projectedGrade = taken ? "-" : "A";
     const actualGrade = taken ? "B" : "-";
+    const draggableId = `${code}-${Math.floor(Math.random() * 1000) + 1}`;
     return {
-        code, ...mods[code], taken, projectedGrade, actualGrade
+        code, ...mods[code], taken, projectedGrade, actualGrade, draggableId
     };
 };

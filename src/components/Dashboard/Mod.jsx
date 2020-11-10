@@ -9,7 +9,7 @@ function Mod({index, modData, handleModRightClick, modColor}) {
     };
 
     return (
-        <Draggable draggableId={modData.code} index={index} key={modData.code}>
+        <Draggable draggableId={modData.draggableId} index={index} key={modData.code}>
             {(provided, snapshot) => {
                 return (
                     <div className={`mod ${modColor}`}
