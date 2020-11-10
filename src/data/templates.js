@@ -23,8 +23,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -67,8 +71,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -106,8 +114,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -150,8 +162,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -189,8 +205,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -233,8 +253,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -272,8 +296,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -316,8 +344,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -355,8 +387,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -399,8 +435,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -438,8 +478,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -483,8 +527,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -522,8 +570,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -566,8 +618,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -605,8 +661,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -649,8 +709,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -688,8 +752,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -732,8 +800,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -771,8 +843,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -815,8 +891,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
@@ -854,8 +934,12 @@ export const templates = {
           { name: "ULR" },
         ],
       },
-      Y1ST: {
-        label: "Special Term",
+      Y1ST1: {
+        label: "Y1ST1",
+        modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
+      },
+      Y1ST2: {
+        label: "Y1ST2",
         modules: [{ code: "CP2106", name: "Independent Software Development Project" }],
       },
       Y2S1: {
@@ -898,8 +982,12 @@ export const templates = {
           { name: "UE" },
         ],
       },
-      Y3ST: {
-        label: "Y3ST",
+      Y3ST1: {
+        label: "Y3ST1",
+        modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
+      },
+      Y3ST2: {
+        label: "Y3ST2",
         modules: [{ code: "CP3880", name: "Advanced Technology Attachment Programme" }],
       },
       Y4S1: {
