@@ -1,13 +1,12 @@
-import { getSimplifiedModuleInfo } from "../utils/getSimplifiedModuleInfo";
+import { generateDashboardMod } from "./generateDashboardMod";
 
 export const generateSemsFromTemplate = (template) => {
   const sems = {};
-  const moduleInfo = getSimplifiedModuleInfo();
 
   Object.entries(template.sems).forEach(([sem, { label: name, modules }]) => {
     const mods = modules
       .filter((module) => !!module["code"])
-      .map(({ code }) => ({ code, ...moduleInfo[code] }));
+      .map(({ code }) => generateDashboardMod(code, sem));
     sems[sem] = { name, mods };
   });
 

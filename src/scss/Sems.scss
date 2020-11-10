@@ -1,0 +1,74 @@
+#sems-edit {
+    background-color: white;
+    padding: 0rem 0.75rem 0.8rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+
+    #sems-container {
+        height: 76.5vh;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+}
+
+.add-remove-mods, .add-remove-mods-edit {
+    .col {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            color: white;
+            margin: 0;
+        }
+    }
+}
+
+.add-remove-mods .col {
+    flex-direction: row-reverse;
+    padding-right: 3rem;
+}
+
+.add-remove-mods-edit {
+    padding: 1rem;
+    background-color: #5E60CE;
+
+    .col {
+        justify-content: space-between;
+    }
+
+    .btn:not(#tooltip-icon) {
+        color: white;
+        border-color: white;
+        &:hover {
+            background-color: white;
+            color: #5E60CE;
+            border-color: white;
+        }
+    }
+}
+
+#sems-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .col {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    :not(:last-child).sems-row,
+    :not(:last-child).sems-row-edit {
+        margin-bottom: 2rem;
+    }
+}
+
+.sems-row .col {
+    min-width: 50%;
+}
+
+.sems-row-edit {
+    .col {
+        min-width: 50%;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}

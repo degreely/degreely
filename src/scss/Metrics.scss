@@ -122,3 +122,34 @@
         box-shadow:         inset 0 0 0px white !important;
     }
 }
+
+.mod-btn-edit-modal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-header {
+        border: none;
+        height: 0;
+    }
+
+    .modal-content {
+        width: 25vw;
+        height: 40vh;
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-bottom: 1.6rem;
+            }
+            .subtitle {
+                margin-bottom: 1.6rem;
+            }
+            .btn {
+                margin: 0.5rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    }
+}

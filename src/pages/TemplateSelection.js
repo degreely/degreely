@@ -23,7 +23,7 @@ const TemplateSelection = ({ currentPlanName, plans, handleCreate, handleChangeP
   const handleSubmit = (value) => {
     const { title, subtitle, ...template } = templates[value];
     const plan = Object.assign(EMPTY_PLAN, template, generateSemsFromTemplate(template));
-    const name = generatePlanName(plans);
+    const name = generatePlanName(title, plans);
     setNewPlanName(name);
     handleCreate(name, plan);
     handleChangePlan(name);

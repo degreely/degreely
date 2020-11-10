@@ -4,6 +4,7 @@ import { getSimplifiedModuleInfo } from "../../../utils/getSimplifiedModuleInfo"
 
 const simplifiedMods = getSimplifiedModuleInfo();
 
+// ASSUMPTION: user has completed Y1S1 only
 const getAllocatedModState = (sem) => sem.name === "Y1S1" ? MetricsModState.COMPLETED : MetricsModState.PLANNED;
 
 export const fillDegreeReqData = (plan) => {

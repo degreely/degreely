@@ -6,7 +6,7 @@ import AboutPage from "./pages/About";
 import SupportPage from "./pages/Support";
 import LandingPage from "./pages/Landing";
 import SettingsPage from "./pages/DegreeSettings";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./components/Dashboard/Dashboard";
 import CreatePlanPage from "./pages/CreatePlan";
 import TemplateSelectionPage from "./pages/TemplateSelection";
 

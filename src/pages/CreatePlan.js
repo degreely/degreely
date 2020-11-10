@@ -16,7 +16,7 @@ import { generatePlanName } from "../utils/generatePlanName";
 
 const CreatePlan = ({ plans, handleCreate, handleChangePlan }) => {
   const handleCreateEmptyPlan = () => {
-    const name = generatePlanName(plans);
+    const name = generatePlanName(undefined, plans);
     handleCreate(name, EMPTY_PLAN);
     handleChangePlan(name);
   };

@@ -18,7 +18,7 @@ const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan, handleR
   const history = useHistory();
   const { pathname } = useLocation();
   const [optionModalProps, setOptionModalProps] = useState({ show: false });
-  const items = Object.keys(plans).filter((plan) => plan !== selected);
+  const items = Object.keys(plans);
 
   const handleOpenMoreOptions = (name) => {
     setOptionModalProps({
@@ -38,7 +38,7 @@ const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan, handleR
 
   const handleAdd = () => history.push("create-plan");
 
-  if (!Object.keys(plans).length || BLACKLISTED_PAGES.includes(pathname)) {
+  if (!items.length || BLACKLISTED_PAGES.includes(pathname)) {
     return null;
   }
 
@@ -55,6 +55,7 @@ const PlanDropdown = ({ plans, selected, handleDelete, handleChangePlan, handleR
             <EditableList
               hasMoreOptions
               items={items}
+              activeItem={selected}
               onClick={handleChangePlan}
               onDelete={handleConditionalDelete}
               onAdd={handleAdd}

@@ -1,0 +1,37 @@
+.mod-grid,
+.mod-list {
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mod-grid {
+  align-items: center;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mod-list {
+  align-items: flex-start;
+  height: 160px;
+  width: 160px;
+}
+
+.mod-text-list {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mod-text-grid {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mod-remove {
+  cursor: pointer;
+}
