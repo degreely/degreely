@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { Actions } from "../../redux/actions";
 import { Droppable } from "react-beautiful-dnd";
+import ClearIcon from '@material-ui/icons/Clear';
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 import AddSemButton from "./AddSemButton";
 import Mod from "./Mod";
 
 import "../../css/dashboard/Sem.css";
 
 function Sem({inEditMode, semData, handleModRightClick, modColor, currentPlan, handleEditPlan}) {
+    const [showRemoveSem, setShowRemoveSem] = useState(false);
+    const handleShowRemoveSem = () => setShowRemoveSem(true);
+    const handleCloseRemoveSem = () => setShowRemoveSem(false);
+
     const missingSemIndicator = semData.name.charAt(0);
     if (missingSemIndicator === "!") {
         // sem doesn't exist; return an option to add it if in edit mode
@@ -24,6 +31,15 @@ function Sem({inEditMode, semData, handleModRightClick, modColor, currentPlan, h
             total += parseInt(mod.mcs);
         });
         return total;
+    };
+
+    const handleRemoveSem = () => {
+        let updatedSems = { ...currentPlan.sems };
+        delete updatedSems[semData.name];
+        handleEditPlan({
+            ...currentPlan,
+            sems: updatedSems,
+        });
     };
 
     const handleRemoveMod = (index) => {
@@ -43,7 +59,24 @@ function Sem({inEditMode, semData, handleModRightClick, modColor, currentPlan, h
 
     return (
         <div className={inEditMode ? "sem-edit" : "sem"}>
-            <h4 className="sem-name"><b>{semData.name}</b></h4>
+            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+                <h4 className="sem-name"><b>{semData.name}</b></h4>
+                {inEditMode && <ClearIcon style={{color: "grey", cursor: "pointer"}} onClick={handleShowRemoveSem} />}
+            </div>
+            <Modal show={showRemoveSem} onHide={handleCloseRemoveSem} dialogClassName="modal-10w" centered>
+                <Modal.Header closeButton>
+                <Modal.Title>Warning</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>You are about to delete {semData.name} and all its mods. Are you sure?</Modal.Body>
+            <Modal.Footer>
+                <Button variant="primary" onClick={handleRemoveSem}>
+                    Yes
+                </Button>
+                <Button variant="secondary" onClick={handleCloseRemoveSem}>
+                    No
+                </Button>
+            </Modal.Footer>
+        </Modal>
             <Droppable droppableId={semData.name}>
                 {(provided, snapshot) => {
                     return (
