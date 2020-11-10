@@ -86,6 +86,7 @@ function Sem({
                   display: "flex",
                   flexDirection: isListView ? "row" : "column",
                   minHeight: isListView || !semData.mods.length ? "initial" : "15.5rem",
+                  flexWrap: "wrap",
                 }}
                 {...provided.droppableProps}
                 ref={provided.innerRef}
