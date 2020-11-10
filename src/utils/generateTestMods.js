@@ -8,6 +8,7 @@ export const generateTestMods = (sems) => {
         sems[key] = {
             ...semData,
             mods: Object.entries(simplifiedModules).slice(modIndex, modIndex + 5).map(([code, data]) => {
+                // ASSUMPTION: user has completed Y1S1 only
                 const taken = semData.name === "Y1S1";
                 const projectedGrade = taken ? "-" : "A";
                 const actualGrade = taken ? "B" : "-";
