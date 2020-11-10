@@ -8,7 +8,6 @@ import "../../css/dashboard/AddSemButton.css";
 function AddSemButton({semName, currentPlan, handleEditPlan}) {
     const handleAddSem = (event) => {
         const sem = { name: semName, mods: [] };
-        console.log(sem);
         handleEditPlan({
             ...currentPlan,
             sems: { ...currentPlan.sems, [semName]: sem },

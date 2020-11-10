@@ -12,7 +12,6 @@ import "../css/ModuleFinder.css";
 const PAGE_LIMIT = 10;
 
 const ModuleFinder = ({
-  moduleToSemMapping = { CS3230: "YS31" },
   availableSems = ["Y1S1", "Y1S2", "Y2S1", "Y2S2", "Y3S1", "Y3S2", "Y4S1", "Y4S2"],
   currentPlan,
   updateSems,
@@ -47,7 +46,12 @@ const ModuleFinder = ({
     });
   };
 
-  console.log(offset);
+  let moduleToSemMapping = {};
+  for (const sem of Object.values(currentPlan.sems)) {
+    for (const mod of sem.mods) {
+      moduleToSemMapping[mod.code] = sem.name;
+    }
+  }
 
   return (
     <div className="module-finder-container">
