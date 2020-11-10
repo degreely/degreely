@@ -64,6 +64,12 @@ function Dashboard({currentPlan, handleEditPlan}) {
         const { source, destination } = result;
         
         if (destination === null) return;
+        if (source.droppableId === "module-finder") {
+            // dragging mod from mod finder
+            console.log(destination);
+            return;
+        }
+
         if (source.droppableId === destination.droppableId) {
             // rearranged mods within a sem
             const sem = sems[source.droppableId];

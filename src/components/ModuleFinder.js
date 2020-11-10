@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import _ from "lodash";
+import { Droppable } from "react-beautiful-dnd";
 
 import SearchBar from "./SearchBar";
 import Card from "./ModuleFinderResultCard";
@@ -52,17 +53,26 @@ const ModuleFinder = ({
         handleChange={debouncedFilter}
         handleClear={handleClearSearch}
       />
-      <div className="results">
-        {modules.map((module) => (
-          <Card
-            key={module.moduleCode}
-            handleAddMod={handleAddMod}
-            containingSemester={moduleToSemMapping[module.moduleCode]}
-            semesterOptions={availableSems}
-            {...module}
-          />
-        ))}
-      </div>
+      <Droppable droppableId="module-finder" isDropDisabled={true}>
+          {(provided, snapshot) => {
+            let index = 0;
+            return (
+              <div className="results" {...provided.droppableProps} ref={provided.innerRef}>
+                {modules.map((module) => (
+                  <Card
+                    key={module.moduleCode}
+                    index={index++}
+                    handleAddMod={handleAddMod}
+                    containingSemester={moduleToSemMapping[module.moduleCode]}
+                    semesterOptions={availableSems}
+                    {...module}
+                  />
+                ))}
+                {provided.placeholder}
+              </div>
+            );
+          }}
+      </Droppable>
     </div>
   );
 };
