@@ -20,8 +20,8 @@ const ClearableSearchBar = ({
           onChange={(e) => handleChange(e.target.value)}
           style={{
             width: "100%",
-            paddingLeft: "32px",
-            paddingRight: "32px",
+            padding: "0.5rem 32px",
+            border: "none",
             boxShadow: "0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)",
           }}
           {...inputProps}
