@@ -41,7 +41,10 @@ const ModuleFinderResultCard = ({
           >
             <h6 className="text-primary font-weight-medium">{`${code} ${title}`}</h6>
 
-            <p className="text-muted text-small" style={{ marginBottom: 0 }}>{`${department} • ${mcs} MCs`}</p>
+            <p
+              className="text-muted text-small"
+              style={{ marginBottom: 0 }}
+            >{`${department} • ${mcs} MCs`}</p>
             <p className="text-muted text-small">{semesters}</p>
 
             <div
@@ -72,7 +75,8 @@ const ModuleFinderResultCard = ({
                     id={`${code}-dropdown`}
                     data-toggle="dropdown"
                     variant="outline-primary"
-                    style={{ padding: "0 0.5rem", borderRadius: "16px" }}
+                    style={{ padding: "0.175rem 0.5rem", borderRadius: "8px" }}
+                    className="d-flex justify-content-center align-items-center"
                   >
                     <span className="text-small font-weight-medium">Add to</span>
                   </Dropdown.Toggle>
