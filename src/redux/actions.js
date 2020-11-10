@@ -8,6 +8,7 @@ export const { Types, Creators: Actions } = createActions(
     editPlan: ["plan"],
     deletePlan: ["name"],
     setIsListView: ["toggle"],
+    setInEditMode: ["toggle"],
   },
   {}
 );

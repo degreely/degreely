@@ -15,13 +15,10 @@ import { generateDashboardMod } from "../../utils/generateDashboardMod";
 
 import "../../css/dashboard/Sem.css";
 
-function Dashboard({ plans, selectedPlan, handleEditPlan }) {
+function Dashboard({ plans, selectedPlan, handleEditPlan, inEditMode, toggleEditMode }) {
   // mod options menu
   const [modOptionsPos, setModOptionsPos] = useState({ x: 0, y: 0 });
   const [modOptions, setModOptions] = useState(null);
-
-  // edit mode
-  const [inEditMode, setInEditMode] = useState(false);
 
   useEffect(() => {
     // close menu by left-clicking outside it
@@ -44,7 +41,8 @@ function Dashboard({ plans, selectedPlan, handleEditPlan }) {
   const sems = currentPlan.sems;
 
   const handleEditModeClick = (event) => {
-    setInEditMode(!inEditMode);
+      console.log(inEditMode)
+    toggleEditMode(!inEditMode);
   };
 
   const handleModRightClick = (clickPos, modData) => {
@@ -155,10 +153,12 @@ function Dashboard({ plans, selectedPlan, handleEditPlan }) {
 const mapStateToProps = (state) => ({
   plans: state.plans,
   selectedPlan: state.currentPlan,
+  inEditMode: state.inEditMode,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   handleEditPlan: (plan) => dispatch(Actions.editPlan(plan)),
+  toggleEditMode: (toggle) => dispatch(Actions.setInEditMode(toggle)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

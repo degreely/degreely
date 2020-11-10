@@ -24,6 +24,7 @@ export const INITIAL_STATE = {
     "without hons": EMPTY_PLAN,
   },
   isListView: false,
+  inEditMode: false,
 };
 
 export const changePlan = (state = INITIAL_STATE, { name }) => {
@@ -61,6 +62,10 @@ export const setIsListView = (state = INITIAL_STATE, { toggle }) => {
   return { ...state, isListView: !toggle }
 };
 
+export const setInEditMode = (state = INITIAL_STATE, { toggle }) => {
+  return { ...state, inEditMode: toggle }
+};
+
 export const HANDLERS = {
   [Types.CHANGE_PLAN]: changePlan,
   [Types.ADD_PLAN]: addPlan,
@@ -68,6 +73,7 @@ export const HANDLERS = {
   [Types.EDIT_PLAN]: editPlan,
   [Types.DELETE_PLAN]: deletePlan,
   [Types.SET_IS_LIST_VIEW]: setIsListView,
+  [Types.SET_IN_EDIT_MODE]: setInEditMode,
 };
 
 export default createReducer(INITIAL_STATE, HANDLERS);
