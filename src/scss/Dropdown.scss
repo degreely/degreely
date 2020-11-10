@@ -72,6 +72,11 @@ div.custom-dropdown .list-group-item {
   }
 }
 
+div.custom-dropdown .list-group-item.active {
+  font-weight: bold;
+  color: inherit;
+}
+
 .IconLeft {
   padding-right: 0.75rem;
 }

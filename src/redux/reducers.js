@@ -20,7 +20,7 @@ export const INITIAL_STATE = {
   plans: {
     "sample plan": { ...EMPTY_PLAN, sems: generateTestMods({ ...DEFAULT_SEMS }) },
     "second major": EMPTY_PLAN,
-    "without hons": EMPTY_PLAN
+    "without hons": EMPTY_PLAN,
   },
 };
 
@@ -36,7 +36,8 @@ export const addPlan = (state = INITIAL_STATE, { name, plan }) => {
 export const renamePlan = (state = INITIAL_STATE, { prevName, newName }) => {
   const { [prevName]: toRename, ...plans } = state.plans;
   plans[newName] = { ...toRename };
-  return { ...state, plans };
+  const currentPlan = state.currentPlan === prevName ? newName : state.currentPlan;
+  return { ...state, currentPlan, plans };
 };
 
 export const editPlan = (state = INITIAL_STATE, { plan }) => {
@@ -46,7 +47,12 @@ export const editPlan = (state = INITIAL_STATE, { plan }) => {
 
 export const deletePlan = (state = INITIAL_STATE, { name }) => {
   const { [name]: toDelete, ...plans } = state.plans;
-  return { ...state, plans };
+  let { currentPlan } = state;
+  if (currentPlan === name) {
+    const planNames = Object.keys(plans);
+    currentPlan = planNames.length ? planNames[0] : "";
+  }
+  return { ...state, currentPlan, plans };
 };
 
 export const HANDLERS = {
