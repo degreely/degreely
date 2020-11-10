@@ -4,9 +4,9 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Sem from "./Sem";
 
-import "../../css/dashboard/Sems.css";
+import "../../scss/Sems.scss";
 
-function Sems({sems, handleModRightClick, handleEditModeClick}) {
+function Sems({inEditMode, sems, handleModRightClick, handleEditModeClick}) {
     const semsData = Object.values(sems);
     let semPairs = [];
     for (let i = 0; i < semsData.length; i += 2) {
@@ -28,20 +28,21 @@ function Sems({sems, handleModRightClick, handleEditModeClick}) {
     }
 
     return (
-        <div id="sems">
-            <Row className="add-remove-mods">
-                <Col className>
+        <div id={`sems${inEditMode ? "-edit" : ""}`}>
+            <Row className={`add-remove-mods${inEditMode ? "-edit" : ""}`}>
+                <Col>
+                    {inEditMode && <h4>Add / Remove Modules</h4>}
                     <Button onClick={handleEditModeClick} variant="outline-primary">
-                        Add / Remove Modules
+                        {inEditMode ? "Save Changes" : "Add / Remove Modules"}
                     </Button>
                 </Col>
             </Row>
-            <Row className="sems-container">
+            <Row id="sems-container">
                 <Col>
                     {semPairs.map(semPair => {
                         const [first, second] = semPair;
                         return (
-                            <Row className="sems-row" key={row++}>
+                            <Row className={`sems-row${inEditMode ? "-edit" : ""}`} key={row++}>
                                 <Col key={first.name}>
                                     <Sem semData={first} handleModRightClick={handleModRightClick} modColor={`gradient-color-${modColor}`}/>
                                 </Col>

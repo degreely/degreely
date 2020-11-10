@@ -11,6 +11,7 @@ import { Actions } from "../../redux/actions";
 
 import "../../css/dashboard/Sem.css";
 import Sems from "./Sems";
+import ModuleFinder from "../ModuleFinder";
 
 function Dashboard({currentPlan, handleEditPlan}) {
     const sems = currentPlan.sems;
@@ -19,7 +20,12 @@ function Dashboard({currentPlan, handleEditPlan}) {
     const [modOptionsPos, setModOptionsPos] = useState({x: 0, y: 0});
     const [modOptions, setModOptions] = useState(null);
 
-    const handleEditModeClick = (event) => {};
+    // edit mode
+    const [inEditMode, setInEditMode] = useState(true);
+
+    const handleEditModeClick = (event) => {
+        setInEditMode(!inEditMode);
+    };
     
     const handleModRightClick = (clickPos, modData) => {
         setModOptionsPos(clickPos);
@@ -89,8 +95,9 @@ function Dashboard({currentPlan, handleEditPlan}) {
             <DragDropContext onDragEnd={result => onDragEnd(result)}>
                 <Container fluid>
                     <Row style={{display: "flex", justifyContent: "center"}}>
+                        {inEditMode && <Col sm="auto"><ModuleFinder /></Col>}
                         <Col>
-                            <Sems sems={sems} handleModRightClick={handleModRightClick} handleEditModeClick={handleEditModeClick} />
+                            <Sems inEditMode={inEditMode} sems={sems} handleModRightClick={handleModRightClick} handleEditModeClick={handleEditModeClick} />
                         </Col>
                         <Col sm="auto">
                             <Metrics />

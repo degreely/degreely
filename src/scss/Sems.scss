@@ -1,0 +1,66 @@
+#sems {
+    .row {
+        margin-bottom: 2rem;
+    }
+}
+
+#sems-edit {
+    background-color: white;
+    padding: 0rem 0.75rem 0.8rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+
+    .row {
+        margin-bottom: 2rem;
+    }
+}
+
+.add-remove-mods, .add-remove-mods-edit {
+    .col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+            color: white;
+            margin: 0;
+        }
+    }
+}
+
+.add-remove-mods-edit {
+    padding: 1rem;
+    background-color: #5E60CE;
+
+    .btn {
+        color: white;
+        border-color: white;
+        &:hover {
+            background-color: white;
+            color: #5E60CE;
+            border-color: white;
+        }
+    }
+}
+
+#sems-container {
+    .col {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    :not(:last-child).sems-row {
+        margin-bottom: 2rem;
+    }
+}
+
+.sems-row .col {
+    min-width: 50%;
+}
+
+.sems-row-edit {
+    .col {
+        min-width: 50%;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
