@@ -18,6 +18,8 @@ function Dashboard({currentPlan, handleEditPlan}) {
     // mod options menu
     const [modOptionsPos, setModOptionsPos] = useState({x: 0, y: 0});
     const [modOptions, setModOptions] = useState(null);
+
+    const handleEditModeClick = (event) => {};
     
     const handleModRightClick = (clickPos, modData) => {
         setModOptionsPos(clickPos);
@@ -88,7 +90,7 @@ function Dashboard({currentPlan, handleEditPlan}) {
                 <Container fluid>
                     <Row style={{display: "flex", justifyContent: "center"}}>
                         <Col>
-                            <Sems sems={sems} handleModRightClick={handleModRightClick} />
+                            <Sems sems={sems} handleModRightClick={handleModRightClick} handleEditModeClick={handleEditModeClick} />
                         </Col>
                         <Col sm="auto">
                             <Metrics />

@@ -11,7 +11,7 @@ function Btn({ type, title, ...props }) {
   } else if (type === "secondary") {
     return (
       <Button style={secondaryStyle} {...props}>
-        {props.title}
+        {title}
       </Button>
     );
   }

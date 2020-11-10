@@ -1,11 +1,3 @@
-.sems-container > :not(:last-child).sems-row {
-    margin-bottom: 2rem;
-}
-
-.sems-row .col {
-    min-width: 50%;
-}
-
 .sem {
     border: 1px solid lightgrey;
     border-radius: 2px;
