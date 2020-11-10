@@ -48,6 +48,7 @@ function Sem({
       ...currentPlan,
       sems: updatedSems,
     });
+    handleCloseRemoveSem();
   };
 
   const handleRemoveMod = (index) => {
