@@ -1,11 +1,13 @@
 import React from "react";
+import { connect } from "react-redux";
+import { Actions } from "../../redux/actions";
 import { Droppable } from "react-beautiful-dnd";
 import AddSemButton from "./AddSemButton";
 import Mod from "./Mod";
 
 import "../../css/dashboard/Sem.css";
 
-function Sem({inEditMode, semData, handleModRightClick, modColor}) {
+function Sem({inEditMode, semData, handleModRightClick, modColor, currentPlan, handleEditPlan}) {
     const missingSemIndicator = semData.name.charAt(0);
     if (missingSemIndicator === "!") {
         // sem doesn't exist; return an option to add it if in edit mode
@@ -24,6 +26,21 @@ function Sem({inEditMode, semData, handleModRightClick, modColor}) {
         return total;
     };
 
+    const handleRemoveMod = (index) => {
+        const mods = [...semData.mods];
+        mods.splice(index, 1);
+        handleEditPlan({
+            ...currentPlan,
+            sems: {
+                ...currentPlan.sems,
+                [semData.name]: {
+                    ...semData,
+                    mods: mods,
+                }
+            },
+        });
+    };
+
     return (
         <div className={inEditMode ? "sem-edit" : "sem"}>
             <h4 className="sem-name"><b>{semData.name}</b></h4>
@@ -34,7 +51,15 @@ function Sem({inEditMode, semData, handleModRightClick, modColor}) {
                             <div /*style={{backgroundColor: snapshot.isDraggingOver ? 'lightgray' : 'white'}}*/>
                                 {semData.mods.map((modData, index) => {
                                     return (
-                                        <Mod key={index} index={index} modData={modData} handleModRightClick={handleModRightClick} modColor={modColor} />
+                                        <Mod
+                                            key={index}
+                                            index={index}
+                                            modData={modData}
+                                            modColor={modColor}
+                                            inEditMode={inEditMode}
+                                            handleModRightClick={handleModRightClick}
+                                            handleRemoveMod={(event) => handleRemoveMod(index)}
+                                        />
                                     );
                                 })}
                                 {provided.placeholder}
@@ -50,4 +75,12 @@ function Sem({inEditMode, semData, handleModRightClick, modColor}) {
     );
 }
 
-export default Sem;
+const mapStateToProps = (state) => ({
+    currentPlan: state.plans[state.currentPlan],
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    handleEditPlan: (plan) => dispatch(Actions.editPlan(plan)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Sem);

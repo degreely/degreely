@@ -1,8 +1,9 @@
 import React from "react";
 import { Draggable } from "react-beautiful-dnd";
+import ClearIcon from '@material-ui/icons/Clear';
 import "../../css/dashboard/Mod.css";
 
-function Mod({index, modData, handleModRightClick, modColor}) {
+function Mod({index, modData, modColor, inEditMode, handleModRightClick, handleRemoveMod}) {
     const handleRightClick = (event) => {
         event.preventDefault();
         handleModRightClick({x: event.clientX, y: event.clientY}, modData);
@@ -18,7 +19,10 @@ function Mod({index, modData, handleModRightClick, modColor}) {
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
                     >
-                        <span className="font-weight-medium">{modData.code}</span> <span>{modData.name}</span>
+                        <span className="mod-text">
+                            <span className="font-weight-medium">{modData.code}</span> <span>{modData.name}</span>
+                        </span>
+                        {inEditMode && <ClearIcon className="mod-remove" onClick={handleRemoveMod} />}
                     </div>
                 );
             }}
