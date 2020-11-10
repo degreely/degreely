@@ -10,7 +10,15 @@ import Mod from "./Mod";
 
 import "../../css/dashboard/Sem.css";
 
-function Sem({inEditMode, semData, handleModRightClick, modColor, isListView, currentPlan, handleEditPlan}) {
+function Sem({
+  inEditMode,
+  semData,
+  handleModRightClick,
+  modColor,
+  isListView,
+  currentPlan,
+  handleEditPlan,
+}) {
   const [showRemoveSem, setShowRemoveSem] = useState(false);
   const handleShowRemoveSem = () => setShowRemoveSem(true);
   const handleCloseRemoveSem = () => setShowRemoveSem(false);
@@ -73,23 +81,30 @@ function Sem({inEditMode, semData, handleModRightClick, modColor, isListView, cu
           <Droppable droppableId={semData.name} direction={isListView ? "horizontal" : "vertical"}>
             {(provided, snapshot) => {
               return (
-                <div className="sem-droppable" {...provided.droppableProps} ref={provided.innerRef}>
-                  <div style={{display: isListView ? "flex" : ""}}>
-                    {semData.mods.map((modData, index) => {
-                      return (
-                        <Mod
-                          key={index}
-                          index={index}
-                          modData={modData}
-                          modColor={modColor}
-                          inEditMode={inEditMode}
-                          handleModRightClick={handleModRightClick}
-                          handleRemoveMod={(event) => handleRemoveMod(index)}
-                        />
-                      );
-                    })}
-                    {provided.placeholder}
-                  </div>
+                <div
+                  className="sem-droppable"
+                  style={{
+                    display: "flex",
+                    flexDirection: isListView ? "row" : "column",
+                    minHeight: isListView ? "initial" : "15.5rem",
+                  }}
+                  {...provided.droppableProps}
+                  ref={provided.innerRef}
+                >
+                  {semData.mods.map((modData, index) => {
+                    return (
+                      <Mod
+                        key={index}
+                        index={index}
+                        modData={modData}
+                        modColor={modColor}
+                        inEditMode={inEditMode}
+                        handleModRightClick={handleModRightClick}
+                        handleRemoveMod={(event) => handleRemoveMod(index)}
+                      />
+                    );
+                  })}
+                  {provided.placeholder}
                 </div>
               );
             }}
