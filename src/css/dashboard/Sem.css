@@ -26,6 +26,7 @@
     margin-bottom: 0.75rem;
 }
 
-.sem-droppable > div > :not(:last-child).mod {
+.sem-droppable > div > :not(:last-child).mod-grid,
+.sem-droppable > div > :not(:last-child).mod-list {
     margin-bottom: 0.5rem;
 }

@@ -23,6 +23,7 @@ export const INITIAL_STATE = {
     "second major": EMPTY_PLAN,
     "without hons": EMPTY_PLAN,
   },
+  isListView: false,
 };
 
 export const changePlan = (state = INITIAL_STATE, { name }) => {
@@ -42,7 +43,6 @@ export const renamePlan = (state = INITIAL_STATE, { prevName, newName }) => {
 };
 
 export const editPlan = (state = INITIAL_STATE, { plan }) => {
-  console.log(plan);
   const plans = { ...state.plans, [state.currentPlan]: plan };
   return { ...state, plans: sortPlans(plans) };
 };
@@ -57,12 +57,17 @@ export const deletePlan = (state = INITIAL_STATE, { name }) => {
   return { ...state, currentPlan, plans: sortPlans(plans) };
 };
 
+export const setIsListView = (state = INITIAL_STATE, { toggle }) => {
+  return { ...state, isListView: !toggle }
+};
+
 export const HANDLERS = {
   [Types.CHANGE_PLAN]: changePlan,
   [Types.ADD_PLAN]: addPlan,
   [Types.RENAME_PLAN]: renamePlan,
   [Types.EDIT_PLAN]: editPlan,
   [Types.DELETE_PLAN]: deletePlan,
+  [Types.SET_IS_LIST_VIEW]: setIsListView,
 };
 
 export default createReducer(INITIAL_STATE, HANDLERS);

@@ -1,20 +1,29 @@
-.mod {
+.mod-grid, .mod-list {
     color: white;
     border-radius: 8px;
     padding: 0.5rem 0.75rem;
     margin: 0 0.5rem;
-
     display: flex;
     justify-content: space-between;
+}
+
+.mod-grid {
     align-items: center;
 }
 
-.mod .mod-text {
+.mod-list {
+    align-items: flex-start;
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+}
+
+.mod-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.mod .mod-remove {
+.mod-remove {
     cursor: pointer;
 }

@@ -7,6 +7,7 @@ export const { Types, Creators: Actions } = createActions(
     renamePlan: ["prevName", "newName"],
     editPlan: ["plan"],
     deletePlan: ["name"],
+    setIsListView: ["toggle"],
   },
   {}
 );

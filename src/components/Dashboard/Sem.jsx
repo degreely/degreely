@@ -10,7 +10,7 @@ import Mod from "./Mod";
 
 import "../../css/dashboard/Sem.css";
 
-function Sem({ inEditMode, semData, handleModRightClick, modColor, currentPlan, handleEditPlan }) {
+function Sem({inEditMode, semData, handleModRightClick, modColor, isListView, currentPlan, handleEditPlan}) {
   const [showRemoveSem, setShowRemoveSem] = useState(false);
   const handleShowRemoveSem = () => setShowRemoveSem(true);
   const handleCloseRemoveSem = () => setShowRemoveSem(false);
@@ -57,8 +57,6 @@ function Sem({ inEditMode, semData, handleModRightClick, modColor, currentPlan, 
     });
   };
 
-  console.log(semData);
-
   return (
     <>
       <div className={inEditMode ? "sem-edit" : "sem"}>
@@ -72,11 +70,11 @@ function Sem({ inEditMode, semData, handleModRightClick, modColor, currentPlan, 
         </div>
 
         {semData.mods.length || inEditMode ? (
-          <Droppable droppableId={semData.name}>
+          <Droppable droppableId={semData.name} direction={isListView ? "horizontal" : "vertical"}>
             {(provided, snapshot) => {
               return (
                 <div className="sem-droppable" {...provided.droppableProps} ref={provided.innerRef}>
-                  <div /*style={{backgroundColor: snapshot.isDraggingOver ? 'lightgray' : 'white'}}*/>
+                  <div style={{display: isListView ? "flex" : ""}}>
                     {semData.mods.map((modData, index) => {
                       return (
                         <Mod
@@ -129,6 +127,7 @@ function Sem({ inEditMode, semData, handleModRightClick, modColor, currentPlan, 
 }
 
 const mapStateToProps = (state) => ({
+  isListView: state.isListView,
   currentPlan: state.plans[state.currentPlan],
 });
 
