@@ -8,8 +8,7 @@ function Mod({ index, modData, modColor, inEditMode, isListView, handleModRightC
   const renderModGrid = (
     <>
       <span className="mod-text-grid">
-        <span className="font-weight-medium">{modData.code}</span>
-        <span>{modData.name}</span>
+        <span className="font-weight-medium">{modData.code}</span> <span>{modData.name}</span>
       </span>
       {inEditMode && <ClearIcon className="mod-remove" onClick={handleRemoveMod} />}
     </>
