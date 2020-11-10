@@ -24,7 +24,7 @@ const ModuleFinderResultCard = ({
   const moveMod = (eventKey) => handleAddMod(generateDashboardMod(code, eventKey), eventKey);
 
   return (
-    <Draggable draggableId={url} index={index} key={url}>
+    <Draggable draggableId={`mf-${code}`} index={index} key={url}>
       {(provided, snapshot) => {
         return (
           <div

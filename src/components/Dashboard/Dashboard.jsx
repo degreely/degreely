@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import { Actions } from "../../redux/actions";
+import { DragDropContext } from "react-beautiful-dnd";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { DragDropContext } from "react-beautiful-dnd";
 import Metrics from "../Metrics/Metrics";
 import ModOptions from "./ModOptions";
-
-import { Actions } from "../../redux/actions";
-
-import "../../css/dashboard/Sem.css";
 import Sems from "./Sems";
 import ModuleFinder from "../ModuleFinder";
+
+import { generateDashboardMod } from "../../utils/generateDashboardMod";
+
+import "../../css/dashboard/Sem.css";
 
 function Dashboard({currentPlan, handleEditPlan}) {
     const sems = currentPlan.sems;
@@ -61,12 +62,21 @@ function Dashboard({currentPlan, handleEditPlan}) {
     };
 
     const onDragEnd = (result) => {
-        const { source, destination } = result;
+        const { source, destination, draggableId } = result;
         
         if (destination === null) return;
         if (source.droppableId === "module-finder") {
             // dragging mod from mod finder
-            console.log(destination);
+            const destSem = sems[destination.droppableId];
+            // draggableId for mods in the finder are of the form "mf-CSXXXX"
+            const newMod = generateDashboardMod(draggableId.substring(3), destSem);
+            const destMods = [...destSem.mods];
+            destMods.splice(destination.index, 0, newMod);
+            updateSems({
+                ...sems,
+                [destSem.name]: { ...destSem, mods: destMods, },
+            });
+
             return;
         }
 
