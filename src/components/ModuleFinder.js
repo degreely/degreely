@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import _ from "lodash";
 import { Droppable } from "react-beautiful-dnd";
+
+import Pagination from "@material-ui/lab/Pagination";
 
 import SearchBar from "./SearchBar";
 import Card from "./ModuleFinderResultCard";
 
 import allModules from "../data/computing-modules";
 import "../css/ModuleFinder.css";
+
+const PAGE_LIMIT = 10;
 
 const ModuleFinder = ({
   moduleToSemMapping = { CS3230: "YS31" },
@@ -15,6 +18,7 @@ const ModuleFinder = ({
   updateSems,
 }) => {
   const [modules, setModules] = useState(allModules);
+  const [offset, setOffset] = useState(0);
 
   const handleClearSearch = () => {
     const textField = document.getElementById("module-search-box");
@@ -23,7 +27,7 @@ const ModuleFinder = ({
     setModules(allModules);
   };
 
-  const debouncedFilter = _.debounce((search) => {
+  const filterModules = (search) => {
     const keyword = search.toLowerCase();
     setModules(
       allModules.filter(
@@ -31,7 +35,8 @@ const ModuleFinder = ({
           !search || moduleCode.toLowerCase().includes(keyword) || title.toLowerCase().includes(keyword)
       )
     );
-  }, 350);
+    setOffset(0);
+  };
 
   const handleAddMod = (mod, destSemName) => {
     const destMods = [...currentPlan.sems[destSemName].mods];
@@ -40,7 +45,9 @@ const ModuleFinder = ({
       ...currentPlan.sems,
       [destSemName]: { ...currentPlan.sems[destSemName], mods: destMods },
     });
-  }
+  };
+
+  console.log(offset);
 
   return (
     <div className="module-finder-container">
@@ -50,29 +57,36 @@ const ModuleFinder = ({
         id="module-search-box"
         resultCount={modules.length}
         resultType="module"
-        handleChange={debouncedFilter}
+        handleChange={filterModules}
         handleClear={handleClearSearch}
       />
       <Droppable droppableId="module-finder" isDropDisabled={true}>
-          {(provided, snapshot) => {
-            let index = 0;
-            return (
-              <div className="results" {...provided.droppableProps} ref={provided.innerRef}>
-                {modules.map((module) => (
-                  <Card
-                    key={module.moduleCode}
-                    index={index++}
-                    handleAddMod={handleAddMod}
-                    containingSemester={moduleToSemMapping[module.moduleCode]}
-                    semesterOptions={availableSems}
-                    {...module}
-                  />
-                ))}
-                {provided.placeholder}
-              </div>
-            );
-          }}
+        {(provided, snapshot) => {
+          return (
+            <div className="results" {...provided.droppableProps} ref={provided.innerRef}>
+              {modules.slice(offset * PAGE_LIMIT, (offset + 1) * PAGE_LIMIT).map((module, index) => (
+                <Card
+                  key={module.moduleCode}
+                  index={index}
+                  handleAddMod={handleAddMod}
+                  containingSemester={moduleToSemMapping[module.moduleCode]}
+                  semesterOptions={availableSems}
+                  {...module}
+                />
+              ))}
+              {provided.placeholder}
+            </div>
+          );
+        }}
       </Droppable>
+      <Pagination
+        showFirstButton
+        showLastButton
+        size="small"
+        onChange={(_, page) => setOffset(page - 1)}
+        count={Math.ceil(modules.length / PAGE_LIMIT)}
+        page={offset + 1}
+      />
     </div>
   );
 };

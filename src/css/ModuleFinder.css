@@ -16,3 +16,9 @@
 .results > div {
   margin-bottom: 1rem;
 }
+
+.MuiPagination-root {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
