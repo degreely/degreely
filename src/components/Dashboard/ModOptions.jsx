@@ -8,7 +8,7 @@ import { grades } from "../../data/grades";
 import "../../css/dashboard/ModOptions.css";
 
 import caret from "../../img/caret-right.png";
-import tick from "../../img/tick.png";
+import SemsDropdown from '../SemsDropdown';
 
 function ModOptions({position, modData, semName, currentPlan, updateSems}) {
     const sems = currentPlan.sems;
@@ -66,29 +66,6 @@ function ModOptions({position, modData, semName, currentPlan, updateSems}) {
         </div>
     );
 
-    const displaySemsDropdown = () =>  {
-        const semsNames = Object.keys(sems);
-        let semsCount = 0;
-        return (
-            <DropdownButton className="options-dropdown" drop="right" title={displaySem}>
-                {semsNames.map(currSemName => {
-                    semsCount++;
-                    return (
-                        <div key={currSemName}>
-                            <Dropdown.Item disabled={currSemName === semName} className="options-dropdown-item" eventKey={currSemName} onSelect={moveMod}
-                                style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}
-                            >
-                                {currSemName}
-                                {currSemName === semName && <img src={tick} alt="tick" height="14px"/>}
-                            </Dropdown.Item>
-                            {semsCount % 2 === 0 && semsCount < semsNames.length && <Dropdown.Divider/>}
-                        </div>
-                    );
-                })}
-            </DropdownButton>
-        );
-    };
-
     return (
         <div id="mod-options-menu" style={{position: "absolute", top: `${position.y}px`, left: `${position.x}px`}}>
             <ListGroup>
@@ -112,7 +89,9 @@ function ModOptions({position, modData, semName, currentPlan, updateSems}) {
                     </div>
                 </ListGroup.Item>
                 <ListGroup.Item className="mod-options-menu-item">
-                    {displaySemsDropdown()}
+                    <DropdownButton className="options-dropdown" drop="right" title={displaySem}>
+                        <SemsDropdown semsNames={Object.keys(sems)} allocatedSemName={semName} moveMod={moveMod} />
+                    </DropdownButton>
                 </ListGroup.Item>
             </ListGroup>
         </div>

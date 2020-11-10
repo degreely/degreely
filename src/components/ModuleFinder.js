@@ -10,6 +10,8 @@ import "../css/ModuleFinder.css";
 const ModuleFinder = ({
   moduleToSemMapping = { CS3230: "YS31" },
   availableSems = ["Y1S1", "Y1S2", "Y2S1", "Y2S2", "Y3S1", "Y3S2", "Y4S1", "Y4S2"],
+  currentPlan,
+  updateSems,
 }) => {
   const [modules, setModules] = useState(allModules);
 
@@ -30,6 +32,15 @@ const ModuleFinder = ({
     );
   }, 350);
 
+  const handleAddMod = (mod, destSemName) => {
+    const destMods = [...currentPlan.sems[destSemName].mods];
+    destMods.push(mod);
+    updateSems({
+      ...currentPlan.sems,
+      [destSemName]: { ...currentPlan.sems[destSemName], mods: destMods },
+    });
+  }
+
   return (
     <div className="module-finder-container">
       <h5 className="text-primary font-weight-medium">Module Search</h5>
@@ -45,6 +56,7 @@ const ModuleFinder = ({
         {modules.map((module) => (
           <Card
             key={module.moduleCode}
+            handleAddMod={handleAddMod}
             containingSemester={moduleToSemMapping[module.moduleCode]}
             semesterOptions={availableSems}
             {...module}

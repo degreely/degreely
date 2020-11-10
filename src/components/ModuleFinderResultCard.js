@@ -1,5 +1,7 @@
 import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
+import { generateDashboardMod } from "../utils/generateDashboardMod";
+import SemsDropdown from "./SemsDropdown";
 
 const ModuleFinderResultCard = ({
   moduleCode: code,
@@ -12,8 +14,11 @@ const ModuleFinderResultCard = ({
   url,
   containingSemester,
   semesterOptions = [],
+  handleAddMod,
 }) => {
-  const semesters = semesterData.map(({ semester }) => `${semester} Semester`).join(" • ");
+  const semesters = semesterData.map(({ semester }) => `Semester ${semester}`).join(" • ");
+
+  const moveMod = (eventKey) => handleAddMod(generateDashboardMod(code, eventKey), eventKey);
 
   return (
     <div
@@ -62,9 +67,7 @@ const ModuleFinderResultCard = ({
               <span className="text-small font-weight-medium">Add to</span>
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              {semesterOptions.map((option) => (
-                <Dropdown.Item key={option}>{option}</Dropdown.Item>
-              ))}
+              <SemsDropdown semsNames={semesterOptions} allocatedSemName={null} moveMod={moveMod} />
             </Dropdown.Menu>
           </Dropdown>
         )}

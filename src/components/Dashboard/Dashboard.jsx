@@ -95,7 +95,7 @@ function Dashboard({currentPlan, handleEditPlan}) {
             <DragDropContext onDragEnd={result => onDragEnd(result)}>
                 <Container fluid>
                     <Row style={{display: "flex", justifyContent: "center"}}>
-                        {inEditMode && <Col sm="auto"><ModuleFinder /></Col>}
+                        {inEditMode && <Col sm="auto"><ModuleFinder availableSems={Object.keys(sems)} currentPlan={currentPlan} updateSems={updateSems} /></Col>}
                         <Col>
                             <Sems inEditMode={inEditMode} sems={sems} handleModRightClick={handleModRightClick} handleEditModeClick={handleEditModeClick} />
                         </Col>
