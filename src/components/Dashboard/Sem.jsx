@@ -102,7 +102,7 @@ function Sem({ inEditMode, semData, handleModRightClick, modColor, currentPlan, 
           </div>
         )}
 
-        {semData.mods.length ? (
+        {semData.mods.length || inEditMode ? (
           <div className="sem-total text-muted">
             <span className="sem-total-label">Total MCs:</span>{" "}
             <span className="sem-total-num">{calculateTotalMcs()}</span>
