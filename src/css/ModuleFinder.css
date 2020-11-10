@@ -11,6 +11,7 @@
 .results {
   overflow-y: auto;
   max-height: 100%;
+  padding: 0.25rem;
 }
 
 .results > div {
