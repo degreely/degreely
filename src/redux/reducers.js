@@ -1,6 +1,7 @@
 import { createReducer } from "reduxsauce";
 import { Types } from "./actions";
 import { generateTestMods } from "../utils/generateTestMods";
+import { sortPlans } from "../utils/sortPlans";
 
 const DEFAULT_SEMS = {
   Y1S1: { name: "Y1S1", mods: [] },
@@ -30,19 +31,20 @@ export const changePlan = (state = INITIAL_STATE, { name }) => {
 
 export const addPlan = (state = INITIAL_STATE, { name, plan }) => {
   const plans = { ...state.plans, [name]: plan };
-  return { ...state, plans };
+  return { ...state, plans: sortPlans(plans) };
 };
 
 export const renamePlan = (state = INITIAL_STATE, { prevName, newName }) => {
   const { [prevName]: toRename, ...plans } = state.plans;
   plans[newName] = { ...toRename };
   const currentPlan = state.currentPlan === prevName ? newName : state.currentPlan;
-  return { ...state, currentPlan, plans };
+  return { ...state, currentPlan, plans: sortPlans(plans) };
 };
 
 export const editPlan = (state = INITIAL_STATE, { plan }) => {
+  console.log(plan);
   const plans = { ...state.plans, [state.currentPlan]: plan };
-  return { ...state, plans };
+  return { ...state, plans: sortPlans(plans) };
 };
 
 export const deletePlan = (state = INITIAL_STATE, { name }) => {
@@ -52,7 +54,7 @@ export const deletePlan = (state = INITIAL_STATE, { name }) => {
     const planNames = Object.keys(plans);
     currentPlan = planNames.length ? planNames[0] : "";
   }
-  return { ...state, currentPlan, plans };
+  return { ...state, currentPlan, plans: sortPlans(plans) };
 };
 
 export const HANDLERS = {
