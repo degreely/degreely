@@ -70,7 +70,7 @@ function ModOptions({ position, modData, semName, currentPlan, updateSems }) {
         prev = grade[0];
         return (
           <>
-            <Dropdown.Divider />
+            <Dropdown.Divider key={`divider-${index + 1}`} />
             <Dropdown.Item
               className="options-dropdown-item"
               key={grade}
