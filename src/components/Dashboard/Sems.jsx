@@ -79,7 +79,6 @@ function Sems({inEditMode, sems, handleModRightClick, handleEditModeClick}) {
         modColor += gradientIncreasing ? 1 : -1;
     }
 
-    let semPairIndex = 0;
     return (
         <div id={`sems${inEditMode ? "-edit" : ""}`}>
             <Row className={`add-remove-mods${inEditMode ? "-edit" : ""}`}>
@@ -108,13 +107,13 @@ function Sems({inEditMode, sems, handleModRightClick, handleEditModeClick}) {
             </Row>
             <Row id="sems-container">
                 <Col>
-                    {generateSemPairs(sems).map(semPair => {
+                    {generateSemPairs(sems).map((semPair, index) => {
                         const [first, second] = semPair;
                         if (first.name === "!Y10S1") {
                             if (!inEditMode) return <></>
                             return (
                                 <div style={{display: "flex", justifyContent: "center"}}>
-                                    <Row className={`sems-row${inEditMode ? "-edit" : ""}`} key={semPairIndex++}>
+                                    <Row className={`sems-row${inEditMode ? "-edit" : ""}`} key={index}>
                                         <Col key={first.name}>
                                             <Button onClick={() => alert("CONGRATULATIONS!")}>
                                                 Like it or not, you're graduating now.
@@ -126,7 +125,7 @@ function Sems({inEditMode, sems, handleModRightClick, handleEditModeClick}) {
                         }
 
                         return (
-                            <Row className={`sems-row${inEditMode ? "-edit" : ""}`} key={semPairIndex++}>
+                            <Row className={`sems-row${inEditMode ? "-edit" : ""}`} key={index}>
                                 <Col key={first.name}>
                                     <Sem inEditMode={inEditMode} semData={first} handleModRightClick={handleModRightClick} modColor={`gradient-color-${modColor}`}/>
                                 </Col>
