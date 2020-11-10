@@ -11,6 +11,7 @@ import IconButton from "./IconButton";
 
 const EditableList = ({
   items,
+  activeItem,
   onDelete,
   onAdd,
   onClick,
@@ -23,6 +24,7 @@ const EditableList = ({
     <ListGroup variant="flush" {...props}>
       {items.map((item) => (
         <ListGroup.Item
+          active={activeItem === item}
           key={item}
           className="d-flex justify-content-between align-items-center"
           style={{ border: 0, padding: "0.375rem 1.25rem" }}

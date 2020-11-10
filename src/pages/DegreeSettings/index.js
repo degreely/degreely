@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -24,11 +24,13 @@ const labels = {
   minors: { plural: "Minors", singular: "Minor" },
 };
 
-const DegreeSettings = ({ currentPlanName, plan, handleEditPlan }) => {
-  const { specialisations, majors, minors } = plan;
+const DegreeSettings = ({ currentPlanName, plans, handleEditPlan }) => {
   const [mode, setMode] = useState("view");
   const [degreeInfo, setDegreeInfo] = useState({});
   const [selectionType, setSelectionType] = useState("");
+
+  const plan = plans[currentPlanName] || {};
+  const { specialisations, majors, minors } = plan;
 
   useEffect(() => {
     setDegreeInfo({ specialisations, majors, minors });
@@ -41,7 +43,7 @@ const DegreeSettings = ({ currentPlanName, plan, handleEditPlan }) => {
   };
   const handleSaveChanges = () => {
     setMode("view");
-    handleEditPlan(currentPlanName, { ...plan, ...degreeInfo });
+    handleEditPlan({ ...plan, ...degreeInfo });
   };
 
   const handleOpenSelectionModal = (category) => {
@@ -68,6 +70,10 @@ const DegreeSettings = ({ currentPlanName, plan, handleEditPlan }) => {
     const existing = new Set(degreeInfo[category]);
     return selectionOptions[category].filter((option) => !existing.has(option));
   };
+
+  if (!currentPlanName) {
+    return <Redirect to={{ pathname: "/" }} />;
+  }
 
   return (
     <>
@@ -121,11 +127,11 @@ const DegreeSettings = ({ currentPlanName, plan, handleEditPlan }) => {
 
 const mapStateToProps = (state) => ({
   currentPlanName: state.currentPlan,
-  plan: state.plans[state.currentPlan],
+  plans: state.plans,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  handleEditPlan: (name, plan) => dispatch(Actions.editPlan(name, plan)),
+  handleEditPlan: (plan) => dispatch(Actions.editPlan(plan)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(DegreeSettings);
