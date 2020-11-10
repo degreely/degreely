@@ -13,6 +13,7 @@ import AppsIcon from "@material-ui/icons/Apps";
 import Sem from "./Sem";
 
 import { generateSemPairs } from "../../utils/generateSemPairs";
+import { generateSemsList } from "../../utils/generateSemsList";
 
 import "../../scss/Sems.scss";
 
@@ -81,7 +82,7 @@ function SemsList({ sems, inEditMode, handleModRightClick }) {
 
   return (
     <>
-      {Object.values(sems).map((sem, index) => {
+      {generateSemsList(sems).map((sem, index) => {
         if (index > 0) advanceModColorGradient();
         return (
           <Row className={`sems-row${inEditMode ? "-edit" : ""}`} key={index}>

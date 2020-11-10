@@ -42,6 +42,7 @@ function Sem({
   };
 
   const handleRemoveSem = () => {
+    setShowRemoveSem(false);
     let updatedSems = { ...currentPlan.sems };
     delete updatedSems[semData.name];
     handleEditPlan({
