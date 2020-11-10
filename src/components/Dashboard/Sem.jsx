@@ -77,21 +77,21 @@ function Sem({
           )}
         </div>
 
-        {semData.mods.length || inEditMode ? (
-          <Droppable droppableId={semData.name} direction={isListView ? "horizontal" : "vertical"}>
-            {(provided, snapshot) => {
-              return (
-                <div
-                  className="sem-droppable"
-                  style={{
-                    display: "flex",
-                    flexDirection: isListView ? "row" : "column",
-                    minHeight: isListView ? "initial" : "15.5rem",
-                  }}
-                  {...provided.droppableProps}
-                  ref={provided.innerRef}
-                >
-                  {semData.mods.map((modData, index) => {
+        <Droppable droppableId={semData.name} direction={isListView ? "horizontal" : "vertical"}>
+          {(provided, snapshot) => {
+            return (
+              <div
+                className="sem-droppable"
+                style={{
+                  display: "flex",
+                  flexDirection: isListView ? "row" : "column",
+                  minHeight: isListView || !semData.mods.length ? "initial" : "15.5rem",
+                }}
+                {...provided.droppableProps}
+                ref={provided.innerRef}
+              >
+                {semData.mods.length ? (
+                  semData.mods.map((modData, index) => {
                     return (
                       <Mod
                         key={index}
@@ -103,17 +103,17 @@ function Sem({
                         handleRemoveMod={(event) => handleRemoveMod(index)}
                       />
                     );
-                  })}
-                  {provided.placeholder}
-                </div>
-              );
-            }}
-          </Droppable>
-        ) : (
-          <div style={{ margin: "2rem 0.75rem 1.25rem", color: "#ADB2C1" }}>
-            <span>No modules allocated for this semester</span>
-          </div>
-        )}
+                  })
+                ) : (
+                  <div style={{ margin: "2rem 0.75rem 1.25rem", color: "#ADB2C1" }}>
+                    <span>No modules allocated for this semester</span>
+                  </div>
+                )}
+                {provided.placeholder}
+              </div>
+            );
+          }}
+        </Droppable>
 
         {semData.mods.length || inEditMode ? (
           <div className="sem-total text-muted">
