@@ -1,5 +1,7 @@
 Supercharge your degree planning with us today!
 
+Check out our project portfolio [here](https://degreely.github.io/portfolio/) for more details on the user research, design evaluation and prototyping process.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
