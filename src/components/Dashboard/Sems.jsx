@@ -83,6 +83,19 @@ function SemsList({ sems, inEditMode, handleModRightClick }) {
   return (
     <>
       {generateSemsList(sems).map((sem, index) => {
+        if (sem.name === "!Y10S1") {
+            return (
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                    <Row className={`sems-row${inEditMode ? "-edit" : ""}`} key={index}>
+                        <Col key={sem.name}>
+                            <Button onClick={() => alert("CONGRATULATIONS!")}>
+                                Like it or not, you're graduating now.
+                            </Button>
+                        </Col>
+                    </Row>
+                </div>
+            );
+        }
         if (index > 0) advanceModColorGradient();
         return (
           <Row className={`sems-row${inEditMode ? "-edit" : ""}`} key={index}>
